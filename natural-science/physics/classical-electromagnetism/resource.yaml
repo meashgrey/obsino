@@ -30,3 +30,4 @@ order:
     - "continuous-charge-distribution"
   law:
     - "conservation-of-electric-charge-law"
+    - "coulomb-law"
