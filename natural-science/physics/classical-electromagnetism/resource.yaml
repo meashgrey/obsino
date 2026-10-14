@@ -27,6 +27,8 @@ order:
   concept:
     - "quantization-of-electric-charge"
     - "point-charge"
+    - "electric-field"
+    - "electric-field-strength"
     - "continuous-charge-distribution"
   law:
     - "conservation-of-electric-charge-law"
