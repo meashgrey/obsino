@@ -29,6 +29,7 @@ order:
     - "point-charge"
     - "electric-field"
     - "electric-field-strength"
+    - "electric-dipole"
     - "continuous-charge-distribution"
   law:
     - "conservation-of-electric-charge-law"

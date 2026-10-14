@@ -12,7 +12,7 @@ electric_field_superposition_principle: {
     For point charges $q_i$ at positions $ub(r)_i$, the field at position
     $ub(r)$ is:
 
-    $ ub(E)(ub(r)) = 1/(4 π ε_0) sum_i q_i (ub(r) - ub(r)_i) / abs(ub(r) - ub(r)_i)^3 $
+    $ ub(E)(ub(r)) = (1/(4 π ε_0)) sum_i (q_i (ub(r) - ub(r)_i))/(abs(ub(r) - ub(r)_i)^3) $
 
     The direction of each term follows the sign of its source charge: away
     from a positive charge and toward a negative charge. Add the vectors by
@@ -23,7 +23,7 @@ electric_field_superposition_principle: {
     For a continuous charge distribution, the sum becomes an integral over
     small charge elements $"d"q$:
 
-    $ ub(E)(ub(r)) = 1/(4 π ε_0) integral (ub(r) - ub(r)') / abs(ub(r) - ub(r)')^3 "d"q $
+    $ ub(E)(ub(r)) = (1/(4 π ε_0)) integral ((ub(r) - ub(r)'))/(abs(ub(r) - ub(r)')^3) "d"q $
 
     Here $ub(r)'$ marks the position of each charge element. This integral
     adds the vector contribution from every part of the distribution. The
