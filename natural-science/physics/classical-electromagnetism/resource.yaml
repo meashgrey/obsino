@@ -28,3 +28,5 @@ order:
     - "quantization-of-electric-charge"
     - "point-charge"
     - "continuous-charge-distribution"
+  law:
+    - "conservation-of-electric-charge-law"
