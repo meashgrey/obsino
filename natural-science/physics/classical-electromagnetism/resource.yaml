@@ -26,4 +26,5 @@ papers:
 order:
   concept:
     - "quantization-of-electric-charge"
+    - "point-charge"
     - "continuous-charge-distribution"
