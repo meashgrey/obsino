@@ -30,6 +30,7 @@ order:
     - "electric-field"
     - "electric-field-strength"
     - "electric-dipole"
+    - "multipole-expansion"
     - "continuous-charge-distribution"
   law:
     - "conservation-of-electric-charge-law"
