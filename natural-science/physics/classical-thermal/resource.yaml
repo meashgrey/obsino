@@ -28,6 +28,9 @@ order:
     # Systems, temperature, and the ideal-gas model
     - "thermal-system"
     - "state-function"
+    - "internal-energy"
+    - "thermodynamic-process"
+    - "heat-and-work"
     - "temperature"
     - "gas"
     - "ideal-gas"
@@ -46,6 +49,7 @@ order:
     - "root-mean-square-speed"
   law:
     - "thermodynamic-zeroth-law"
+    - "thermodynamic-first-law"
     - "boyle-law"
     - "charles-law"
     - "gay-lussac-law"
