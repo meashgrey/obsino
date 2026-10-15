@@ -49,7 +49,15 @@ IGNORE_DIRS := cue.mod assets asset bin src
 # Set shell to bash for compatibility
 SHELL := /bin/bash
 
-.PHONY: single-export package-export handbook clean clean-cache help
+.PHONY: single-export package-export handbook clio-plugin clean clean-cache help
+
+# Build Clio's Typst WASM plugin before compiling figures that import it.
+clio-plugin:
+	@if [[ ! -f "$(ROOT)/.lib/clio/scripts/build-plugin.sh" ]]; then \
+		echo "Clio submodule is missing; run: git submodule update --init .lib/clio"; \
+		exit 1; \
+	fi
+	@bash "$(ROOT)/.lib/clio/scripts/build-plugin.sh"
 
 # This subcommand exports a single cue file through the CUE package system
 # It extracts a specific property (TARGET) from a package and generates PDF
@@ -64,6 +72,7 @@ package-export:
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
+	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
 	@echo "  Compiling typst file to $(TARGET).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(TARGET).pdf
 	@rm -f $(TEMP)
@@ -81,6 +90,7 @@ single-export:
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
+	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
 	@echo "  Compiling typst file to $(RAW_CLASS).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(RAW_CLASS).pdf
 	@rm -f $(TEMP)
@@ -174,6 +184,7 @@ handbook:
 	# Format and compile the handbook
 	@echo "→ Formatting handbook with typstyle"
 	@typstyle -i $(TEMP)
+	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
 	@echo "→ Compiling handbook to PDF"
 	@typst compile --root $(ROOT) $(TEMP) handbook-$(HANDBOOK_POSTFIX).pdf
 	@echo "→ Cleaning up temporary files"
