@@ -9,13 +9,16 @@ average_translational_kinetic_energy: {
     From the #link(<concept-pressure-from-molecular-collisions>)[pressure from
     molecular collisions], we know that:
 
-    $ p V = 1/3 n m ⟨v^2⟩ = 2/3 n (1/2 m ⟨v^2⟩) = 2/3 n ⟨E_k⟩ $
+    Here $N$ is the number of molecules. The kinetic-theory pressure relation is:
+
+    $ p V = 1/3 N m ⟨v^2⟩ = 2/3 N (1/2 m ⟨v^2⟩) = 2/3 N ⟨E_k⟩ $
 
     so
 
-    $ ⟨E_k⟩ = (3 p V)/(2 n) $
+    $ ⟨E_k⟩ = (3 p V)/(2 N) $
   """#
   related: [
-    "concept/pressure-from-molecular-collisions"
+    "concept/pressure-from-molecular-collisions",
+    "concept/temperature-from-microscopic"
   ]
 }

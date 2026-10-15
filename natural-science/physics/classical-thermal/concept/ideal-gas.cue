@@ -2,17 +2,18 @@ package concept
 
 ideal_gas: {
   content: #"""
-    An *ideal gas* is a simplified model of a real gas. It obeys Boyle's Law
-    exactly plus two other gas laws (Charles's Law and Avogadro's Law). Assumptions
-    of an ideal gas:
+    An *ideal gas* is a simplified model of a real gas. Its particles are treated
+    as point-like, and the model neglects intermolecular forces except during
+    collisions. The main assumptions are:
 
-    1. The gas particle are *point-like*
-    2. There are *no intermolecular forces* except during instantaneous elastic
-    3. Collisions with the walls and between particles are *perfectly elastic*
-      (no energy loss)
-    4. The particles move in *random straight lines* between collisions.
+    1. The particles' own volumes are negligible compared with the volume of the gas.
+    2. Particles exert no forces on one another except during collisions.
+    3. Collisions between particles and with the container walls are instantaneous
+       and perfectly elastic.
+    4. Between collisions, particles move in straight lines; in thermal equilibrium,
+       their directions are random.
 
-    No real gas is perfectly ideal, but at *low pressure* and *high temperature*,
-    most gasses behave nearly ideally.
+    No real gas is perfectly ideal, but many gases behave approximately ideally
+    at low pressure and high temperature.
   """#
 }

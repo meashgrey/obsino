@@ -9,9 +9,14 @@ gas: {
 
     - $p$: pressure, force per unit area
     - $V$: volume, the geometric space occupied by the gas
-    - $T$: temperature, a measure of the average kinetic energy of the particles
+    - $T$: temperature, a state variable that characterizes thermal equilibrium
     - $n$: amount of substance, number of moles
 
-    These variables are not independent they are related by an equation of state.
+    These variables are not independent; an equation of state relates them. For
+    an ideal gas, that relation is the ideal gas law.
   """#
+  related: [
+    "concept/ideal-gas",
+    "law/ideal-gas-law"
+  ]
 }

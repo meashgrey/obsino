@@ -13,6 +13,12 @@ temperature: {
 
     $ Θ_A = Θ_B <=> A "is thermal equilibrium with" B $
 
-    Any function that has this property can be used as a temperature scale.
+    Any function that has this property can be used as a temperature scale. The
+    zeroth law is what makes a consistent temperature scale possible.
   """#
+  related: [
+    "concept/thermal-system",
+    "concept/ideal-gas-temperature-scale",
+    "law/thermodynamic-zeroth-law"
+  ]
 }

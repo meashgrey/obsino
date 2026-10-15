@@ -10,26 +10,32 @@ thermal_system: {
       #table(
         columns: 4,
         align: (center, center, center, left),
-        [Type], [Mass exchange], [Heat exchange], [Example],
+        [Type], [Matter exchange], [Energy exchange], [Example],
 
         [*Isolated system*], [❌], [❌],
-        [A perfectly insulated fixed container],
+        [A sealed, rigid, perfectly insulated container],
 
         [*Closed system*], [❌], [✅],
-        [A sealed piston with heat flow allowed],
+        [A sealed piston that can exchange heat or work],
 
         [*Open system*], [✅], [✅],
-        [A flowing fluid in a pipe]
+        [A flowing fluid in a pipe that can exchange energy]
       )
     ]
 
-    The state of a thermodynamic system is described by a set of *macroscopic
-    geometric quantities* that do not depend on the system's history. Notice,
-    a system is in *thermodynamic equilibrium* if all state variables are constant
-    in time and uniform throughout the system with no gradients. In equilibrium:
+    A system's state is described by macroscopic properties such as pressure,
+    volume, and temperature. A system is in *thermodynamic equilibrium* when its
+    macroscopic state is steady and it has no unbalanced gradients driving
+    spontaneous macroscopic change. Heat and work are two ways energy can cross
+    the system boundary; equilibrium is not defined merely by the absence of work.
+
+    In equilibrium:
 
     - No net macroscopic flow of matter
     - No net heat flow
-    - No net work exchange with surroundings
+    - No spontaneous macroscopic change in the system's state
   """#
+  related: [
+    "law/thermodynamic-zeroth-law"
+  ]
 }
