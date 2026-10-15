@@ -46,8 +46,13 @@
             typstyle
             jq
             pnpm
+            rustc
+            cargo
+            lld
           ];
           text = ''
+            export CARGO_TARGET_WASM32_UNKNOWN_UNKNOWN_LINKER="${pkgs.lld}/bin/wasm-ld"
+
             # Define workspace root (relative to where flake is)
             WORKSPACE_ROOT=$(pwd)
             BUILD_DIR="$WORKSPACE_ROOT/build"
@@ -61,6 +66,9 @@
             # Debug for fonts list
 
             ${pkgs.typst}/bin/typst fonts
+            rustc --version
+            cargo --version
+            wasm-ld --version
 
             # Create build directory if it doesn't exist
             mkdir -p "$BUILD_DIR"
