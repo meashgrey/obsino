@@ -36,16 +36,17 @@ electric_field_strength: {
     directions.
 
     The heatmap below shows the *relative magnitude*, proportional to $(1)/(R^2)$,
-    around one positive point charge at its center. Warmer colors indicate a
-    stronger field; the logarithmic color scale makes weaker regions visible
-    alongside the intense field close to the charge. The value is capped near
-    the ideal point charge to display the singular center; the colors do not
-    show field direction.
+    around one positive point charge at its center. Rust evaluates the field
+    over the observation grid and returns a raster image to Typst. A small
+    softening length regularizes values very close to the point source; the
+    logarithmic color scale clips values above its display range. The pale
+    marker identifies the charge, while color shows magnitude rather than
+    field direction.
 
     \(figure_part_electric_field_strength)
   """
   figure_part_electric_field_strength: #"""
-    #let electric-field-heatmap = "assets/typst/single-point-charge-field-heatmap.typ"
+    #let electric-field-heatmap = "assets/typst/single-point-charge-field-heatmap-clio.typ"
     #eval(
       str(read(electric-field-heatmap)),
       mode: "markup"

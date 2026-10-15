@@ -49,11 +49,19 @@ IGNORE_DIRS := cue.mod assets asset bin src
 # Set shell to bash for compatibility
 SHELL := /bin/bash
 
-.PHONY: single-export package-export handbook clean clean-cache help
+.PHONY: single-export package-export handbook clio-plugin clean clean-cache help
+
+# Build Clio's Typst WASM plugin before compiling figures that import it.
+clio-plugin:
+	@if [[ ! -f "$(ROOT)/.lib/clio/scripts/build-plugin.sh" ]]; then \
+		echo "Clio submodule is missing; run: git submodule update --init .lib/clio"; \
+		exit 1; \
+	fi
+	@bash "$(ROOT)/.lib/clio/scripts/build-plugin.sh"
 
 # This subcommand exports a single cue file through the CUE package system
 # It extracts a specific property (TARGET) from a package and generates PDF
-package-export:
+package-export: clio-plugin
 	@echo "→ Starting to process package $(PACKAGE)/$(DIR) and single property $(TARGET) in it"
 	@echo "  Exporting CUE package to YAML and extracting $(TARGET).content"
 	@cat $(HEADER) > $(TEMP)
@@ -72,7 +80,7 @@ package-export:
 
 # This subcommand exports a single CUE file directly
 # It processes a single file and generates PDF from its content property
-single-export:
+single-export: clio-plugin
 	@echo "→ Starting to process single CUE file $(FILE)"
 	@echo "  Exporting CUE file to YAML and extracting $(CLASS).content"
 	@cat $(HEADER) > $(TEMP)
@@ -87,7 +95,7 @@ single-export:
 	@echo "✅ successfully generate the pdf of content"
 
 # This subcommand exports all content into a comprehensive handbook PDF
-handbook:
+handbook: clio-plugin
 	@echo "→ Starting to export all the content into handbook-$(HANDBOOK_POSTFIX).pdf"; \
 	\
 	# Function to convert hyphen-case to Title Case for headings; \

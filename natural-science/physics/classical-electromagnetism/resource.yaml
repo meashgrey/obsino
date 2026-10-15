@@ -36,3 +36,7 @@ order:
     - "conservation-of-electric-charge-law"
     - "coulomb-law"
     - "electric-field-superposition-principle"
+  specific:
+    - "uniformly-charged-annulus-axis-field"
+    - "uniformly-charged-disk-axis-field"
+    - "uniformly-charged-plane-with-circular-hole"

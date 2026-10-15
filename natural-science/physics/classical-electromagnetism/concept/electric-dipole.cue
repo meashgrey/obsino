@@ -49,7 +49,7 @@ electric_dipole: {
     \(figure_part_electric_dipole)
   """
   figure_part_electric_dipole: #"""
-    #let dipole-heatmap = "assets/typst/electric-field-strength-heatmap.typ"
+    #let dipole-heatmap = "assets/typst/electric-field-strength-heatmap-clio.typ"
     #scale(80%, reflow: true)[
       #eval(
         str(read(dipole-heatmap)),

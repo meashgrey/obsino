@@ -1,0 +1,3 @@
+[submodule ".lib/clio"]
+	path = .lib/clio
+	url = https://github.com/athena-harness/clio.git

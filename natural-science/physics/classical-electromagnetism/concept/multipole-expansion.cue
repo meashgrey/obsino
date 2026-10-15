@@ -45,7 +45,7 @@ multipole_expansion: {
     \(figure_part_multipole_expansion)
   """
   figure_part_multipole_expansion: #"""
-    #let multipole-heatmap = "assets/typst/multipoint-charge-field-heatmap.typ"
+    #let multipole-heatmap = "assets/typst/multipoint-charge-field-heatmap-clio.typ"
     #scale(80%, reflow: true)[
       #eval(
         str(read(multipole-heatmap)),
