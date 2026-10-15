@@ -27,6 +27,7 @@ order:
   concept:
     # Systems, temperature, and the ideal-gas model
     - "thermal-system"
+    - "state-function"
     - "temperature"
     - "gas"
     - "ideal-gas"

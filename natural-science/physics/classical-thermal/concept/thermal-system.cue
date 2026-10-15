@@ -24,16 +24,29 @@ thermal_system: {
     ]
 
     A system's state is described by macroscopic properties such as pressure,
-    volume, and temperature. A system is in *thermodynamic equilibrium* when its
-    macroscopic state is steady and it has no unbalanced gradients driving
-    spontaneous macroscopic change. Heat and work are two ways energy can cross
-    the system boundary; equilibrium is not defined merely by the absence of work.
+    volume, temperature, and composition. *Thermodynamic equilibrium* means
+    these properties do not change spontaneously with time. It requires thermal,
+    mechanical, chemical, and (when multiple phases are present) phase equilibrium:
 
-    In equilibrium:
+    - *Thermal equilibrium*: There is no temperature difference driving a net
+      transfer of heat within the system. When two systems in thermal contact
+      are in equilibrium with each other, there is no net heat flow between them.
+    - *Mechanical equilibrium*: There are no unbalanced forces causing bulk
+      motion or continuing deformation. Pressure forces are balanced; in a
+      gravitational field, pressure can vary with height while still balancing
+      gravity.
+    - *Chemical equilibrium*: The composition does not change through a net
+      chemical reaction or the net transfer of a substance between regions.
+      Reactions may continue microscopically, but their forward and reverse
+      changes balance overall.
+    - *Phase equilibrium*: When multiple phases of a substance coexist, there is
+      no net transfer of matter from one phase to another, so the amount of each
+      phase remains stable. For example, in a liquid-vapor equilibrium,
+      evaporation and condensation balance overall.
 
-    - No net macroscopic flow of matter
-    - No net heat flow
-    - No spontaneous macroscopic change in the system's state
+    These conditions together prevent spontaneous macroscopic change. Heat and
+    work describe ways energy can cross the system boundary; the absence of work
+    alone does not establish equilibrium.
   """#
   related: [
     "law/thermodynamic-zeroth-law"
