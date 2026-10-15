@@ -255,6 +255,8 @@
 
       devShells = forAllSystems ({ pkgs }: {
         default = pkgs.mkShell {
+          CARGO_TARGET_WASM32_UNKNOWN_UNKNOWN_LINKER = "${pkgs.lld}/bin/wasm-ld";
+
           packages = with pkgs; [
             cue
             yq-go
@@ -262,6 +264,9 @@
             typstyle
             jq
             pnpm
+            rustc
+            cargo
+            lld
           ];
 
           shellHook = ''
@@ -272,6 +277,9 @@
             typstyle --version
             jq --version
             pnpm --version
+            rustc --version
+            cargo --version
+            wasm-ld --version
           '';
         };
       });
