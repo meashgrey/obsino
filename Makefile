@@ -61,7 +61,7 @@ clio-plugin:
 
 # This subcommand exports a single cue file through the CUE package system
 # It extracts a specific property (TARGET) from a package and generates PDF
-package-export: clio-plugin
+package-export:
 	@echo "→ Starting to process package $(PACKAGE)/$(DIR) and single property $(TARGET) in it"
 	@echo "  Exporting CUE package to YAML and extracting $(TARGET).content"
 	@cat $(HEADER) > $(TEMP)
@@ -72,6 +72,7 @@ package-export: clio-plugin
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
+	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
 	@echo "  Compiling typst file to $(TARGET).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(TARGET).pdf
 	@rm -f $(TEMP)
@@ -80,7 +81,7 @@ package-export: clio-plugin
 
 # This subcommand exports a single CUE file directly
 # It processes a single file and generates PDF from its content property
-single-export: clio-plugin
+single-export:
 	@echo "→ Starting to process single CUE file $(FILE)"
 	@echo "  Exporting CUE file to YAML and extracting $(CLASS).content"
 	@cat $(HEADER) > $(TEMP)
@@ -89,13 +90,14 @@ single-export: clio-plugin
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
+	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
 	@echo "  Compiling typst file to $(RAW_CLASS).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(RAW_CLASS).pdf
 	@rm -f $(TEMP)
 	@echo "✅ successfully generate the pdf of content"
 
 # This subcommand exports all content into a comprehensive handbook PDF
-handbook: clio-plugin
+handbook:
 	@echo "→ Starting to export all the content into handbook-$(HANDBOOK_POSTFIX).pdf"; \
 	\
 	# Function to convert hyphen-case to Title Case for headings; \
@@ -182,6 +184,7 @@ handbook: clio-plugin
 	# Format and compile the handbook
 	@echo "→ Formatting handbook with typstyle"
 	@typstyle -i $(TEMP)
+	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
 	@echo "→ Compiling handbook to PDF"
 	@typst compile --root $(ROOT) $(TEMP) handbook-$(HANDBOOK_POSTFIX).pdf
 	@echo "→ Cleaning up temporary files"
