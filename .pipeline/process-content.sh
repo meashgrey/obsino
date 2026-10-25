@@ -99,7 +99,9 @@ smiles_list=$(echo "$raw_content" \
 
 if [ -n "$smiles_list" ]; then
   echo "> Rendering SMILES with michem" >&2
-  raw_content=$(printf '%s\n' "$raw_content" | sed 's|image("smiles:\/\/|michem.smiles("|g')
+  raw_content=$(printf '%s\n' "$raw_content" \
+    | sed 's|image("smiles:\/\/|michem.smiles("|g' \
+    | sed -E 's/(michem\.smiles\("[^"]*")/\1, style: michem.style(font: "Libertinus Serif")/g')
 fi
 
 # Process figures:// labels (looked up in pictures.yaml)
