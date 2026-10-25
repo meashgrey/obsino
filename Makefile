@@ -49,7 +49,7 @@ IGNORE_DIRS := cue.mod assets asset bin src
 # Set shell to bash for compatibility
 SHELL := /bin/bash
 
-.PHONY: single-export package-export handbook clio-plugin clean clean-cache help
+.PHONY: single-export package-export handbook clio-plugin michem-plugin clean clean-cache help
 
 # Build Clio's Typst WASM plugin before compiling figures that import it.
 clio-plugin:
@@ -58,6 +58,14 @@ clio-plugin:
 		exit 1; \
 	fi
 	@bash "$(ROOT)/.lib/clio/scripts/build-plugin.sh"
+
+# Build michem's Typst WASM plugin before compiling molecular structures.
+michem-plugin:
+	@if [[ ! -f "$(ROOT)/.lib/michem/scripts/build-plugin.sh" ]]; then \
+		echo "Michem submodule is missing; run: git submodule update --init .lib/michem"; \
+		exit 1; \
+	fi
+	@bash "$(ROOT)/.lib/michem/scripts/build-plugin.sh"
 
 # This subcommand exports a single cue file through the CUE package system
 # It extracts a specific property (TARGET) from a package and generates PDF
@@ -73,6 +81,12 @@ package-export:
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
 	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
+	@if grep -Eq 'michem\.smiles\(|/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
+		fi; \
+		$(MAKE) michem-plugin; \
+	fi
 	@echo "  Compiling typst file to $(TARGET).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(TARGET).pdf
 	@rm -f $(TEMP)
@@ -85,15 +99,24 @@ single-export:
 	@echo "→ Starting to process single CUE file $(FILE)"
 	@echo "  Exporting CUE file to YAML and extracting $(CLASS).content"
 	@cat $(HEADER) > $(TEMP)
-	@cue export $(FILE) --out yaml | yq -r ".$(CLASS).content" >> $(TEMP)
+	@raw_content=$$(cue export "$(FILE)" --out yaml | yq -r ".$(CLASS).content"); \
+	raw_content=$$(printf '%s\n' "$$raw_content" | $(ROOT)/.pipeline/process-content.sh --downloads $(REMOTE_DOWNLOADS)); \
+	printf '%s\n' "$$raw_content" >> $(TEMP)
 	@echo "→ Formatting generated raw typst file content"
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
 	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
+	@if grep -Eq 'michem\.smiles\(|/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
+		fi; \
+		$(MAKE) michem-plugin; \
+	fi
 	@echo "  Compiling typst file to $(RAW_CLASS).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(RAW_CLASS).pdf
 	@rm -f $(TEMP)
+	@rm -rf $(REMOTE_DOWNLOADS)
 	@echo "✅ successfully generate the pdf of content"
 
 # This subcommand exports all content into a comprehensive handbook PDF
@@ -185,6 +208,12 @@ handbook:
 	@echo "→ Formatting handbook with typstyle"
 	@typstyle -i $(TEMP)
 	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
+	@if grep -Eq 'michem\.smiles\(|/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
+		fi; \
+		$(MAKE) michem-plugin; \
+	fi
 	@echo "→ Compiling handbook to PDF"
 	@typst compile --root $(ROOT) $(TEMP) handbook-$(HANDBOOK_POSTFIX).pdf
 	@echo "→ Cleaning up temporary files"

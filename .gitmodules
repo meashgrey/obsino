@@ -1,3 +1,6 @@
 [submodule ".lib/clio"]
 	path = .lib/clio
 	url = https://github.com/athena-harness/clio.git
+[submodule ".lib/michem"]
+	path = .lib/michem
+	url = https://github.com/chitin-dev/michem.git

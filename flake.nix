@@ -45,7 +45,6 @@
             typst
             typstyle
             jq
-            pnpm
             rustc
             cargo
             lld
@@ -56,12 +55,6 @@
             # Define workspace root (relative to where flake is)
             WORKSPACE_ROOT=$(pwd)
             BUILD_DIR="$WORKSPACE_ROOT/build"
-
-            if [[ ! -d ".pipeline/smiles/node_modules" ]]; then
-              pushd .pipeline/smiles
-              pnpm install
-              popd
-            fi
 
             # Debug for fonts list
 
@@ -271,7 +264,6 @@
             typst
             typstyle
             jq
-            pnpm
             rustc
             cargo
             lld
@@ -284,7 +276,6 @@
             typst --version
             typstyle --version
             jq --version
-            pnpm --version
             rustc --version
             cargo --version
             wasm-ld --version

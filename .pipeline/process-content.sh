@@ -11,12 +11,10 @@
 #   --cache DIR         Cache directory for downloaded files
 #                       (default: <root>/.cache/figures)
 #   --pictures FILE     Path to pictures.yaml (default: <root>/pictures.yaml)
-#   --smiles-dir DIR    Smiles rendering pipeline directory
-#                       (default: <root>/.pipeline/smiles)
 #
 # Reads raw Typst content from stdin, processes these schemas in order:
 #   1. `https://` URLs     ->  downloaded files (via curl, cached)
-#   2. `smiles://` strings ->  rendered SVG files (via smiles.mjs)
+#   2. `smiles://` strings ->  michem Typst calls
 #   3. `figures://` labels ->  downloaded files (via curl, cached,
 #                              looked up in pictures.yaml)
 set -euo pipefail
@@ -27,14 +25,12 @@ ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 REMOTE_DOWNLOADS="download"
 CACHE_DIR="$ROOT/.cache/figures"
 PICTURES="$ROOT/pictures.yaml"
-SMILES_DIR="$ROOT/.pipeline/smiles"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --downloads) REMOTE_DOWNLOADS="$2"; shift 2 ;;
     --cache)     CACHE_DIR="$2";         shift 2 ;;
     --pictures)  PICTURES="$2";          shift 2 ;;
-    --smiles-dir) SMILES_DIR="$2";       shift 2 ;;
     *) echo "Unknown option: $1" >&2; exit 1 ;;
   esac
 done
@@ -96,33 +92,14 @@ if [ -n "$img_urls" ]; then
   done <<< "$img_urls"
 fi
 
-# Process smiles:// strings (molecular structure rendering)
+# Process smiles:// strings with michem's Typst renderer.
 smiles_list=$(echo "$raw_content" \
   | grep -o 'image("smiles://[^"]*' \
   | sed 's/image("smiles:\/\///') || true
 
 if [ -n "$smiles_list" ]; then
-  while IFS= read -r smile; do
-    if [ -n "$smile" ]; then
-      echo "> Rendering SMILES: $smile" >&2
-      pushd "$SMILES_DIR" > /dev/null
-      ./smiles.mjs "$smile" >&2 || true
-      structure=(structure*.svg)
-      if [[ -f "${structure[0]}" ]]; then
-        mv -- "${structure[0]}" "/tmp/${structure[0]}"
-      fi
-      popd > /dev/null
-      if [ -f "/tmp/${structure[0]}" ]; then
-        mv -- "/tmp/${structure[0]}" "$REMOTE_DOWNLOADS/${structure[0]}"
-        echo "> Rendered $smile -> ${structure[0]}" >&2
-        esc=$(echo "$smile" | sed -e 's/\\/\\\\/g' -e 's/\]/\\]/g' -e 's/\[/\\[/g' -e 's/\./\\./g' -e 's/\//\\\//g')
-        echo "> Escape-filtered SMILES: $esc" >&2
-        raw_content=$(echo "$raw_content" | sed "s|smiles://$esc|$REMOTE_DOWNLOADS/${structure[0]}|g")
-      else
-        echo "! Warning: Failed to render SMILES: $smile" >&2
-      fi
-    fi
-  done <<< "$smiles_list"
+  echo "> Rendering SMILES with michem" >&2
+  raw_content=$(printf '%s\n' "$raw_content" | sed 's|image("smiles:\/\/|michem.smiles("|g')
 fi
 
 # Process figures:// labels (looked up in pictures.yaml)
