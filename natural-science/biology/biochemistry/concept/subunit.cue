@@ -11,6 +11,8 @@ subunit: {
     type of subunit in a protein is indicated by a subscript.
   """#
   related: [
-    "concept/quaternary-structure"
+    "concept/tertiary-structure",
+    "concept/oligomer",
+    "concept/quaternary-structure",
   ]
 }

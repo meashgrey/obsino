@@ -38,6 +38,7 @@ beta_conformation: {
   """#
   related: [
     "concept/secondary-structure",
-    "concept/alpha-helix"
+    "concept/alpha-helix",
+    "concept/ramachandran-plot",
   ]
 }

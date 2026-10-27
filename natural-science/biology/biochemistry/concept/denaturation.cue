@@ -15,4 +15,9 @@ denaturation: {
     cooperativity in the unfolding process. The midpoint of the temperature range
     over which denaturation occurs is called the *melting temperature*, or $T_m$.
   """#
+  related: [
+    "concept/native-fold",
+    "concept/molecular-chaperones",
+    "phenomenon/exp-ribonuclease-refolding",
+  ]
 }

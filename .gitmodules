@@ -1,0 +1,3 @@
+[submodule "natural-science/biology/biochemistry/.lib/michem"]
+	path = natural-science/biology/biochemistry/.lib/michem
+	url = https://github.com/chitin-dev/michem.git

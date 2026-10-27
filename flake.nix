@@ -45,6 +45,8 @@
             typst
             typstyle
             jq
+            rustc
+            cargo
           ];
           text = ''
             # Define workspace root (relative to where flake is)
@@ -257,6 +259,8 @@
             typst
             typstyle
             jq
+            rustc
+            cargo
           ];
 
           shellHook = ''
@@ -266,6 +270,8 @@
             typst --version
             typstyle --version
             jq --version
+            rustc --version
+            cargo --version
           '';
         };
       });

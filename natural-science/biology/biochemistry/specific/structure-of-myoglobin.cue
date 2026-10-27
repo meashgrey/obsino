@@ -4,8 +4,9 @@ structure_of_myoglobin: {
   content: """
     Myoglobin is the oxygen carrier in muscle. It is a single polypeptide chain,
     it has 153 amino acids, and $M_r = 16700$. The heme prosthetic group
-    is capable of binding oxygen. Myoglobin is extremely compact, 70% main chain
-    folded into eight $α$ right-handed helices.
+    is capable of binding oxygen. In heme, iron is coordinated by the porphyrin
+    ring and binds oxygen reversibly. Myoglobin is extremely compact, with about
+    70% of its main chain folded into eight right-handed $α$-helices.
 
     \(figure_part_heme)
 
@@ -21,14 +22,16 @@ structure_of_myoglobin: {
   """
   figure_part_heme: #"""
     #align(center)[
-      #stack(dir: ltr)[
-        #box(width: 40%)[
-          #figure(
-            image("smiles://CC1=C(C2=CC3=NC(=CC4=C(C(=C([N-]4)C=C5C(=C(C(=N5)C=C1[N-]2)C)C=C)C)C=C)C(=C3CCC(=O)O)C)CCC(=O)O.[Fe+2]"),
-            caption: "Heme prosthetic group"
+      #figure(
+        align(center)[
+          #michem.smiles(
+            "CC1=C(C2=CC3=NC(=CC4=C(C(=C([N-]4)C=C5C(=C(C(=N5)C=C1[N-]2)C)C=C)C)C=C)C(=C3CCC(=O)O)C)CCC(=O)O",
+            style: michem.style(font: "Libertinus Serif"),
+            width: 65%,
           )
-        ]
-      ]
+        ],
+        caption: [Porphyrin ligand of heme b; coordinated iron is omitted.],
+      )
     ]
   """#
   figure_part_myoglobin_electrostatic: #"""
@@ -43,4 +46,8 @@ structure_of_myoglobin: {
       ]
     ]
   """#
+  related: [
+    "concept/tertiary-structure",
+    "concept/alpha-helix",
+  ]
 }

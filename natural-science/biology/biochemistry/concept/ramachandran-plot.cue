@@ -42,4 +42,9 @@ ramachandran_plot: {
       )
     ]
   """#
+  related: [
+    "concept/secondary-structure",
+    "concept/alpha-helix",
+    "concept/beta-conformation",
+  ]
 }

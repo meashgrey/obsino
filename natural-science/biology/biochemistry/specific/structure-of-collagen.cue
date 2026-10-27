@@ -15,6 +15,7 @@ structure_of_collagen: {
     offers more hydrogen bonds *between the three strands of collagen*.
   """#
   related: [
-    "concept/tertiary-structure"
+    "concept/alpha-helix",
+    "concept/tertiary-structure",
   ]
 }

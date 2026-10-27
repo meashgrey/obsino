@@ -15,6 +15,8 @@ quaternary_structure: {
     are called the quaternary structure of deoxyhemoglobin.
   """#,
   related: [
-    "concept/subunit"
+    "concept/subunit",
+    "concept/oligomer",
+    "concept/tertiary-structure",
   ]
 }

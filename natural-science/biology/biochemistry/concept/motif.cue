@@ -90,6 +90,7 @@ motif: {
         tends to reverse the direction of the chain within a protein. 
   """#
   related: [
-    "concept/secondary-structure"
+    "concept/secondary-structure",
+    "concept/domain",
   ]
 }

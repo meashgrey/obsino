@@ -43,4 +43,9 @@ pi_pi_interaction: {
       from one aromatic ring interact simultaneously with $π$-cloud of the
       second ring.
   """
+  related: [
+    "concept/anion-pi-interaction",
+    "concept/cation-pi-interaction",
+    "concept/conformation",
+  ]
 }

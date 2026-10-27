@@ -28,6 +28,7 @@ DIR ?= <directory>
 
 # Root directory
 ROOT := $(shell dirname $(shell readlink Makefile))
+MICHEM_ROOT := $(CURDIR)/.lib/michem
 # Extract package name from cue.mod/module.cue file
 PACKAGE := $(shell cat cue.mod/module.cue | yq -r ".module")
 # Extract directory name for handbook postfix (used in handbook filename)
@@ -49,7 +50,15 @@ IGNORE_DIRS := cue.mod assets asset bin src
 # Set shell to bash for compatibility
 SHELL := /bin/bash
 
-.PHONY: single-export package-export handbook clean clean-cache help
+.PHONY: single-export package-export handbook michem-plugin clean clean-cache help
+
+# Build Michem's Typst WASM plugin before compiling molecular structures.
+michem-plugin:
+	@if [[ ! -f "$(MICHEM_ROOT)/scripts/build-plugin.sh" ]]; then \
+		echo "Michem submodule is missing; run: git submodule update --init natural-science/biology/biochemistry/.lib/michem"; \
+		exit 1; \
+	fi
+	@bash "$(MICHEM_ROOT)/scripts/build-plugin.sh"
 
 # This subcommand exports a single cue file through the CUE package system
 # It extracts a specific property (TARGET) from a package and generates PDF
@@ -64,6 +73,12 @@ package-export:
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
+	@if grep -Eq 'michem\.' "$(TEMP)"; then \
+		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
+		fi; \
+		$(MAKE) michem-plugin; \
+	fi
 	@echo "  Compiling typst file to $(TARGET).pdf"
 	@typst compile $(TEMP) $(TARGET).pdf
 	@rm -f $(TEMP)
@@ -81,6 +96,12 @@ single-export:
 	@typstyle -i $(TEMP)
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
+	@if grep -Eq 'michem\.' "$(TEMP)"; then \
+		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
+		fi; \
+		$(MAKE) michem-plugin; \
+	fi
 	@echo "  Compiling typst file to $(RAW_CLASS).pdf"
 	@typst compile $(TEMP) $(RAW_CLASS).pdf
 	@rm -f $(TEMP)
@@ -174,6 +195,12 @@ handbook:
 	# Format and compile the handbook
 	@echo "→ Formatting handbook with typstyle"
 	@typstyle -i $(TEMP)
+	@if grep -Eq 'michem\.' "$(TEMP)"; then \
+		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
+			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
+		fi; \
+		$(MAKE) michem-plugin; \
+	fi
 	@echo "→ Compiling handbook to PDF"
 	@typst compile $(TEMP) handbook-$(HANDBOOK_POSTFIX).pdf
 	@echo "→ Cleaning up temporary files"

@@ -26,4 +26,8 @@ domain: {
       ]
     ]
   """#
+  related: [
+    "concept/motif",
+    "concept/tertiary-structure",
+  ]
 }

@@ -49,4 +49,9 @@ exp_ribonuclease_refolding: {
     domains. Large ensembles of folding intermediates are rapidly brought to a
     single native conformation.
   """#
+  related: [
+    "concept/native-fold",
+    "concept/denaturation",
+    "concept/molecular-chaperones",
+  ]
 }

@@ -16,6 +16,7 @@ floppy_string_protein: {
     discovered the two universal solutions to the stability problem.
   """#
   related: [
-    "concept/secondary-structure"
+    "concept/secondary-structure",
+    "concept/native-fold",
   ]
 }

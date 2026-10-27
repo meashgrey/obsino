@@ -15,4 +15,8 @@ peptide_bond: {
     bonds in the backbone may also be rotationally hindered, depending on the
     size and charge of $"R"$ group.
   """#
+  related: [
+    "concept/conformation",
+    "concept/secondary-structure",
+  ]
 }

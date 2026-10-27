@@ -17,6 +17,7 @@ oligomer: {
       contact surfaces between identical subunits.
   """#
   related: [
-    "concept/subunit"
+    "concept/subunit",
+    "concept/quaternary-structure",
   ]
 }

@@ -35,6 +35,8 @@ structure_of_alpha_keratin: {
     are the basis of permanent waving.
   """#
   related: [
-    "concept/tertiary-structure"
+    "concept/alpha-helix",
+    "concept/motif",
+    "concept/tertiary-structure",
   ]
 }

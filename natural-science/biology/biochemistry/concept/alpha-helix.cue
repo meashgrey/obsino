@@ -39,7 +39,9 @@ alpha_helix: {
     horns.
   """#
   related: [
+    "concept/peptide-bond",
     "concept/secondary-structure",
-    "concept/beta-conformation"
+    "concept/beta-conformation",
+    "concept/ramachandran-plot",
   ]
 }

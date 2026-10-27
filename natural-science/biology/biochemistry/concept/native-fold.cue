@@ -10,4 +10,11 @@ native_fold: {
     interactions*. And the three-dimensional structure of a protein is determined
     by its amino acid sequence.
   """#
+  related: [
+    "concept/conformation",
+    "concept/tertiary-structure",
+    "concept/denaturation",
+    "concept/molecular-chaperones",
+    "phenomenon/exp-ribonuclease-refolding",
+  ]
 }

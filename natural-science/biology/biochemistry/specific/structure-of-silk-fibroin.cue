@@ -8,6 +8,6 @@ structure_of_silk_fibroin: {
   """#
   related: [
     "concept/beta-conformation",
-    "concept/tertiary-structure"
+    "concept/tertiary-structure",
   ]
 }

@@ -13,8 +13,12 @@ secondary_structure: {
     - random coil: irregular arrangement of the polypeptide chain.
   """#
   related: [
+    "concept/peptide-bond",
+    "concept/conformation",
     "phenomenon/floppy-string-protein",
     "concept/alpha-helix",
-    "concept/beta-conformation"
+    "concept/beta-conformation",
+    "concept/ramachandran-plot",
+    "concept/motif",
   ]
 }

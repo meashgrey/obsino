@@ -10,4 +10,10 @@ tertiary_structure: {
     - *Globular proteins*: made from several types of secondary structure in the
       same polypeptide chain.
   """#
+  related: [
+    "concept/secondary-structure",
+    "concept/domain",
+    "concept/native-fold",
+    "concept/quaternary-structure",
+  ]
 }

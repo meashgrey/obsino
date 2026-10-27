@@ -26,4 +26,10 @@ conformation: {
       Long-range strong interactions between permanently charged groups. This
       charge-charge interaction in proteins is often called *salt bridge*.
   """#
+  related: [
+    "concept/native-fold",
+    "concept/anion-pi-interaction",
+    "concept/cation-pi-interaction",
+    "concept/pi-pi-interaction",
+  ]
 }

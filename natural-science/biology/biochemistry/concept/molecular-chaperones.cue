@@ -18,4 +18,9 @@ molecular_chaperones: {
         - PDI: protein disulfide isomerase (蛋白质二硫键异构酶);
         - PPI: peptide prolyl cis-trans isomerase (肽基脯氨顺反异构酶).
   """#
+  related: [
+    "concept/native-fold",
+    "concept/denaturation",
+    "phenomenon/exp-ribonuclease-refolding",
+  ]
 }

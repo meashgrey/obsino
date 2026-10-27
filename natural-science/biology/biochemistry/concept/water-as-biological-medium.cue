@@ -18,4 +18,8 @@ water_as_biological_medium: {
     GABA transporter, where they contribute to the structural integrity of the
     protein.
   """#
+  related: [
+    "concept/conformation",
+    "concept/native-fold",
+  ]
 }

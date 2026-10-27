@@ -29,43 +29,50 @@ papers:
   null
 order:
   concept:
-    # Water
+    # Biochemical setting and protein building blocks
     - "water-as-biological-medium"
-    # Amino acids and proteins
     - "peptide-bond"
     - "conformation"
+
+    # Noncovalent interactions and molecular recognition
     - "anion-pi-interaction"
     - "cation-pi-interaction"
     - "pi-pi-interaction"
+
+    # Protein structure: local structure to assemblies
     - "secondary-structure"
     - "alpha-helix"
-    - "ramachandran-plot"
     - "beta-conformation"
+    - "ramachandran-plot"
     - "motif"
     - "domain"
+    - "tertiary-structure"
     - "subunit"
     - "oligomer"
-    - "tertiary-structure"
     - "quaternary-structure"
+
+    # Folding and structural stability
     - "native-fold"
     - "molecular-chaperones"
     - "denaturation"
-    # Signal transduction
+
+    # Cellular signaling
     - "signal-transduction"
     - "agonist"
     - "antagonist"
   specific:
-    # Amino acids and proteins
+    # Protein structure case studies
     - "structure-of-alpha-keratin"
     - "structure-of-collagen"
     - "structure-of-myoglobin"
     - "structure-of-silk-fibroin"
-    # Signal transduction
+
+    # Receptor signaling case study
     - "g-protein-coupled-receptors-signal-transduction"
   phenomenon:
-    # Amino acids and proteins
-    - "exp-ribonuclease-refolding"
+    # Folding and refolding
     - "floppy-string-protein"
+    - "exp-ribonuclease-refolding"
   principle:
     # ChimeraX
     - "chimerax-report-secondary-structure"

@@ -40,4 +40,9 @@ signal_transduction: {
       mode: "markup"
     )
   """#
+  related: [
+    "concept/agonist",
+    "concept/antagonist",
+    "specific/g-protein-coupled-receptors-signal-transduction",
+  ]
 }

@@ -19,4 +19,9 @@ anion_pi_interaction: {
     helps anchor the cofactor in its binding pocket, stabilizes the protein's
     functional conformation, and modulates electron transfer during catalysis.
   """#
+  related: [
+    "concept/cation-pi-interaction",
+    "concept/pi-pi-interaction",
+    "concept/conformation",
+  ]
 }

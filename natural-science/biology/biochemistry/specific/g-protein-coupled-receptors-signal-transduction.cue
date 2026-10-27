@@ -49,20 +49,30 @@ g_protein_coupled_receptors_signal_transduction: {
   """#
   figure_part_gtp_and_gdp: #"""
     #align(center)[
-      #stack(dir: ltr)[
-        #box(width: 40%)[
-          #figure(
-            image("smiles://c1nc2c(n1[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@@](=O)(O)O[P@](=O)(O)OP(=O)(O)O)O)O)[nH]c(nc2=O)N"),
-            caption: "Guanosine Triphosphate"
-          )
-        ],
-        #box(width: 40%)[
-          #figure(
-            image("smiles://C1=NC2=C(N1C3C(C(C(O3)COP(=O)(O)OP(=O)(O)O)O)O)NC(=NC2=O)N"),
-            caption: "Guanosine Diphosphate"
-          )
-        ]
-      ]
+      #grid(
+        columns: (1fr, 1fr),
+        gutter: 1em,
+        figure(
+          align(center)[
+            #michem.smiles(
+              "c1nc2c(n1[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@@](=O)(O)O[P@](=O)(O)OP(=O)(O)O)O)O)[nH]c(nc2=O)N",
+              style: michem.style(font: "Libertinus Serif"),
+              width: 100%,
+            )
+          ],
+          caption: [Guanosine triphosphate (GTP)],
+        ),
+        figure(
+          align(center)[
+            #michem.smiles(
+              "C1=NC2=C(N1C3C(C(C(O3)COP(=O)(O)OP(=O)(O)O)O)O)NC(=NC2=O)N",
+              style: michem.style(font: "Libertinus Serif"),
+              width: 100%,
+            )
+          ],
+          caption: [Guanosine diphosphate (GDP)],
+        ),
+      )
     ]
   """#
   figure_part_beta_adrenergic_receptor_system: #"""
@@ -73,4 +83,9 @@ g_protein_coupled_receptors_signal_transduction: {
       )
     ]
   """#
+  related: [
+    "concept/signal-transduction",
+    "concept/agonist",
+    "concept/antagonist",
+  ]
 }
