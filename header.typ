@@ -26,7 +26,7 @@
 
 // styles configuration
 
-#set text(font: ("Libertinus Serif", "LXGW WenKai Mono"), lang: "en")
+#set text(font: ("Libertinus Serif", "霞鶩文楷"), lang: "en")
 #show raw.where(block: true): set text(font: "Cascadia Mono", 0.8em)
 #show raw.where(block: false): set text(
   orange,
