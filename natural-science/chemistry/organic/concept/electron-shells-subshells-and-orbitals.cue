@@ -98,6 +98,7 @@ electron_shells_subshells_and_orbitals: {
     covalent bonds.
   """
   related: [
+    "concept/hunds-rule-and-subshell-energy-order",
     "concept/atomic-and-molecular-orbitals",
     "concept/sigma-and-pi-bonds",
   ]

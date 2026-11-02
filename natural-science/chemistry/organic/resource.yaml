@@ -6,6 +6,11 @@ papers:
   null
 order:
   concept:
-    - "alpha-carbon-acidity"
+    - "electron-shells-subshells-and-orbitals"
+    - "hunds-rule-and-subshell-energy-order"
+    - "atomic-and-molecular-orbitals"
+    - "sigma-and-pi-bonds"
     - "dienes-and-polyenes"
+    - "resonance-in-conjugated-dienes"
     - "s-cis-s-trans-conformations"
+    - "alpha-carbon-acidity"

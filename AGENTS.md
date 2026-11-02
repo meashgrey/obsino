@@ -71,6 +71,11 @@ CUE knowledge entries follow this pattern:
 - **Assets**: Images (SVG/PNG/JPG), Typst figure scripts (`.typ`), or Docker /
   code samples in an `assets/` subdirectory, embedded via `read()`
 
+### Typst Math Typography
+
+- In math mode, wrap upright text in a quoted string, for example
+  `$upright("pK")_a$`. Do not write upright words as unquoted math identifiers.
+
 ### Source Code
 
 Some modules include runnable or verifiable source code in a `src/` directory:
