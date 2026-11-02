@@ -1,7 +1,7 @@
 package concept
 
 alpha_carbon_acidity: {
-  content: #"""
+  content: """
     A *carbonyl compound* contains a carbonyl group, $"C=O"$. The carbon directly
     attached to the carbonyl carbon is the *alpha carbon* ($"C"_alpha$), and a
     hydrogen bonded to it is an *alpha hydrogen*. Removing an alpha hydrogen
@@ -44,15 +44,7 @@ alpha_carbon_acidity: {
     among carbonyl compounds. The alpha hydrogen is on the carbon adjacent to
     the $C=O$ group.
 
-    #table(
-      columns: 3,
-      align: (center, center, center),
-      [Compound], [Structure], [Approximate alpha-H $upright("pK")_a$],
-      [Acetaldehyde], image("smiles://CC=O", width: 25mm), [16.7],
-      [Acetone], image("smiles://CC(=O)C", width: 25mm), [19.3],
-      [Acetophenone], image("smiles://CC(=O)c1ccccc1", width: 25mm), [18.3],
-      [Cyclohexanone], image("smiles://O=C1CCCCC1", width: 25mm), [18.1],
-    )
+    \(figure_part_representative_carbonyl_compounds)
 
     === How an enolate forms
 
@@ -65,67 +57,11 @@ alpha_carbon_acidity: {
       carbonyl carbon;
     - the C=O pi electrons move to oxygen.
 
-    #let base-pair = michem.atom-ref("hydroxide", 0, offset: (-6, 0))
-    #figure(
-      align(center)[
-      #michem.mechanism(
-        michem.mol(
-          "acetone",
-          michem.smiles-input("C(=O)(C[H])C", positions: (
-            (0, 0),
-            (0, 1),
-            (1, -0.5),
-            (2, -0.5),
-            (-1, -0.5),
-          )),
-          at: (0pt, 0pt),
-          scale: 1.5,
-        ),
-        michem.mol("hydroxide", "[OH-]", at: (65pt, 0pt), scale: 1.5),
-        michem.mol(
-          "enolate",
-          "CC(=C)[O-]",
-          at: (160pt, 0pt),
-          scale: 1.5,
-        ),
-        michem.mol("water", "O", at: (220pt, 0pt), scale: 1.5),
-        michem.lone-pair(base-pair, angle: 180deg, separation: 3),
-        michem.electron-arrow(
-          base-pair,
-          michem.atom-ref("acetone", 3),
-          bend: 16,
-        ),
-        michem.electron-arrow(
-          michem.bond-ref("acetone", 2, 3),
-          michem.bond-ref("acetone", 0, 2),
-          bend: -18,
-        ),
-        michem.electron-arrow(
-          michem.bond-ref("acetone", 0, 1),
-          michem.atom-ref("acetone", 1),
-          bend: 18,
-        ),
-        michem.reaction-arrow(
-          (105pt, 0pt),
-          (120pt, 0pt),
-        ),
-        font: "Libertinus Serif",
-        padding: 8pt,
-      )
-      ],
-      caption: [Base-promoted deprotonation of acetone. The C-H bond electrons form
-      the C=C bond, the carbonyl pi electrons move to oxygen, and hydroxide becomes water.],
-    )
+    \(figure_part_enolate_formation)
 
     For acetone, the resulting enolate has two resonance contributors:
 
-    #table(
-      columns: 2,
-      align: (center, center),
-      [Negative charge drawn on oxygen], [Negative charge drawn on the alpha carbon],
-      image("smiles://C=C([O-])C", width: 35mm),
-      image("smiles://CC(=O)[CH2-]", width: 35mm),
-    )
+    \(figure_part_enolate_resonance)
 
     These are *resonance contributors*, not two separate ions in equilibrium.
     The real enolate is a resonance hybrid with electron density shared across
@@ -145,5 +81,26 @@ alpha_carbon_acidity: {
     rule for all carbonyl compounds. For example, the endocyclic enolate of
     cyclohexanone has a more substituted carbon-carbon double bond than the
     enolate of acetone, which can contribute to its relative stabilization.
+  """
+  figure_part_representative_carbonyl_compounds: #"""
+    #let representative-carbonyl-compounds = "assets/typst/representative-carbonyl-compounds.typ"
+    #eval(
+      str(read(representative-carbonyl-compounds)),
+      mode: "markup"
+    )
+  """#
+  figure_part_enolate_formation: #"""
+    #let enolate-formation = "assets/typst/enolate-formation.typ"
+    #eval(
+      str(read(enolate-formation)),
+      mode: "markup"
+    )
+  """#
+  figure_part_enolate_resonance: #"""
+    #let enolate-resonance = "assets/typst/enolate-resonance.typ"
+    #eval(
+      str(read(enolate-resonance)),
+      mode: "markup"
+    )
   """#
 }

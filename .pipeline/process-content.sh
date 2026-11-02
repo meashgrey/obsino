@@ -14,7 +14,7 @@
 #
 # Reads raw Typst content from stdin, processes these schemas in order:
 #   1. `https://` URLs     ->  downloaded files (via curl, cached)
-#   2. `smiles://` strings ->  michem Typst calls
+#   2. `smiles://` strings ->  Typst calls to the official michem package
 #   3. `figures://` labels ->  downloaded files (via curl, cached,
 #                              looked up in pictures.yaml)
 set -euo pipefail

@@ -49,7 +49,7 @@ IGNORE_DIRS := cue.mod assets asset bin src
 # Resolve Bash from PATH; NixOS does not guarantee a /bin/bash path.
 SHELL := bash
 
-.PHONY: single-export package-export handbook clio-plugin michem-plugin clean clean-cache help
+.PHONY: single-export package-export handbook clio-plugin clean clean-cache help
 
 # Build Clio's Typst WASM plugin before compiling figures that import it.
 clio-plugin:
@@ -58,14 +58,6 @@ clio-plugin:
 		exit 1; \
 	fi
 	@bash "$(ROOT)/.lib/clio/scripts/build-plugin.sh"
-
-# Build michem's Typst WASM plugin before compiling molecular structures.
-michem-plugin:
-	@if [[ ! -f "$(ROOT)/.lib/michem/scripts/build-plugin.sh" ]]; then \
-		echo "Michem submodule is missing; run: git submodule update --init .lib/michem"; \
-		exit 1; \
-	fi
-	@bash "$(ROOT)/.lib/michem/scripts/build-plugin.sh"
 
 # This subcommand exports a single cue file through the CUE package system
 # It extracts a specific property (TARGET) from a package and generates PDF
@@ -81,11 +73,8 @@ package-export:
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
 	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
-	@if grep -Eq 'michem\.smiles\(|/\.lib/michem/lib\.typ' "$(TEMP)"; then \
-		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
-			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
-		fi; \
-		$(MAKE) michem-plugin; \
+	@if grep -Eq 'michem\.' "$(TEMP)" && ! grep -q '@preview/michem:0.1.0' "$(TEMP)"; then \
+		sed -i '1i#import "@preview/michem:0.1.0" as michem' "$(TEMP)"; \
 	fi
 	@echo "  Compiling typst file to $(TARGET).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(TARGET).pdf
@@ -107,11 +96,8 @@ single-export:
 	@echo "→ Temp typst file content:"
 	@cat $(TEMP)
 	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
-	@if grep -Eq 'michem\.smiles\(|/\.lib/michem/lib\.typ' "$(TEMP)"; then \
-		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
-			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
-		fi; \
-		$(MAKE) michem-plugin; \
+	@if grep -Eq 'michem\.' "$(TEMP)" && ! grep -q '@preview/michem:0.1.0' "$(TEMP)"; then \
+		sed -i '1i#import "@preview/michem:0.1.0" as michem' "$(TEMP)"; \
 	fi
 	@echo "  Compiling typst file to $(RAW_CLASS).pdf"
 	@typst compile --root $(ROOT) $(TEMP) $(RAW_CLASS).pdf
@@ -208,11 +194,8 @@ handbook:
 	@echo "→ Formatting handbook with typstyle"
 	@typstyle -i $(TEMP)
 	@if grep -Eq 'clio\.typ|/\.lib/clio/' "$(TEMP)"; then $(MAKE) clio-plugin; fi
-	@if grep -Eq 'michem\.smiles\(|/\.lib/michem/lib\.typ' "$(TEMP)"; then \
-		if ! grep -q '/\.lib/michem/lib\.typ' "$(TEMP)"; then \
-			sed -i '1i#import "/.lib/michem/lib.typ" as michem' "$(TEMP)"; \
-		fi; \
-		$(MAKE) michem-plugin; \
+	@if grep -Eq 'michem\.' "$(TEMP)" && ! grep -q '@preview/michem:0.1.0' "$(TEMP)"; then \
+		sed -i '1i#import "@preview/michem:0.1.0" as michem' "$(TEMP)"; \
 	fi
 	@echo "→ Compiling handbook to PDF"
 	@typst compile --root $(ROOT) $(TEMP) handbook-$(HANDBOOK_POSTFIX).pdf
