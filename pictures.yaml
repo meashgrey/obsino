@@ -26,6 +26,10 @@ pictures:
     - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f756/4972211/dcfe96b1acf8/PRO-25-1551-g001.jpg"
   amantadine-s31n-overlay:
     - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f756/4972211/dd1a7e01a23c/PRO-25-1551-g002.jpg"
+  interferon-oas-rnase-l:
+    - "https://www.frontiersin.org/files/Articles/1287940/xml-images/fimmu-15-1287940-g004.webp"
+  interferon-pkr:
+    - "https://www.frontiersin.org/files/Articles/1287940/xml-images/fimmu-15-1287940-g005.webp"
   beta-adrenergic-membrane-receptor:
     - "https://a1.boltp.com/2026/06/16/6a30d63dc30f9.png"
   beta-barrel-in-extra-superfolder-gfp:
