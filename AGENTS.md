@@ -62,6 +62,17 @@ a module-specific PDF (e.g., `handbook-pharmaceutics.pdf`,
 
 ## Knowledge File Structure
 
+### Medicinal chemistry and figure preferences
+
+- Draw molecular structures in Typst with the `@preview/michem` package and a
+  SMILES string instead of sourcing a separate skeletal-structure image.
+- Typeset chemical formula element symbols upright in math, for example
+  `$"C"_("10")"H"_("17")"N"$`.
+- For structural case studies, prefer publicly accessible, published structural
+  analysis figures that show ligand contacts, nearby residues, and water or
+  hydrogen-bond networks. Cite each figure in its caption and distinguish
+  ligand-bound structures from apo structures and models.
+
 CUE knowledge entries follow this pattern:
 
 - **Content**: Written in Typst markup inside the `content` field

@@ -4,7 +4,7 @@ amantadine: {
   content: #"""
     *Amantadine* (1-adamantanamine; PubChem CID 2130) is an adamantane-class
     antiviral and a historically important inhibitor of the influenza A virus
-    M2 proton channel. Its neutral molecular formula is $C_(10)H_(17)N$. The
+    M2 proton channel. Its neutral molecular formula is $"C"_("10")"H"_("17")"N"$. The
     structure combines a compact, rigid, hydrophobic tricyclic adamantane cage
     with a primary amine at a bridgehead carbon. The amine is basic and is
     protonated to a substantial extent under physiological conditions; medicinal
@@ -16,8 +16,12 @@ amantadine: {
 
     #align(center)[
       #figure(
-        image("figures://amantadine-chemical-structure", width: 32%),
-        caption: [Skeletal formula of amantadine]
+        michem.smiles(
+          "NC12CC3CC(CC(C3)C1)C2",
+          style: michem.style(font: "Libertinus Serif"),
+          width: 42%,
+        ),
+        caption: [Amantadine skeletal structure drawn from SMILES with michem]
       )
     ]
 
@@ -39,6 +43,49 @@ amantadine: {
     pharmacological class and historical mechanism, not a current treatment
     recommendation.
 
+    In the wild-type M2 pore, the protonated amine of amantadine is positioned
+    to form water-mediated hydrogen bonds with two waters in the Ala30 layer.
+    The crystallographic model also resolves the surrounding pore waters near
+    Gly34, showing how the inhibitor engages a structured solvent network and
+    occupies the channel lumen. This interaction is water-mediated; the
+    published structure does not establish a direct amantadine–Ala30 hydrogen
+    bond.
+
+    #align(center)[
+      #figure(
+        image("figures://amantadine-wt-water-network", width: 82%),
+        caption: [Wild-type M2 bound to amantadine (PDB 6BKK): simulated water positions and crystallographic water density around Ala30, Gly34, and His37. Figure 5 from Thomaston et al., 2018.]
+      )
+    ]
+
+    In the S31N mutant, the Asn31 side chains point into the pore and form a
+    cyclic inter-subunit hydrogen-bond network bridged by a central water. The
+    substitution also introduces additional polar bulk into the adamantane
+    binding region and narrows the site. The structure below is the apo S31N
+    channel (PDB 5C02), not an amantadine-bound mutant complex; it therefore
+    depicts the mutation-associated network and structural basis for reduced
+    adamantane susceptibility rather than direct drug contacts. A separate
+    view in the same study overlays this mutant structure with the amantadine-
+    bound wild-type structure.
+
+    #align(center)[
+      #figure(
+        image("figures://amantadine-s31n-hbond-network", width: 82%),
+        caption: [Apo S31N M2 (PDB 5C02): Asn31 residues form a hydrogen-bonded ring around a central water; the pore-water network continues toward His37. Figure 1 from Thomaston and DeGrado, 2016.]
+      )
+    ]
+
+    The structural comparison below overlays apo S31N M2 (PDB 5C02) with
+    amantadine-bound wild-type M2 (PDB 3C9J). It shows the mutation at position
+    31 beside the drug-binding pose, complementing the apo network view above.
+
+    #align(center)[
+      #figure(
+        image("figures://amantadine-s31n-overlay", width: 82%),
+        caption: [Structural overlay of apo S31N M2 (green) with amantadine-bound wild-type M2 (pink), highlighting Asn31, Ser31, and amantadine. Figure 2a from Thomaston and DeGrado, 2016.]
+      )
+    ]
+
     The case illustrates a central medicinal-chemistry lesson: high affinity for
     a defined molecular target does not guarantee durable clinical utility when
     the target can evolve under selection pressure. Amantadine is also used for
@@ -47,15 +94,15 @@ amantadine: {
     References
 
     - #link("https://pubchem.ncbi.nlm.nih.gov/compound/2130")[PubChem compound record]
-    - #link("https://pubmed.ncbi.nlm.nih.gov/18235503/")[Structural study of the influenza A M2 channel]
+    - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC6497056/")[Thomaston et al., 2018, high-resolution amantadine-bound M2 structures and water-mediated hydrogen bonds]
+    - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC4972211/")[Thomaston and DeGrado, 2016, S31N M2 crystal structure and resistance-associated hydrogen-bond network]
     - #link("https://www.cdc.gov/flu/treatment/antiviralresistance.html")[CDC antiviral-resistance guidance]
-    - #link("https://commons.wikimedia.org/wiki/File:Amantadine.svg")[Amantadine structure image, Wikimedia Commons]
   """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://pubchem.ncbi.nlm.nih.gov/compound/2130",
-    "https://pubmed.ncbi.nlm.nih.gov/18235503/",
-    "https://www.cdc.gov/flu/treatment/antiviralresistance.html",
-    "https://commons.wikimedia.org/wiki/File:Amantadine.svg"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6497056/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4972211/",
+    "https://www.cdc.gov/flu/treatment/antiviralresistance.html"
   ]
 }

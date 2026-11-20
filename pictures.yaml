@@ -20,8 +20,12 @@
 pictures:
   atmospheric-pressure-chemical-ionisation:
     - "https://upload.wikimedia.org/wikipedia/commons/c/cc/APCI_Source_With_Heated_Nebulizer.png"
-  amantadine-chemical-structure:
-    - "https://commons.wikimedia.org/wiki/Special:FilePath/Amantadine.svg"
+  amantadine-wt-water-network:
+    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f336/6497056/03ee0a35b556/nihms-1016942-f0005.jpg"
+  amantadine-s31n-hbond-network:
+    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f756/4972211/dcfe96b1acf8/PRO-25-1551-g001.jpg"
+  amantadine-s31n-overlay:
+    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f756/4972211/dd1a7e01a23c/PRO-25-1551-g002.jpg"
   beta-adrenergic-membrane-receptor:
     - "https://a1.boltp.com/2026/06/16/6a30d63dc30f9.png"
   beta-barrel-in-extra-superfolder-gfp:
