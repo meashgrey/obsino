@@ -41,6 +41,8 @@
           name = "handbook";
           runtimeInputs = with pkgs; [
             cue
+            curl
+            file
             yq-go
             typst
             typstyle
@@ -267,6 +269,8 @@
 
           packages = with pkgs; [
             cue
+            curl
+            file
             yq-go
             typst
             typstyle

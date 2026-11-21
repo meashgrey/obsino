@@ -55,29 +55,37 @@ get_extension() {
   fi
 }
 
-# Download a URL to the cache if not already present, then copy to downloads.
+is_image() {
+  local mime
+  [[ -s "$1" ]] || return 1
+  mime=$(file --brief --mime-type -- "$1") || return 1
+  [[ "$mime" == image/* ]]
+}
+
+# Only publish complete images to the shared cache.
 cache_download() {
   local url="$1"
-  local filename
+  local filename cached_file temporary_file
   filename="$(echo -n "$url" | md5sum | awk '{print $1}').$(get_extension "$url")"
+  cached_file="$CACHE_DIR/$filename"
 
-  if [ -f "$CACHE_DIR/$filename" ] && [ -s "$CACHE_DIR/$filename" ]; then
-    cp -- "$CACHE_DIR/$filename" "$REMOTE_DOWNLOADS/$filename"
-    echo "> Using cached $filename" >&2
-    return 0
+  if ! is_image "$cached_file"; then
+    echo "> Downloading $url" >&2
+    temporary_file=$(mktemp "$CACHE_DIR/.download.XXXXXX") || return 1
+    if ! curl --fail --silent --show-error --location --connect-timeout 10 --max-time 30 \
+      --retry 2 --retry-max-time 60 --output "$temporary_file" "$url" || ! is_image "$temporary_file"; then
+      rm -f -- "$temporary_file"
+      echo "! Failed to download an image from $url" >&2
+      return 1
+    fi
+    if ! mv -f -- "$temporary_file" "$cached_file"; then
+      rm -f -- "$temporary_file"
+      return 1
+    fi
   fi
 
-  echo "> Downloading $filename" >&2
-  curl -s -L "$url" -o "$CACHE_DIR/$filename" || true
-  if [ -f "$CACHE_DIR/$filename" ] && [ -s "$CACHE_DIR/$filename" ]; then
-    cp -- "$CACHE_DIR/$filename" "$REMOTE_DOWNLOADS/$filename"
-    echo "> Downloaded and cached $filename" >&2
-    return 0
-  fi
-
-  rm -f "$CACHE_DIR/$filename"
-  echo "! Warning: Failed to download $url" >&2
-  return 1
+  cp -- "$cached_file" "$REMOTE_DOWNLOADS/$filename" || return 1
+  printf '%s/%s\n' "$REMOTE_DOWNLOADS" "$filename"
 }
 
 # Process https:// URLs (direct remote image links)
@@ -88,10 +96,8 @@ img_urls=$(echo "$raw_content" \
 if [ -n "$img_urls" ]; then
   while IFS= read -r url; do
     if [ -n "$url" ]; then
-      if cache_download "$url"; then
-        img_name="$(echo -n "$url" | md5sum | awk '{print $1}').$(get_extension "$url")"
-        raw_content=$(echo "$raw_content" | sed "s|$url|$REMOTE_DOWNLOADS/$img_name|g")
-      fi
+      img_path=$(cache_download "$url") || exit 1
+      raw_content=${raw_content//"image(\"$url\""/"image(\"$img_path\""}
     fi
   done <<< "$img_urls"
 fi
@@ -132,32 +138,22 @@ figures=$(echo "$raw_content" \
 
 if [ -n "$figures" ]; then
   while IFS= read -r label; do
-    if [ -n "$label" ]; then
-      if [ ! -f "$PICTURES" ]; then
-        echo "! Warning: pictures.yaml not found at $PICTURES" >&2
-        continue
-      fi
-      urls=$(yq -r ".pictures[\"${label}\"][]" "$PICTURES" 2>/dev/null)
-      if [ -n "$urls" ]; then
-        fig_downloaded=false
-        while IFS= read -r fig_url; do
-          if [ -n "$fig_url" ]; then
-            fig_name="$(echo -n "$fig_url" | md5sum | awk '{print $1}').$(get_extension "$fig_url")"
-            if cache_download "$fig_url"; then
-              raw_content=$(echo "$raw_content" \
-                | sed "s|figures://$label|$REMOTE_DOWNLOADS/$fig_name|g")
-              fig_downloaded=true
-              break
-            fi
-          fi
-        done <<< "$urls"
-        if [ "$fig_downloaded" = false ]; then
-          echo "! Warning: Failed to download any URL for figure label: $label" >&2
-        fi
-      else
-        echo "! Warning: No URLs found for figure label: $label in pictures.yaml" >&2
-      fi
+    if [ ! -f "$PICTURES" ]; then
+      echo "! Missing image registry: $PICTURES" >&2
+      exit 1
     fi
+    urls=$(FIGURE_LABEL="$label" yq -r '.pictures[strenv(FIGURE_LABEL)][]' "$PICTURES")
+    img_path=""
+    while IFS= read -r fig_url; do
+      if [[ -n "$fig_url" ]] && img_path=$(cache_download "$fig_url"); then
+        break
+      fi
+    done <<< "$urls"
+    if [[ -z "$img_path" ]]; then
+      echo "! No readable image for figures://$label in $PICTURES" >&2
+      exit 1
+    fi
+    raw_content=${raw_content//"image(\"figures://$label\""/"image(\"$img_path\""}
   done <<< "$figures"
 fi
 

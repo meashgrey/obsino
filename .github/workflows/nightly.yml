@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - pharmacy/medicinal-chemistry
   schedule:
     - cron: '0 0 * * *' # Optional: Runs every night at midnight UTC
 
@@ -53,11 +54,17 @@ jobs:
 
           popd
 
+      - name: Build Medicinal Chemistry Handbook
+        if: github.ref == 'refs/heads/pharmacy/medicinal-chemistry'
+        run: nix develop --command make -C healthcare/pharmacy/medicinal-chemistry handbook
+
       - name: Build Handbooks
+        if: github.ref == 'refs/heads/master'
         # This runs your custom Nix command which populates ./build
         run: nix run .#handbook
 
       - name: Create Nightly Release
+        if: github.ref == 'refs/heads/master'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly

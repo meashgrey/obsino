@@ -45,7 +45,7 @@ RESOURCE := resource.yaml
 PICTURES := $(ROOT)/pictures.yaml
 REMOTE_DOWNLOADS := download
 # Directories to ignore when generating handbook
-IGNORE_DIRS := cue.mod assets asset bin src
+IGNORE_DIRS := cue.mod assets asset bin src $(REMOTE_DOWNLOADS)
 # Set shell to bash for compatibility
 SHELL := /bin/bash
 
@@ -66,7 +66,7 @@ package-export:
 	@echo "  Exporting CUE package to YAML and extracting $(TARGET).content"
 	@cat $(HEADER) > $(TEMP)
 	@raw_content=$$(cue export $(PACKAGE)/$(DIR) --out yaml | yq -r ".$(TARGET).content"); \
-	raw_content=$$(echo "$$raw_content" | $(ROOT)/.pipeline/process-content.sh --downloads $(REMOTE_DOWNLOADS)); \
+	raw_content=$$(echo "$$raw_content" | $(ROOT)/.pipeline/process-content.sh --downloads $(REMOTE_DOWNLOADS)) || exit 1; \
 	echo "$$raw_content" >> $(TEMP)
 	@echo "→ Formatting generated raw typst file content"
 	@typstyle -i $(TEMP)
@@ -164,7 +164,7 @@ handbook:
 			\
 			# Export file content and extract content property; \
 			raw_content=$$(cue export $(PACKAGE)/$$dir --out yaml | yq -r ".$$(basename $$file | sed -e 's/.cue//g' -e 's/-/_/g').content"); \
-			raw_content=$$(echo "$$raw_content" | $(ROOT)/.pipeline/process-content.sh --downloads $(REMOTE_DOWNLOADS)); \
+			raw_content=$$(echo "$$raw_content" | $(ROOT)/.pipeline/process-content.sh --downloads $(REMOTE_DOWNLOADS)) || exit 1; \
 			echo "$$raw_content" >> $(TEMP); \
 			\
 			related=$$(cue export $(PACKAGE)/$$dir --out json | yq -r ".$$(basename $$file | sed -e 's/.cue//g' -e 's/-/_/g').related"); \
@@ -195,13 +195,8 @@ handbook:
 # Clean up generated PDF files
 clean:
 	@echo "→ Cleaning up generated PDF files"
-	@if ls *.pdf >/dev/null 2>&1 || ls temp.typ >/dev/null 2>&1 || ls download/ >/dev/null 2>&1; then \
-		rm -f *.pdf temp.typ; \
-		rm -rf download; \
-		echo "✅ clean successfully"; \
-	else \
-		echo "❌ failed to clean because there are no matched files"; \
-	fi
+	@rm -f *.pdf $(TEMP)
+	@rm -rf $(REMOTE_DOWNLOADS)
 
 # Clean cached downloads (figures and remote images)
 clean-cache:

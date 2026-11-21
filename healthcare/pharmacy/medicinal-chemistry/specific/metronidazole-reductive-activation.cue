@@ -52,11 +52,11 @@ metronidazole_reductive_activation: {
         block(width: 64%, inset: 8pt, stroke: 0.5pt + luma(170))[
           #align(center)[
             *Pyruvate oxidation / reduced electron carriers* \
-            $arrow.down$ \
+            ↓ \
             *Metronidazole nitro-group reduction* \
-            $arrow.down$ \
+            ↓ \
             *Reactive reduced intermediates* \
-            $arrow.down$ \
+            ↓ \
             *DNA damage and impaired nucleic-acid synthesis*
           ]
         ],
