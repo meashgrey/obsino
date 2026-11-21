@@ -18,6 +18,8 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 pictures:
+  linezolid-ribosome-binding:
+    - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5424203/bin/mBio.00395-17-f0001.jpg"
   quinolone-gyrase-cycle:
     - "https://www.mdpi.com/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g001.png"
   quinolone-gyrase-bound:
