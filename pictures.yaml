@@ -18,6 +18,12 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 pictures:
+  quinolone-gyrase-cycle:
+    - "https://www.mdpi.com/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g001.png"
+  quinolone-gyrase-bound:
+    - "https://www.mdpi.com/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g003.png"
+  quinolone-metal-bridge:
+    - "https://pmc.ncbi.nlm.nih.gov/articles/PMC3985860/bin/nihms568348f5.jpg"
   atmospheric-pressure-chemical-ionisation:
     - "https://upload.wikimedia.org/wikipedia/commons/c/cc/APCI_Source_With_Heated_Nebulizer.png"
   amantadine-wt-water-network:
