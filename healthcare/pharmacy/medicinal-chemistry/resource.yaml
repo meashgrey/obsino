@@ -50,6 +50,10 @@ websites:
   - "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0de2f5c7-9e75-4bdf-9c28-e026cc6694b4"
   - "https://commons.wikimedia.org/wiki/File:Mechanism_of_acyclovir_action.png"
   - "https://www.nature.com/articles/s41467-020-20542-0"
+  - "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-life-cycle"
+  - "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/fda-approved-hiv-medicines"
+  - "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/principles-antiretroviral-therapy"
+  - "https://commons.wikimedia.org/wiki/File:HIV-replication-cycle-en.svg"
 order:
   concept:
     - "medicinal-chemistry"
@@ -57,3 +61,4 @@ order:
     - "amantadine"
     - "recombinant-interferon"
     - "nucleoside-analog-antivirals"
+    - "hiv-antiretroviral-drugs"
