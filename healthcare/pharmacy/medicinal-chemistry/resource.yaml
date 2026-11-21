@@ -32,6 +32,14 @@ papers:
     journal: "Iranian Biomedical Journal 26(1), 85–90 (2022)"
     doi: "https://doi.org/10.52547/ibj.26.1.85"
     completed: false
+  - title: "Herpes simplex virus type 1 DNA polymerase: Mechanism of inhibition by acyclovir triphosphate"
+    journal: "Journal of Biological Chemistry 264(11), 6127–6137 (1989)"
+    doi: "https://doi.org/10.1016/S0021-9258(18)83248-3"
+    completed: false
+  - title: "Mechanism of SARS-CoV-2 polymerase stalling by remdesivir"
+    journal: "Nature Communications 12, 279 (2021)"
+    doi: "https://doi.org/10.1038/s41467-020-20542-0"
+    completed: false
 websites:
   - "https://pubchem.ncbi.nlm.nih.gov/compound/2130"
   - "https://www.cdc.gov/flu/treatment/antiviralresistance.html"
@@ -39,9 +47,13 @@ websites:
   - "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9290e5b-6d40-2318-e053-2995a90a9916"
   - "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1287940/full"
   - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8784902/"
+  - "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0de2f5c7-9e75-4bdf-9c28-e026cc6694b4"
+  - "https://commons.wikimedia.org/wiki/File:Mechanism_of_acyclovir_action.png"
+  - "https://www.nature.com/articles/s41467-020-20542-0"
 order:
   concept:
     - "medicinal-chemistry"
   specific:
     - "amantadine"
     - "recombinant-interferon"
+    - "nucleoside-analog-antivirals"

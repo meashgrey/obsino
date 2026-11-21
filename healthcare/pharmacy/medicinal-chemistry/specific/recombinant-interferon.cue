@@ -62,7 +62,7 @@ recombinant_interferon: {
 
 		#align(center)[
 		  #figure(
-		    image("figures://interferon-oas-rnase-l", width: 88%),
+		    image("figures://interferon-oas-rnase-l", width: 68%),
 		    caption: [OAS1 senses viral dsRNA and synthesizes 2-5A from ATP; 2-5A promotes RNase L dimerization, after which RNase L cleaves RNA. Reproduced from Figure 4 of Luan et al. (2024), under the Creative Commons Attribution (CC BY) license.]
 		  )
 		]
@@ -78,7 +78,7 @@ recombinant_interferon: {
 
 		#align(center)[
 		  #figure(
-		    image("figures://interferon-pkr", width: 88%),
+		    image("figures://interferon-pkr", width: 68%),
 		    caption: [Viral dsRNA activates PKR by promoting dimerization and autophosphorylation; active PKR phosphorylates eIF2-alpha and inhibits translation initiation. Reproduced from Figure 5 of Luan et al. (2024), under the Creative Commons Attribution (CC BY) license.]
 		  )
 		]

@@ -53,7 +53,7 @@ amantadine: {
 
     #align(center)[
       #figure(
-        image("figures://amantadine-wt-water-network", width: 82%),
+        image("figures://amantadine-wt-water-network", width: 68%),
         caption: [Wild-type M2 bound to amantadine (PDB 6BKK): simulated water positions and crystallographic water density around Ala30, Gly34, and His37. Figure 5 from Thomaston et al., 2018.]
       )
     ]
@@ -70,7 +70,7 @@ amantadine: {
 
     #align(center)[
       #figure(
-        image("figures://amantadine-s31n-hbond-network", width: 82%),
+        image("figures://amantadine-s31n-hbond-network", width: 68%),
         caption: [Apo S31N M2 (PDB 5C02): Asn31 residues form a hydrogen-bonded ring around a central water; the pore-water network continues toward His37. Figure 1 from Thomaston and DeGrado, 2016.]
       )
     ]
@@ -81,7 +81,7 @@ amantadine: {
 
     #align(center)[
       #figure(
-        image("figures://amantadine-s31n-overlay", width: 82%),
+        image("figures://amantadine-s31n-overlay", width: 68%),
         caption: [Structural overlay of apo S31N M2 (green) with amantadine-bound wild-type M2 (pink), highlighting Asn31, Ser31, and amantadine. Figure 2a from Thomaston and DeGrado, 2016.]
       )
     ]
