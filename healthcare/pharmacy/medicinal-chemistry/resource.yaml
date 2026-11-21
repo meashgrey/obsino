@@ -49,6 +49,9 @@ papers:
     doi: "https://doi.org/10.1038/s41467-020-20542-0"
     completed: false
 websites:
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC13711503/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8286842/"
+  - "https://pubmed.ncbi.nlm.nih.gov/39471786/"
   - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5424203/"
   - "https://pmc.ncbi.nlm.nih.gov/articles/PMC3264260/"
   - "https://www.rcsb.org/structure/4WFA"
@@ -89,3 +92,5 @@ order:
     - "quinolone-antibacterials"
     - "sulfonamide-trimethoprim"
     - "linezolid-ribosome-inhibition"
+    - "metronidazole-reductive-activation"
+    - "nitrofurantoin-nitroreductase-activation"
