@@ -19,7 +19,7 @@ amantadine: {
         michem.smiles(
           "NC12CC3CC(CC(C3)C1)C2",
           style: michem.style(font: "Libertinus Serif"),
-          width: 28%,
+          width: 12%,
         ),
         caption: [Amantadine skeletal structure drawn from SMILES with michem]
       )
