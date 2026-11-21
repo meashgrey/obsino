@@ -49,6 +49,8 @@ papers:
     doi: "https://doi.org/10.1038/s41467-020-20542-0"
     completed: false
 websites:
+  - "https://www.kegg.jp/pathway/map00790"
+  - "https://www.rcsb.org/"
   - "https://pmc.ncbi.nlm.nih.gov/articles/PMC9953508/"
   - "https://pmc.ncbi.nlm.nih.gov/articles/PMC9917921/"
   - "https://www.rcsb.org/structure/2XKK"
@@ -82,3 +84,4 @@ order:
     - "nucleoside-analog-antivirals"
     - "hiv-antiretroviral-drugs"
     - "quinolone-antibacterials"
+    - "sulfonamide-trimethoprim"
