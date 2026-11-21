@@ -1,7 +1,7 @@
 package specific
 
 hiv_antiretroviral_drugs: {
-	content: #"""
+  content: #"""
             *Antiretroviral therapy* (ART) inhibits successive steps in the HIV replication
             cycle. HIV carries two copies of positive-sense single-stranded RNA. After
             entry into a susceptible cell, viral reverse transcriptase converts this RNA
@@ -190,19 +190,19 @@ hiv_antiretroviral_drugs: {
             - #link("https://wellcomecollection.org/works/ah34mcug")[HIV assembly and budding by David S. Goodsell, Wellcome Collection, CC BY 4.0]
             - #link("https://wellcomecollection.org/works/temz6uyf")[HIV maturation by David S. Goodsell, Wellcome Collection, CC BY 4.0]
         """#
-	related: ["concept/medicinal-chemistry"]
-	external_link: [
-		"https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-life-cycle",
-		"https://hivinfo.nih.gov/understanding-hiv/fact-sheets/fda-approved-hiv-medicines",
-		"https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/principles-antiretroviral-therapy",
-		"https://commons.wikimedia.org/wiki/File:HIV-replication-cycle-en.svg",
-		"https://wellcomecollection.org/works/enep9d4h",
-		"https://commons.wikimedia.org/wiki/File:P24_HIV-capsid.png",
-		"https://wellcomecollection.org/works/dractz5z",
-		"https://wellcomecollection.org/works/ubp5tz9n",
-		"https://wellcomecollection.org/works/gxdy6rt2",
-		"https://wellcomecollection.org/works/ueftx3yf",
-		"https://wellcomecollection.org/works/ah34mcug",
-		"https://wellcomecollection.org/works/temz6uyf",
-	]
+  related: ["concept/medicinal-chemistry"]
+  external_link: [
+    "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-life-cycle",
+    "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/fda-approved-hiv-medicines",
+    "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/principles-antiretroviral-therapy",
+    "https://commons.wikimedia.org/wiki/File:HIV-replication-cycle-en.svg",
+    "https://wellcomecollection.org/works/enep9d4h",
+    "https://commons.wikimedia.org/wiki/File:P24_HIV-capsid.png",
+    "https://wellcomecollection.org/works/dractz5z",
+    "https://wellcomecollection.org/works/ubp5tz9n",
+    "https://wellcomecollection.org/works/gxdy6rt2",
+    "https://wellcomecollection.org/works/ueftx3yf",
+    "https://wellcomecollection.org/works/ah34mcug",
+    "https://wellcomecollection.org/works/temz6uyf",
+  ]
 }
