@@ -20,6 +20,14 @@
 textbooks: null
 tests: null
 papers:
+  - title: "DNA Gyrase as a Target for Quinolones"
+    journal: "Biomedicines 11(2), 371 (2023)"
+    doi: "https://doi.org/10.3390/biomedicines11020371"
+    completed: false
+  - title: "Mechanism of Quinolone Action and Resistance"
+    journal: "Biochemistry 53 (2014)"
+    doi: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3985860/"
+    completed: false
   - title: "Structure and mechanism of the M2 proton channel of influenza A virus"
     journal: "Nature 451, 591–595 (2008)"
     doi: "https://doi.org/10.1038/nature06531"
@@ -41,6 +49,9 @@ papers:
     doi: "https://doi.org/10.1038/s41467-020-20542-0"
     completed: false
 websites:
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC9953508/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC9917921/"
+  - "https://www.rcsb.org/structure/2XKK"
   - "https://pubchem.ncbi.nlm.nih.gov/compound/2130"
   - "https://www.cdc.gov/flu/treatment/antiviralresistance.html"
   - "https://commons.wikimedia.org/wiki/File:Amantadine.svg"
@@ -70,3 +81,4 @@ order:
     - "recombinant-interferon"
     - "nucleoside-analog-antivirals"
     - "hiv-antiretroviral-drugs"
+    - "quinolone-antibacterials"
