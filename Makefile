@@ -26,8 +26,8 @@ FILE ?= <file>
 TARGET ?= <target>
 DIR ?= <directory>
 
-# Root directory
-ROOT := $(shell dirname $(shell readlink Makefile))
+# Root directory (resolves the symlinked Makefile back to the repository root)
+ROOT := $(patsubst %/,%,$(dir $(realpath $(firstword $(MAKEFILE_LIST)))))
 # Extract package name from cue.mod/module.cue file
 PACKAGE := $(shell cat cue.mod/module.cue | yq -r ".module")
 # Extract directory name for handbook postfix (used in handbook filename)
@@ -47,9 +47,9 @@ REMOTE_DOWNLOADS := download
 # Directories to ignore when generating handbook
 IGNORE_DIRS := cue.mod assets asset bin src $(REMOTE_DOWNLOADS)
 # Set shell to bash for compatibility
-SHELL := /bin/bash
+SHELL := /usr/bin/env bash
 
-.PHONY: single-export package-export handbook clio-plugin clean clean-cache help
+.PHONY: single-export package-export handbook clio-plugin clean clean-cache sync-pictures publish-pictures help
 
 # Build Clio's Typst WASM plugin before compiling figures that import it.
 clio-plugin:
@@ -206,6 +206,16 @@ clean-cache:
 	else \
 		echo "No cache to clear"; \
 	fi
+
+# Publish the pictures referenced by pictures.yaml to Cloudflare R2
+sync-pictures:
+	@echo "→ Synchronising pictures with Cloudflare R2"
+	@bash "$(ROOT)/.scripts/sync-pictures.sh"
+
+# Push every locally cached picture to R2, overwriting existing objects
+publish-pictures:
+	@echo "→ Publishing cached pictures to Cloudflare R2 (overwrite)"
+	@bash "$(ROOT)/.scripts/sync-pictures.sh" --force
 
 # Display help information for available subcommands
 help:

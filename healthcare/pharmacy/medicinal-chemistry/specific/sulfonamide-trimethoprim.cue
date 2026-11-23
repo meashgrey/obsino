@@ -28,14 +28,14 @@ sulfonamide_trimethoprim: {
           align(center)[
             *PABA + activated dihydropterin* \
             #text(size: 9pt, fill: rgb("#a33b36"))[DHPS inhibited by sulfonamides] \
-            ↓ \
+            $↓$ \
             *Dihydropteroate* \
-            ↓ \
+            $↓$ \
             *Dihydrofolate (DHF)* \
             #text(size: 9pt, fill: rgb("#a33b36"))[DHFR inhibited by trimethoprim] \
-            ↓ \
+            $↓$ \
             *Tetrahydrofolate (THF)* \
-            ↓ \
+            $↓$ \
             Purines and thymidylate
           ],
         ),

@@ -43,11 +43,11 @@ nitrofurantoin_nitroreductase_activation: {
         block(width: 66%, inset: 8pt, stroke: 0.5pt + luma(170))[
           #align(center)[
             *NAD(P)H and FMN-dependent NfsA / NfsB* \
-            ↓ \
+            $↓$ \
             *Nitrofurantoin nitro-group reduction* \
-            ↓ \
+            $↓$ \
             *Reactive reduced intermediates* \
-            ↓ \
+            $↓$ \
             *DNA, protein, and metabolic damage*
           ]
         ],

@@ -18,48 +18,18 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 pictures:
-  linezolid-ribosome-binding:
-    - "https://pmc-oa-opendata.s3.amazonaws.com/PMC5424203.1/mbo0021733030001.jpg"
-  quinolone-gyrase-cycle:
-    - "https://mdpi-res.com/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g001.png"
-  quinolone-gyrase-bound:
-    - "https://mdpi-res.com/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g003.png"
-  quinolone-metal-bridge:
-    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2351/3985860/39f4735fc3e7/bi-2014-000564_0005.jpg"
-  atmospheric-pressure-chemical-ionisation:
-    - "https://upload.wikimedia.org/wikipedia/commons/c/cc/APCI_Source_With_Heated_Nebulizer.png"
-  amantadine-wt-water-network:
-    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f336/6497056/03ee0a35b556/nihms-1016942-f0005.jpg"
   amantadine-s31n-hbond-network:
     - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f756/4972211/dcfe96b1acf8/PRO-25-1551-g001.jpg"
   amantadine-s31n-overlay:
     - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f756/4972211/dd1a7e01a23c/PRO-25-1551-g002.jpg"
-  interferon-oas-rnase-l:
-    - "https://www.frontiersin.org/files/Articles/1287940/xml-images/fimmu-15-1287940-g004.webp"
-  interferon-pkr:
-    - "https://www.frontiersin.org/files/Articles/1287940/xml-images/fimmu-15-1287940-g005.webp"
+  amantadine-wt-water-network:
+    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f336/6497056/03ee0a35b556/nihms-1016942-f0005.jpg"
   antiviral-acyclovir-mechanism:
     - "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mechanism_of_acyclovir_action.png/960px-Mechanism_of_acyclovir_action.png"
   antiviral-remdesivir-rdrp:
-    - "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-020-20542-0/MediaObjects/41467_2020_20542_Fig3_HTML.png"
-  hiv-replication-cycle:
-    - "https://upload.wikimedia.org/wikipedia/commons/5/57/HIV-replication-cycle-en.svg"
-  hiv-attachment-fusion:
-    - "https://iiif.wellcomecollection.org/image/B0010019/full/760,/0/default.jpg"
-  hiv-capsid-structure:
-    - "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/P24_HIV-capsid.png/960px-P24_HIV-capsid.png"
-  hiv-reverse-transcription:
-    - "https://iiif.wellcomecollection.org/image/B0010020/full/760,/0/default.jpg"
-  hiv-integration:
-    - "https://iiif.wellcomecollection.org/image/B0010021/full/760,/0/default.jpg"
-  hiv-transcription:
-    - "https://iiif.wellcomecollection.org/image/B0010022/full/760,/0/default.jpg"
-  hiv-translation:
-    - "https://iiif.wellcomecollection.org/image/B0010023/full/760,/0/default.jpg"
-  hiv-assembly-budding:
-    - "https://iiif.wellcomecollection.org/image/B0010024/full/760,/0/default.jpg"
-  hiv-maturation:
-    - "https://iiif.wellcomecollection.org/image/B0010025/full/760,/0/default.jpg"
+    - "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41467-020-20542-0/MediaObjects/41467_2020_20542_Fig3_HTML.png"
+  atmospheric-pressure-chemical-ionisation:
+    - "https://upload.wikimedia.org/wikipedia/commons/c/cc/APCI_Source_With_Heated_Nebulizer.png"
   beta-adrenergic-membrane-receptor:
     - "https://a1.boltp.com/2026/06/16/6a30d63dc30f9.png"
   beta-barrel-in-extra-superfolder-gfp:
@@ -70,11 +40,41 @@ pictures:
     - "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/ESI_positive_mode_%2821589986840%29.jpg/1280px-ESI_positive_mode_%2821589986840%29.jpg"
   electrostatic-structure-of-myoglobin:
     - "https://a1.boltp.com/2026/06/18/6a33f69db4a6e.png"
+  hiv-assembly-budding:
+    - "https://iiif.wellcomecollection.org/image/B0010024/full/760,/0/default.jpg"
+  hiv-attachment-fusion:
+    - "https://iiif.wellcomecollection.org/image/B0010019/full/760,/0/default.jpg"
+  hiv-capsid-structure:
+    - "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/P24_HIV-capsid.png/960px-P24_HIV-capsid.png"
+  hiv-integration:
+    - "https://iiif.wellcomecollection.org/image/B0010021/full/760,/0/default.jpg"
+  hiv-maturation:
+    - "https://iiif.wellcomecollection.org/image/B0010025/full/760,/0/default.jpg"
+  hiv-replication-cycle:
+    - "https://upload.wikimedia.org/wikipedia/commons/5/57/HIV-replication-cycle-en.svg"
+  hiv-reverse-transcription:
+    - "https://iiif.wellcomecollection.org/image/B0010020/full/760,/0/default.jpg"
+  hiv-transcription:
+    - "https://iiif.wellcomecollection.org/image/B0010022/full/760,/0/default.jpg"
+  hiv-translation:
+    - "https://iiif.wellcomecollection.org/image/B0010023/full/760,/0/default.jpg"
+  interferon-oas-rnase-l:
+    - "https://www.frontiersin.org/files/Articles/1287940/xml-images/fimmu-15-1287940-g004.webp"
+  interferon-pkr:
+    - "https://www.frontiersin.org/files/Articles/1287940/xml-images/fimmu-15-1287940-g005.webp"
+  linezolid-ribosome-binding:
+    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ce67/5424203/c9e1aefe051f/mbo0021733030001.jpg"
   matrix-assisted-laser-desorption-ionisation:
     - "https://www.creative-proteomics.com/images/Matrix-assiste-Laser-Desorption-Ionization.jpg"
   plasma-membrane-receptor:
-    - "https://cdn.rcsb.org/images/structures/pdb/1f88_chain-A.jpeg"
+    - "https://cdn.rcsb.org/images/structures/pdb/1f88_assembly-1.jpeg"
   polysorbate-80:
     - "https://a1.boltp.com/2026/06/19/6a35267c8a51e.jpg"
+  quinolone-gyrase-bound:
+    - "https://mdpi-res.com/d_attachment/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g003.png"
+  quinolone-gyrase-cycle:
+    - "https://mdpi-res.com/d_attachment/biomedicines/biomedicines-11-00371/article_deploy/html/images/biomedicines-11-00371-g001.png"
+  quinolone-metal-bridge:
+    - "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2351/3985860/39f4735fc3e7/bi-2014-000564_0005.jpg"
   ramachandran-plot-of-1ca2:
     - "https://a1.boltp.com/2026/06/18/6a33f6311af88.png"

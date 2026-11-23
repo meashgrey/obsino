@@ -41,8 +41,6 @@
           name = "handbook";
           runtimeInputs = with pkgs; [
             cue
-            curl
-            file
             yq-go
             typst
             typstyle
@@ -51,6 +49,8 @@
             rustc
             cargo
             lld
+            curl
+            coreutils
           ];
           text = ''
             export CARGO_TARGET_WASM32_UNKNOWN_UNKNOWN_LINKER="${pkgs.lld}/bin/wasm-ld"
@@ -102,6 +102,25 @@
 
               popd > /dev/null
             done
+          '';
+        };
+        sync-pictures = pkgs.writeShellApplication {
+          name = "sync-pictures";
+          runtimeInputs = with pkgs; [
+            bash
+            coreutils
+            curl
+            yq-go
+          ];
+          # The checkout (not the flake source) holds pictures.yaml and the
+          # cache, so the wrapper locates it at run time. `wrangler` is left on
+          # PATH on purpose: only the local backend needs it, and pinning a
+          # nixpkgs build of it would drag node into CI builds that use the S3
+          # backend instead.
+          text = ''
+            OBSINO_ROOT="$(pwd)"
+            export OBSINO_ROOT
+            exec bash "$OBSINO_ROOT/.scripts/sync-pictures.sh" "$@"
           '';
         };
         clean = pkgs.writeShellApplication {
@@ -269,8 +288,6 @@
 
           packages = with pkgs; [
             cue
-            curl
-            file
             yq-go
             typst
             typstyle
@@ -279,6 +296,8 @@
             rustc
             cargo
             lld
+            curl
+            coreutils
           ];
 
           shellHook = ''
