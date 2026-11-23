@@ -26,13 +26,13 @@ ideal_gas_law: {
 
     This shows the relationship between macroscopic state variables under any
     equilibrium state.
-  """#
+    """#
   related: [
     "law/avogadro-law",
     "law/boyle-law",
     "law/charles-law",
     "law/gay-lussac-law",
     "concept/ideal-gas",
-    "concept/ideal-gas-temperature-scale"
+    "concept/ideal-gas-temperature-scale",
   ]
 }

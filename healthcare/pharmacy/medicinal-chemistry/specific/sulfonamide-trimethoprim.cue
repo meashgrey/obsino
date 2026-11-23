@@ -125,12 +125,12 @@ sulfonamide_trimethoprim: {
     - #link("https://www.kegg.jp/pathway/map00790")[KEGG folate biosynthesis pathway diagram]
     - #link("https://pubchem.ncbi.nlm.nih.gov/compound/Sulfamethoxazole")[PubChem: sulfamethoxazole]
     - #link("https://pubchem.ncbi.nlm.nih.gov/compound/Trimethoprim")[PubChem: trimethoprim]
-  """#
+    """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://www.kegg.jp/pathway/map00790",
     "https://www.rcsb.org/",
     "https://pubchem.ncbi.nlm.nih.gov/compound/Sulfamethoxazole",
-    "https://pubchem.ncbi.nlm.nih.gov/compound/Trimethoprim"
+    "https://pubchem.ncbi.nlm.nih.gov/compound/Trimethoprim",
   ]
 }

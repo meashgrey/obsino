@@ -37,5 +37,5 @@ proof_cumulative_distribution_function_properties: {
       Thus
 
       $ F_X (x_0) = lim_(n-> ∞) F_X (x_n) = F_X (x_0 + 0) $
-  """#
+    """#
 }

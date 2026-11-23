@@ -12,8 +12,8 @@ sustained_release_preparation: {
         nanomaterials);
       - Oral preparations: drug release is related to the residence time in
         GI (gastrointestinal).
-  """#
+    """#
   related: [
-    "concept/mrdds"
+    "concept/mrdds",
   ]
 }

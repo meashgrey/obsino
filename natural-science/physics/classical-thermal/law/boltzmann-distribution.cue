@@ -16,8 +16,8 @@ boltzmann_distribution: {
     where $g(E)$ is the *density of states* (number of states per unit energy
     interval). The Maxwell speed distribution is a special case of the Boltzmann
     distribution applied to translational kinetic energy.
-  """#
+    """#
   related: [
-    "law/maxwell-speed-distribution"
+    "law/maxwell-speed-distribution",
   ]
 }

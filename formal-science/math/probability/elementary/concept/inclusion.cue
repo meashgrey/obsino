@@ -6,5 +6,5 @@ inclusion: {
     $A$ is also in $B$. In other words, whenever $A$ occurs, $B$ must also occur:
 
     $ A ⊂ B space.en <=> space.en ∀ ω ∈ A, ω ∈ B $
-  """#
+    """#
 }

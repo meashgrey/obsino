@@ -26,10 +26,10 @@ inner_product: {
     is inserted into $ub(A)$'s single slot is:
 
     $ ub(A)(ub(C)) := ub(A) ⋅ ub(C) $
-  """#
+    """#
   related: [
     "concept/tensor",
     "concept/squared-length",
-    "desire/measurable-reality"
+    "desire/measurable-reality",
   ]
 }

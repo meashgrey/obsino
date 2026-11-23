@@ -44,7 +44,7 @@ center_of_mass: {
     obtain the *center-of-mass theorem*:
 
     $ M ub(a)_"center" = ub(F)^(("ext")) $
-  """#
+    """#
   related: [
     "concept/momentum",
     "concept/center-of-mass-frame",

@@ -73,7 +73,7 @@ pcr: {
 
     Annealing temperature is usually 5°C lower than $T_m$, optimal annealing
     temperature can be determined by running a test with temperature gradient.
-  """
+    """
   figure_part_pcr: #"""
     #let pcr = "assets/polymerase-chain-reaction.png"
     #align(center)[
@@ -86,5 +86,5 @@ pcr: {
         ]
       ]
     ]
-  """#
+    """#
 }

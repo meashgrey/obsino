@@ -30,9 +30,9 @@ expectation: {
 
     5. *Independent product*: if $X$ and $Y$ are independent then $𝔼[X Y] = 
       𝔼[X] · 𝔼[Y]$
-  """#
+    """#
   related: [
     "concept/distribution-column",
-    "concept/probability-density-function"
+    "concept/probability-density-function",
   ]
 }

@@ -36,8 +36,8 @@ orthogonal_transformation: {
     $ R_(overline(p) i) R_(i overline(q)) = δ_(overline(p) overline(q)),
     space.en
     R_(i overline(p)) R_(overline(p) j) = δ_(i j) $
-  """#
+    """#
   related: [
-    "proof/proof-transformation-matrix-is-orthogonal"
+    "proof/proof-transformation-matrix-is-orthogonal",
   ]
 }

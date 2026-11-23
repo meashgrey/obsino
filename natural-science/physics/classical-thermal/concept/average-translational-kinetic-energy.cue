@@ -14,8 +14,8 @@ average_translational_kinetic_energy: {
     so
 
     $ ⟨E_k⟩ = (3 p V)/(2 n) $
-  """#
+    """#
   related: [
-    "concept/pressure-from-molecular-collisions"
+    "concept/pressure-from-molecular-collisions",
   ]
 }

@@ -61,19 +61,19 @@ normal_distribution: {
       & = 2/(sqrt(π)) × sqrt(π)/2 = 1 $
 
     Thus $𝕍"ar"[X] = σ^2$.
-  """
+    """
   figure_part_normal_distribution_pdf: #"""
     #let normal-pdf = "assets/typst/normal-distribution-pdf.typ"
     #eval(
       str(read(normal-pdf)),
       mode: "markup",
     )
-  """#
+    """#
   figure_part_normal_distribution_cdf: #"""
     #let normal-cdf = "assets/typst/normal-distribution-cdf.typ"
     #eval(
       str(read(normal-cdf)),
       mode: "markup",
     )
-  """#
+    """#
 }

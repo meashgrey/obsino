@@ -31,11 +31,11 @@ index_vectors: {
     An indexed expression can also appear on the receiving end of an assignment,
     in which cases the assignment operation is performed *only on those elements
     of the vector*.
-  """
+    """
   code_part_index_vectors: #"""
-    #raw-block-file(
-      "src/basic/index-vectors.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/index-vectors.R",
+        "r"
+      )
+    """#
 }

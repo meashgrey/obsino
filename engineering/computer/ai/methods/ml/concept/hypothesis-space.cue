@@ -22,14 +22,14 @@ hypothesis_space: {
     algorithm can choose from when varying the parameters in order to reduce a
     training objective. This is called the *representative capacity* of the
     model.
-  """
+    """
   figure_part_overfit_underfit: #"""
     #let overfit-underfit = "assets/typst/overfit-underfit.typ"
     #eval(
       str(read(overfit-underfit)),
       mode: "markup"
     )
-  """#
+    """#
   related: [
     "concept/training-error",
   ]

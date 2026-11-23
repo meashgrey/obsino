@@ -54,34 +54,34 @@ function: {
     allowing infinite loops in Lean's logic would make it unsound.
 
     \(code_part_partial_function)
-  """
+    """
   code_part_function: #"""
-    #raw-block-file(
-      "src/basic/Function.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/Function.lean",
+        "lean"
+      )
+    """#
   code_part_anonymous_function: #"""
-    #raw-block-file(
-      "src/basic/AnonymousFunction.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/AnonymousFunction.lean",
+        "lean"
+      )
+    """#
   code_part_recursive_function: #"""
-    #raw-block-file(
-      "src/basic/RecursiveFunction.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/RecursiveFunction.lean",
+        "lean"
+      )
+    """#
   code_part_partial_function: #"""
-    #raw-block-file(
-      "src/basic/PartialFunction.lean",
-      "lean"
-    ) 
-  """#
+      #raw-block-file(
+        "src/basic/PartialFunction.lean",
+        "lean"
+      ) 
+    """#
   related: [
     "concept/definitions",
     "concept/inductive-datatype",
-    "concept/pattern-matching"
+    "concept/pattern-matching",
   ]
 }

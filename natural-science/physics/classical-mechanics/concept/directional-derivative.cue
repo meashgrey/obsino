@@ -14,9 +14,9 @@ directional_derivative: {
     left-hand side is also a tensor with the same rank as $sans("T")$:
 
     $ "rank"(∇_(ub(A))sans("T")) = "rank"(sans("T")) $
-  """#
+    """#
   related: [
     "concept/gradient",
-    "theorem/leibniz-rule-of-directional-derivative"
+    "theorem/leibniz-rule-of-directional-derivative",
   ]
 }

@@ -13,11 +13,11 @@ namespace: {
       simply omit the `in` from a top-level usage of `open`.
 
     \(code_part_namespace)
-  """
+    """
   code_part_namespace: #"""
-    #raw-block-file(
-      "src/basic/Namespace.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/Namespace.lean",
+        "lean"
+      )
+    """#
 }

@@ -13,11 +13,11 @@ auxiliary_subgoals: {
     which models "suffices to show" construction in ordinary mathematics.
 
     \(code_part_auxiliary_subgoals)
-  """
+    """
   code_part_auxiliary_subgoals: #"""
-    #raw-block-file(
-      "src/proof/AuxiliaryProof.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/proof/AuxiliaryProof.lean",
+        "lean"
+      )
+    """#
 }

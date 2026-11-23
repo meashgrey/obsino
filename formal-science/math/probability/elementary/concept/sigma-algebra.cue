@@ -25,11 +25,11 @@ sigma_algebra: {
 
     The minimal $σ$-algebra is ${∅, Ω}$. It is the smallest possible $σ$-algebra
     on any sample space.
-  """#
+    """#
   related: [
     "concept/sample-space",
     "concept/complementary-events",
     "concept/countable-infinite-union",
-    "desire/assign-probability-to-uncountable"
+    "desire/assign-probability-to-uncountable",
   ]
 }

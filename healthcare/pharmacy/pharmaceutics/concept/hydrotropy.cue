@@ -16,5 +16,5 @@ hydrotropy: {
     - Certain organic acids and their sodium salts (such as sodium benzoate,
       sodium salicylate, and p-aminobenzoic)
     - Amide compounds (such as urea, nicotinamide and acetamide).
-  """#
+    """#
 }

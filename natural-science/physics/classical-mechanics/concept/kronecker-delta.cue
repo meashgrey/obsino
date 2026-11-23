@@ -10,8 +10,8 @@ kronecker_delta: {
     ) $
 
     as the Kronecker delta.
-  """#
+    """#
   related: [
-    "concept/basis-vector"
+    "concept/basis-vector",
   ]
 }

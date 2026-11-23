@@ -8,5 +8,5 @@ equality: {
     $ A ⊂ B "and" B ⊂ A $
 
     $A$ occurs if and only if $B$ occurs.
-  """#
+    """#
 }

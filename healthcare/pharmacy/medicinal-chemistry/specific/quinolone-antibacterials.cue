@@ -131,12 +131,12 @@ quinolone_antibacterials: {
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC4686662/")[Structural basis of gyrase inhibition by moxifloxacin (2015)]
     - #link("https://www.rcsb.org/structure/2XKK")[RCSB PDB 2XKK: A. baumannii topoisomerase IV–DNA–moxifloxacin]
     - #link("https://www.rcsb.org/structure/5BTC")[RCSB PDB 5BTC: mycobacterial gyrase–DNA–ciprofloxacin]
-  """#
+    """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC9953508/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC3985860/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC9917921/",
-    "https://www.rcsb.org/structure/2XKK"
+    "https://www.rcsb.org/structure/2XKK",
   ]
 }

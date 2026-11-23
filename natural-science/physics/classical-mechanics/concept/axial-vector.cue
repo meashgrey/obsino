@@ -29,12 +29,12 @@ axial_vector: {
     $bold(ω)$, then indeed the $bold(ω)$ vector points the same way, but the
     perceived "rotation direction" appears opposite. This is because the rule
     we use to define direction is itself not parity-invariant.
-  """#
+    """#
   related: [
     "concept/angular-speed",
     "concept/angular-momentum",
     "concept/parity-transformation",
     "concept/axial-vector",
-    "concept/vector"
+    "concept/vector",
   ]
 }

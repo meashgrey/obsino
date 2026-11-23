@@ -35,9 +35,9 @@ beta_conformation: {
                            | β turn
     --<---β strand 2-------/
     ```
-  """#
+    """#
   related: [
     "concept/secondary-structure",
-    "concept/alpha-helix"
+    "concept/alpha-helix",
   ]
 }

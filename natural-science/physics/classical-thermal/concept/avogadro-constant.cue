@@ -6,8 +6,8 @@ avogadro_constant: {
     ions, electrons etc.) in one mole of a substance:
 
     $ N_A = 6.02214076 × 10^(23) "particles per mole" $
-  """#
+    """#
   related: [
-    "law/ideal-gas-law"
+    "law/ideal-gas-law",
   ]
 }

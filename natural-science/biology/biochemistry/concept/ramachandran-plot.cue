@@ -33,7 +33,7 @@ ramachandran_plot: {
         [Lower Left],   [$3_(10)$-helix],         [/]
       )
     ]
-  """
+    """
   figure_part_ramachandran_of_1ca2: #"""
     #align(center)[
       #figure(
@@ -41,5 +41,5 @@ ramachandran_plot: {
         caption: "Ramachandran plot of 1CA2"
       )
     ]
-  """#
+    """#
 }

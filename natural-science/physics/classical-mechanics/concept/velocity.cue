@@ -13,5 +13,5 @@ velocity: {
 
     Velocity is a *tangent vector* on the curve $cal("P")(λ)$, $ub(v)$ points
     along the direction of motion.
-  """#
+    """#
 }

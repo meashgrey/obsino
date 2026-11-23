@@ -29,11 +29,11 @@ proposition: {
     proofs.
 
     \(code_part_proposition)
-  """
+    """
   code_part_proposition: #"""
-    #raw-block-file(
-      "src/proof/Proposition.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/proof/Proposition.lean",
+        "lean"
+      )
+    """#
 }

@@ -16,6 +16,6 @@ quantization_of_electric_charge: {
     macroscopic situations that charge is often treated as if it could vary
     continuously. This approximation is useful for describing charge spread
     over a wire, a surface, or a volume.
-  """#
+    """#
   related: ["concept/continuous-charge-distribution"]
 }

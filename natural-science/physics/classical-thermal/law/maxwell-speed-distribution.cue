@@ -71,15 +71,15 @@ maxwell_speed_distribution: {
     $ v_"rms" = sqrt((3 k T)/m) $
 
     \(figure_part_maxwell_speed_distribution)
-  """
+    """
   figure_part_maxwell_speed_distribution: #"""
     #let maxwell-speed-distribution = "assets/typst/maxwell-speed-distribution.typ"
     #eval(
       str(read(maxwell-speed-distribution)),
       mode: "markup"
     )
-  """#
+    """#
   related: [
-    "concept/root-mean-square-speed"
+    "concept/root-mean-square-speed",
   ]
 }

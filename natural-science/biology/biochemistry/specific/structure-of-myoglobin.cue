@@ -18,7 +18,7 @@ structure_of_myoglobin: {
     - Little empty space inside for iron and oxygen.
 
     \(figure_part_myoglobin_electrostatic)
-  """
+    """
   figure_part_heme: #"""
     #align(center)[
       #stack(dir: ltr)[
@@ -30,7 +30,7 @@ structure_of_myoglobin: {
         ]
       ]
     ]
-  """#
+    """#
   figure_part_myoglobin_electrostatic: #"""
     #align(center)[
       #stack(dir: ltr)[
@@ -42,5 +42,5 @@ structure_of_myoglobin: {
         ]
       ]
     ]
-  """#
+    """#
 }

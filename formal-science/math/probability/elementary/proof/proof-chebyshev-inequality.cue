@@ -16,10 +16,10 @@ proof_chebyshev_inequality: {
       ≥ ∫_(abs(x - μ) ≥ ε) (x - μ)^2 p(x) "d"x \
       & ≥ ∫_(abs(x - μ) ≥ ε) ε^2 p(x) "d"x ≥ ε^2 ∫_(abs(x - μ) ≥ ε) p(x) "d"x \
       & = ε^2 P(|X - μ| ≥ ε) $
-  """#
+    """#
   related: [
     "concept/expectation",
     "concept/variance",
-    "theorem/chebyshev-inequality"
+    "theorem/chebyshev-inequality",
   ]
 }

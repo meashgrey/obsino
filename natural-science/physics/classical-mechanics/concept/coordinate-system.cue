@@ -8,8 +8,8 @@ coordinate_system: {
     arrow(cal("OP"))$ is the position vector. A coordinate system itself is not a
     tensor; it is a human-chosen labelling tool. Different coordinate systems
     are related by orthogonal transformation matrices $R_(overline(p)i)$
-  """#
+    """#
   related: [
-    "concept/orthogonal-transformation"
+    "concept/orthogonal-transformation",
   ]
 }

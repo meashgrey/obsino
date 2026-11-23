@@ -12,7 +12,7 @@ alternative_splicing: {
     RNAs can be alternatively spliced in many ways.
 
     \(figure_part_alternative_splicing)
-  """
+    """
   figure_part_alternative_splicing: #"""
     #let alternative-splicing = "assets/alternative-splicing.jpg"
     #align(center)[
@@ -25,9 +25,9 @@ alternative_splicing: {
         ]
       ]
     ]
-  """#
+    """#
   related: [
     "concept/rna",
-    "concept/rna-transcription"
+    "concept/rna-transcription",
   ]
 }

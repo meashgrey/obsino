@@ -16,12 +16,12 @@ l2_loss: {
     where $r = y - hat(y)$ is the residual.
 
     \(figure_part_l2_loss)
-  """
+    """
   figure_part_l2_loss: #"""
     #let l2-loss = "assets/typst/l2-loss.typ"
     #eval(
       str(read(l2-loss)),
       mode: "markup"
     )
-  """#
+    """#
 }

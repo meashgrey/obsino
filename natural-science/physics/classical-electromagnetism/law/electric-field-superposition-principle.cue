@@ -29,11 +29,11 @@ electric_field_superposition_principle: {
     adds the vector contribution from every part of the distribution. The
     principle applies to electrostatic fields in vacuum; it lets us build the
     field of a complicated arrangement from simpler, known fields.
-  """#
+    """#
   related: [
     "concept/electric-field",
     "concept/electric-field-strength",
     "concept/continuous-charge-distribution",
-    "law/coulomb-law"
+    "law/coulomb-law",
   ]
 }

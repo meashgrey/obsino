@@ -20,10 +20,10 @@ temperature_from_microscopic: {
     the molecules*. At absolute zero, $T = 0$, so $⟨E_k⟩ = 0$ all molecular motion
     stops. Temperature is not a property of a single molecule, it is a *statistical
     average over a huge number of molecules*.
-  """#
+    """#
   related: [
     "concept/boltzmann-constant",
     "concept/average-translational-kinetic-energy",
-    "law/ideal-gas-law"
+    "law/ideal-gas-law",
   ]
 }

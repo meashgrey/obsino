@@ -14,5 +14,5 @@ slot_naming_notation: {
     - Another example: consider the contraction of the first and third slots of
       a third-rank tensor $sans("T")$, in any basis the components of
       $1\&3"contraction"(sans("T")) = T_(i j i)$
-  """#
+    """#
 }

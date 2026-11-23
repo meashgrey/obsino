@@ -17,5 +17,5 @@ molecular_chaperones: {
       Two enzymes required in the folding pathway:
         - PDI: protein disulfide isomerase (蛋白质二硫键异构酶);
         - PPI: peptide prolyl cis-trans isomerase (肽基脯氨顺反异构酶).
-  """#
+    """#
 }

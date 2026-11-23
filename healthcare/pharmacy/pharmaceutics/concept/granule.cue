@@ -7,5 +7,5 @@ granule: {
     for oral administration. This type of dosage form can be directly swallowed
     or dissolved in water before swallowing, and is suitable for variously drugs,
     including traditional Chinese medicines and certain water-sensitive antibiotics.
-  """#
+    """#
 }

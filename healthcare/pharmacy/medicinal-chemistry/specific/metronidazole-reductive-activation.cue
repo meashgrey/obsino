@@ -91,11 +91,11 @@ metronidazole_reductive_activation: {
     - #link("https://www.accessdata.fda.gov/drugsatfda_docs/nda/2017/209363Orig1s000MicroR.pdf")[FDA microbiology review (2017), Figure 2: anaerobic redox activation]
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC1045807/")[Edwards (1980), mechanisms of selective toxicity]
     - #link("https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/020334s015lbl.pdf")[FDA metronidazole labeling: mechanism and resistance]
-  """#
+    """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13711503/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC1045807/",
-    "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2017/209363Orig1s000MicroR.pdf"
+    "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2017/209363Orig1s000MicroR.pdf",
   ]
 }

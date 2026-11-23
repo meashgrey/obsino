@@ -7,8 +7,8 @@ center_of_mass_frame: {
 
     - The position of the center of mass is zero $ub(x)'_"center" = ub(0)$;
     - The total momentum is zero: $ub(p)' = ∑ m_i ub(v)'_i = ub(0)$
-  """#
+    """#
   related: [
-    "concept/center-of-mass"
+    "concept/center-of-mass",
   ]
 }

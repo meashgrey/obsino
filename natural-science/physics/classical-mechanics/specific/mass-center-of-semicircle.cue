@@ -21,15 +21,15 @@ mass_center_of_semicircle: {
       & = 2/π R $
 
     Thus the center-of-mass of this semicircle is $ub(x) = (0,2\\/π R)$.
-  """
+    """
   figure_part_semicircle: #"""
     #let semicircle = "assets/typst/mass-center-of-semicircle.typ"
     #eval(
       str(read(semicircle)),
       mode: "markup"
     )
-  """#
+    """#
   related: [
-    "concept/center-of-mass"
+    "concept/center-of-mass",
   ]
 }

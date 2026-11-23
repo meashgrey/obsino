@@ -9,10 +9,10 @@ contraction: {
     from $ub(A) ⊗ ub(B)$:
 
     $ "contraction" (ub(A) ⊗ ub(B)) := ub(A) ⋅ ub(B) $
-  """#
+    """#
   related: [
     "concept/tensor",
     "concept/inner-product",
-    "concept/tensor-product"
+    "concept/tensor-product",
   ]
 }

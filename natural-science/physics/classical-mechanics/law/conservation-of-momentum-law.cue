@@ -65,11 +65,11 @@ conservation_of_momentum_law: {
     $ub(F)^(("ext"))$, then:
 
     $ m_1 ub(v)_1 + m_2 ub(v)_2 = m_1 ub(v)'_1 + m_2 ub(v)'_2 $
-  """#
+    """#
   related: [
     "law/newton-second-law",
     "law/newton-third-law",
     "concept/momentum",
-    "concept/impulse"
+    "concept/impulse",
   ]
 }

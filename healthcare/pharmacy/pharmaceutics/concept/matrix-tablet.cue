@@ -9,5 +9,5 @@ matrix_tablet: {
     *Matrix tablets* are designed to improve patient compliance by decreasing
     dosing frequency, maintaining stable drug concentrations in the blood, and
     reducing potential side effects.
-  """#
+    """#
 }

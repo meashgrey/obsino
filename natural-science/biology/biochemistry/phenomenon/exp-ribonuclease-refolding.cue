@@ -48,5 +48,5 @@ exp_ribonuclease_refolding: {
     Regions of secondary structure may form followed by folding into motifs and
     domains. Large ensembles of folding intermediates are rapidly brought to a
     single native conformation.
-  """#
+    """#
 }

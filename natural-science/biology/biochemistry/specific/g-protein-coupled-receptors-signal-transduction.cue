@@ -38,7 +38,7 @@ g_protein_coupled_receptors_signal_transduction: {
         \(figure_part_gtp_and_gdp)
 
     \(figure_part_beta_adrenergic_receptor_system)
-  """
+    """
   figure_part_plasma_membrane_receptor: #"""
     #align(center)[
       #figure(
@@ -46,7 +46,7 @@ g_protein_coupled_receptors_signal_transduction: {
         caption: "Seven Transmembrane Helical Segments of Bovine Rhodopsin"
       )
     ]
-  """#
+    """#
   figure_part_gtp_and_gdp: #"""
     #align(center)[
       #stack(dir: ltr)[
@@ -64,7 +64,7 @@ g_protein_coupled_receptors_signal_transduction: {
         ]
       ]
     ]
-  """#
+    """#
   figure_part_beta_adrenergic_receptor_system: #"""
     #align(center)[
       #figure(
@@ -72,5 +72,5 @@ g_protein_coupled_receptors_signal_transduction: {
         caption: "Signal Transduction of " + $β$ + "-Adrenergic-Receptor-System"
       )
     ]
-  """#
+    """#
 }

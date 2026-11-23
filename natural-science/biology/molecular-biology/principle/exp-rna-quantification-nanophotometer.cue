@@ -28,8 +28,8 @@ exp_rna_quantification_nanophotometer: {
     - Cannot distinguish RNA from DNA
     - Cannot detect degradation
     - Contaminants that absorb at 260 nm can overestimate concentration
-  """#
+    """#
   related: [
-    "principle/exp-total-rna-isolation-trizol"
+    "principle/exp-total-rna-isolation-trizol",
   ]
 }

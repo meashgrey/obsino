@@ -153,9 +153,9 @@ non_inertial_frame: {
         [rotation itself]
       )
     ]
-  """#
+    """#
   related: [
     "law/newton-second-law",
-    "concept/angular-speed"
+    "concept/angular-speed",
   ]
 }

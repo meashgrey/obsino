@@ -8,11 +8,11 @@ if_let: {
     using `if let` instead of `match` can make code easier to read.
 
     \(code_part_if_let)
-  """
+    """
   code_part_if_let: #"""
-    #raw-block-file(
-      "src/basic/IfLet.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/IfLet.lean",
+        "lean"
+      )
+    """#
 }

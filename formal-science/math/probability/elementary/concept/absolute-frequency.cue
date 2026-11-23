@@ -8,8 +8,8 @@ absolute_frequency: {
     or observations. Its notation:
 
     $ n_A = "number of times event" A "occurs" $
-  """#
+    """#
   related: [
-    "concept/relative-frequency"
+    "concept/relative-frequency",
   ]
 }

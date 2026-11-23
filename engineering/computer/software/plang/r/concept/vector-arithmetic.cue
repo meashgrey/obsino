@@ -16,11 +16,11 @@ vector_arithmetic: {
     - Common arithmetic functions: `log`, `exp`, `sin` and so on;
     - `min` and `max` function returns the minimum and maximum elements;
     - `sum`, `prod`, `mean`, `var`, `sort` methods etc.
-  """
+    """
   code_part_vector_arithmetic: #"""
-    #raw-block-file(
-      "src/basic/vector-arithmetic.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/vector-arithmetic.R",
+        "r"
+      )
+    """#
 }

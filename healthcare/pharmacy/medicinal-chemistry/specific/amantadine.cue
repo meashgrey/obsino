@@ -97,12 +97,12 @@ amantadine: {
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC6497056/")[Thomaston et al., 2018, high-resolution amantadine-bound M2 structures and water-mediated hydrogen bonds]
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC4972211/")[Thomaston and DeGrado, 2016, S31N M2 crystal structure and resistance-associated hydrogen-bond network]
     - #link("https://www.cdc.gov/flu/treatment/antiviralresistance.html")[CDC antiviral-resistance guidance]
-  """#
+    """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://pubchem.ncbi.nlm.nih.gov/compound/2130",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC6497056/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4972211/",
-    "https://www.cdc.gov/flu/treatment/antiviralresistance.html"
+    "https://www.cdc.gov/flu/treatment/antiviralresistance.html",
   ]
 }

@@ -21,11 +21,11 @@ evaluating_expression: {
     call in an another function call.
 
     \(code_part_evaluating)
-  """
+    """
   code_part_evaluating: #"""
-    #raw-block-file(
-      "src/basic/EvaluatingExpression.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/EvaluatingExpression.lean",
+        "lean"
+      )
+    """#
 }

@@ -33,8 +33,8 @@ structure_of_alpha_keratin: {
 
     The stretchability of $α$-keratins and their numerous disulfide cross-linkages
     are the basis of permanent waving.
-  """#
+    """#
   related: [
-    "concept/tertiary-structure"
+    "concept/tertiary-structure",
   ]
 }

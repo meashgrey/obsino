@@ -23,8 +23,8 @@ chimerax_report_secondary_structure: {
     ```
 
     here `H` stands for $α$-helix and `G` stands for $3_(10)$-helix.
-  """#
+    """#
   related: [
-    "concept/secondary-structure"
+    "concept/secondary-structure",
   ]
 }

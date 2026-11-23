@@ -23,9 +23,9 @@ conservation_of_angular_momentum_law: {
     2. System with no external torque;
     3. If the external torque has zero component along some direction, the
       component of total angular momentum along that direction is conserved.
-  """#
+    """#
   related: [
     "concept/angular-momentum",
-    "concept/torque"
+    "concept/torque",
   ]
 }

@@ -24,7 +24,7 @@ coulomb_law: {
     explicitly in the equations. Rationalization is a choice about where
     factors of $4 π$ appear in the equations; it does not mean changing the
     physical force.
-  """#
+    """#
   related: ["concept/point-charge"]
   external_link: ["https://physics.nist.gov/cgi-bin/cuu/Value?eqep0="]
 }

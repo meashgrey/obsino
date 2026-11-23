@@ -10,5 +10,5 @@ dosage_form: {
     - Adjust the rate of activity;
     - Decrease or eliminate the toxicity and side effect;
     - Affect the therapeutic efficiency.
-  """#
+    """#
 }

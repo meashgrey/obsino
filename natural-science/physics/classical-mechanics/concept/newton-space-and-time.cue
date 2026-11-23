@@ -8,5 +8,5 @@ newton_space_and_time: {
     3-space by capital script letters like $cal("P")$ and $cal("Q")$. These
     points and the 3-space in which they live require no coordinates for their
     definition.
-  """#
+    """#
 }

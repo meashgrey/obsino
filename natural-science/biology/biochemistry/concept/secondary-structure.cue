@@ -11,10 +11,10 @@ secondary_structure: {
     - $β$ sheet ($β$ conformation): stabilized by hydrogen bonds between adjacent
       segments that may not be nearby;
     - random coil: irregular arrangement of the polypeptide chain.
-  """#
+    """#
   related: [
     "phenomenon/floppy-string-protein",
     "concept/alpha-helix",
-    "concept/beta-conformation"
+    "concept/beta-conformation",
   ]
 }

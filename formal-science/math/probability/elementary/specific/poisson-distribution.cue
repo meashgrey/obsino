@@ -32,19 +32,19 @@ poisson_distribution: {
       & = λ^2 "e"^(-λ) ∑_(k=2)^∞ (λ^(k-2))/((k-2)!)
         + λ "e"^(-λ) ∑_(k=1)^∞ (λ^(k-1))/((k-1)!) - λ^2 \\
       & = λ^2 + λ - λ^2 = λ $
-  """
+    """
   figure_part_poisson_distribution_pmf: #"""
     #let poisson-pmf = "assets/typst/poisson-distribution-pmf.typ"
     #eval(
       str(read(poisson-pmf)),
       mode: "markup"
     )
-  """#
+    """#
   figure_part_poisson_distribution_cdf: #"""
     #let poisson-cdf = "assets/typst/poisson-distribution-cdf.typ"
     #eval(
       str(read(poisson-cdf)),
       mode: "markup"
     )
-  """#
+    """#
 }

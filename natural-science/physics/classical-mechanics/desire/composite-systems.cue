@@ -9,8 +9,8 @@ composite_systems: {
     The tensor product is motivated by the desire to construct *higher-rank
     objects* out of lower-rank ones. The tensor product is the only mathematical
     way to combine two individual quantum states into a single unified system.
-  """#
+    """#
   related: [
-    "concept/tensor-product"
+    "concept/tensor-product",
   ]
 }

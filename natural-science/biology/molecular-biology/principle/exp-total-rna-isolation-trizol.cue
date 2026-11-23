@@ -34,9 +34,9 @@ exp_total_rna_isolation_trizol: {
       at 4 °C, carefully remove supernatant with a pipette
     8. *Air dry*: Dry pellet for about 2 minutes
     9. *Dissolution*: Dissolve RNA in 40 μL RNase-free water
-  """
+    """
   related: [
     "concept/rna",
-    "concept/total-rna"
+    "concept/total-rna",
   ]
 }

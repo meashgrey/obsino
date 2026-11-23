@@ -8,8 +8,8 @@ relative_frequency: {
     equals $1$:
 
     $ f_A = ("frequency of" A)/"total number of trials" = (n_A)/n $
-  """#
+    """#
   related: [
-    "concept/absolute-frequency"
+    "concept/absolute-frequency",
   ]
 }

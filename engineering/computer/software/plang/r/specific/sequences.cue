@@ -19,11 +19,11 @@ sequences: {
 
     A related function is `rep()` which can be used for replicating an object
     in various complicated ways.
-  """
+    """
   code_part_sequences: #"""
-    #raw-block-file(
-      "src/specific/sequences.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/specific/sequences.R",
+        "r"
+      )
+    """#
 }

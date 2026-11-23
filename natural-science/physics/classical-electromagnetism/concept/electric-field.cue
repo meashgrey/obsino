@@ -12,9 +12,9 @@ electric_field: {
 
     An electric field has both a strength and a direction. Its direction at a
     point is the direction of the force on a positive test charge there.
-  """#
+    """#
   related: [
     "concept/electric-field-strength",
-    "law/coulomb-law"
+    "law/coulomb-law",
   ]
 }

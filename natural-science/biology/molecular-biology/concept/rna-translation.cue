@@ -34,7 +34,7 @@ rna_translation: {
     amino acids building blocks in humans. As the ribosome reads each codon along
     an mRNA, the tRNA brings the correct amino acids, which is then added to the
     growing protein molecule.
-  """
+    """
   figure_part_rna_translation: #"""
     #let central-dogma = "assets/central-dogma.jpg"
     #align(center)[
@@ -47,5 +47,5 @@ rna_translation: {
         ]
       ]
     ]
-  """#
+    """#
 }

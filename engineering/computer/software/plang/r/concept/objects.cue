@@ -26,11 +26,11 @@ objects: {
     R caters for changes of mode almost anywhere. There is a large collection
     of functions of the form `as.<something>()` for either coercion from one
     mode to another.
-  """
+    """
   code_part_objects: #"""
-    #raw-block-file(
-      "src/basic/objects.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/objects.R",
+        "r"
+      )
+    """#
 }

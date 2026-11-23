@@ -13,7 +13,7 @@ domain: {
       #math.italic("Staphylococcus aureus") (金黄葡萄球菌)
 
     \(figure_part_beta_barrel)
-  """
+    """
   figure_part_beta_barrel: #"""
     #align(center)[
       #stack(dir: ltr)[
@@ -25,5 +25,5 @@ domain: {
         ]
       ]
     ]
-  """#
+    """#
 }

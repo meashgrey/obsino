@@ -62,8 +62,8 @@ circular_motion: {
     Therefore:
 
     $ ub(a)_c = v(- v/R hat(ub(r))) = - v^2/R hat(ub(r)) $
-  """#
+    """#
   related: [
-    "concept/angular-speed"
+    "concept/angular-speed",
   ]
 }

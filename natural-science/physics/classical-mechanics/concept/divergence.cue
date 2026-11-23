@@ -11,8 +11,8 @@ divergence: {
     Similarly, if $sans("T")$ is a tensor field of rank 3, then $T_(a b c ; c)$
     is its divergence on its third slot, and $T_(a b c ; b)$ is its divergence on
     its second slot.
-  """#
+    """#
   related: [
-    "concept/gradient"
+    "concept/gradient",
   ]
 }

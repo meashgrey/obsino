@@ -43,9 +43,9 @@ mean_free_path: {
     The mean free path is the average distance traveled per collision:
 
     $ λ = (v Δ t)/(n σ ⟨v_"rel"⟩ Δ t) = 1/(sqrt(2) n σ) = 1/(sqrt(2) π d^2 n) $
-  """#
+    """#
   related: [
     "concept/mean-collision-frequency",
-    "concept/collision-cross-section"
+    "concept/collision-cross-section",
   ]
 }

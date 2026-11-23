@@ -30,17 +30,17 @@ definitions: {
 
     Another way is to use `abbrev` instead of `def` to define the new derived
     number type.
-  """
+    """
   code_part_definitions: #"""
-    #raw-block-file(
-      "src/basic/DefinitionBasicUsage.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/DefinitionBasicUsage.lean",
+        "lean"
+      )
+    """#
   code_part_overloaded_number: #"""
-    #raw-block-file(
-      "src/basic/OverloadedNumber.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/OverloadedNumber.lean",
+        "lean"
+      )
+    """#
 }

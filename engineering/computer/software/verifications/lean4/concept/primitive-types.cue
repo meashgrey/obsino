@@ -27,11 +27,11 @@ primitive_types: {
     For example, `Nat` refers to natural numbers, and `Int` refers to `Integer`.
 
     \(code_part_primitive_types)
-  """
+    """
   code_part_primitive_types: #"""
-    #raw-block-file(
-      "src/basic/PrimitiveTypes.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PrimitiveTypes.lean",
+        "lean"
+      )
+    """#
 }

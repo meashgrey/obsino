@@ -29,9 +29,9 @@ probability_density_function: {
     The basic properties of probability density function:
     1. Non-negative: $f_X (x) ≥ 0$
     2. Normalization: $∫_(-∞)^(+∞) f_X (x) "d"x = 1$
-  """#
+    """#
   related: [
     "concept/distribution-column",
-    "concept/cumulative-distribution-function"
+    "concept/cumulative-distribution-function",
   ]
 }

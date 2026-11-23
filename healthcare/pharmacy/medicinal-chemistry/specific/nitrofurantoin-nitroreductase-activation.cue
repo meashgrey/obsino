@@ -98,11 +98,11 @@ nitrofurantoin_nitroreductase_activation: {
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC8286842/")[NfsA structural study (2021), Figures 1 and 6]
     - #link("https://pubmed.ncbi.nlm.nih.gov/39471786/")[Unlocking Nitrofurantoin (2024), Figure 2: mechanism and resistance]
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC10414118/")[Nitrofurantoin narrative review (2023), Figure 3: mode of action]
-  """#
+    """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC8286842/",
     "https://pubmed.ncbi.nlm.nih.gov/39471786/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10414118/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10414118/",
   ]
 }

@@ -43,7 +43,7 @@ multipole_expansion: {
     relative magnitude on a logarithmic scale, not field direction.
 
     \(figure_part_multipole_expansion)
-  """
+    """
   figure_part_multipole_expansion: #"""
     #let multipole-heatmap = "assets/typst/multipoint-charge-field-heatmap-clio.typ"
     #scale(80%, reflow: true)[
@@ -52,12 +52,12 @@ multipole_expansion: {
         mode: "markup"
       )
     ]
-  """#
+    """#
   related: [
     "concept/point-charge",
     "concept/electric-field-strength",
     "concept/electric-dipole",
     "law/coulomb-law",
-    "law/electric-field-superposition-principle"
+    "law/electric-field-superposition-principle",
   ]
 }

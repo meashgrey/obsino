@@ -39,10 +39,10 @@ cauchy_distribution: {
       & = 2 ∫_0^(+∞) 1/π x/(1 + x^2) "d"x \\
       & = 2 evaluated( (1/(2 π) ln(x^2 + 1)) )_0^(+∞) \\
       & = +∞ $
-  """
+    """
   related: [
     "concept/probability-density-function",
-    "concept/cumulative-distribution-function"
+    "concept/cumulative-distribution-function",
   ]
   figure_part_cauchy_distribution_pdf: #"""
     #let pdf-cauchy = "assets/typst/cauchy-distribution-pdf.typ"
@@ -50,12 +50,12 @@ cauchy_distribution: {
       str(read(pdf-cauchy)),
       mode: "markup"
     )
-  """#
+    """#
   figure_part_cauchy_distribution_cdf: #"""
     #let cdf-cauchy = "assets/typst/cauchy-distribution-cdf.typ"
     #eval(
       str(read(cdf-cauchy)),
       mode: "markup"
     )
-  """#
+    """#
 }

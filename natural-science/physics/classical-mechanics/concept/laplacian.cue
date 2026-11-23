@@ -14,5 +14,5 @@ laplacian: {
       := (∂^2 T_(a b c)) / (∂ x_j ∂ x_k) $
 
     The operator $∇^2$ is called the *laplacian*.
-  """#
+    """#
 }

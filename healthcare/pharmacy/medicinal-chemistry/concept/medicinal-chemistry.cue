@@ -19,6 +19,6 @@ medicinal_chemistry: {
     mechanism of action and observed pharmacology. The amantadine example
     illustrates how a rigid adamantane cage and a basic amine form a compact
     antiviral scaffold, while viral target mutations can erase its activity.
-  """#
+    """#
   related: ["specific/amantadine"]
 }

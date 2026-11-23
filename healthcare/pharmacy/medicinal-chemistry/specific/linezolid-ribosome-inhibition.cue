@@ -107,12 +107,12 @@ linezolid_ribosome_inhibition: {
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC4888801/")[Munita and Arias (2016), Mechanisms of Antibiotic Resistance]
     - #link("https://pmc.ncbi.nlm.nih.gov/articles/PMC11325235/")[Structural basis of Cfr-mediated antimicrobial resistance]
     - #link("https://www.rcsb.org/structure/4WFA")[RCSB PDB 4WFA: linezolid-bound bacterial ribosome]
-  """#
+    """#
   related: ["concept/medicinal-chemistry"]
   external_link: [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC5424203/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC3264260/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4888801/",
-    "https://www.rcsb.org/structure/4WFA"
+    "https://www.rcsb.org/structure/4WFA",
   ]
 }

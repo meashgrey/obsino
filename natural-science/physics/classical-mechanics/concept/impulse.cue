@@ -25,5 +25,5 @@ impulse: {
 
     $ ub(J)_"total" = ∫(ub(F)_1 + ub(F)_2 + ⋯)"d"t = ∫ ub(F)_1 "d"t +
       ∫ ub(F)_2 "d"t + ⋯ $
-  """#
+    """#
 }

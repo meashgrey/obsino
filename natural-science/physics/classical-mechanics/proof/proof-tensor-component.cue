@@ -8,10 +8,10 @@ proof_tensor_component: {
       & = T_(a b c) δ_(a i) δ_(b j) δ_(c k) \
       & = T_(a b c) \
       & = T_(i j k) $
-  """#
+    """#
   related: [
     "concept/tensor-product",
     "concept/kronecker-delta",
-    "concept/einstein-summation-convention"
+    "concept/einstein-summation-convention",
   ]
 }

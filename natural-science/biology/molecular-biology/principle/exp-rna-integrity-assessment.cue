@@ -16,8 +16,8 @@ exp_rna_integrity_assessment: {
       approximately 2:1 in animals
     - *Partially degraded RNA*: Smearing between bands, decreased 28S:18S ratio
     - *Completely degraded RNA*: No distinct bands, low-molecular-weight smear
-  """#
+    """#
   related: [
-    "principle/exp-total-rna-isolation-trizol"
+    "principle/exp-total-rna-isolation-trizol",
   ]
 }

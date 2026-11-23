@@ -12,8 +12,8 @@ distance: {
     Where $|⋅|$ is the length introduced by the inner product $sans("g")(⋅,⋅)$:
     $|ub(A)| = sqrt(ub(A) ⋅ ub(A))$. Distance is not a vector, it is a scalar
     field, it is always non-negative and path-dependent, unlike displacement.
-  """#
+    """#
   related: [
-    "concept/inner-product"
+    "concept/inner-product",
   ]
 }

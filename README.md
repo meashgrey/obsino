@@ -74,6 +74,10 @@ nix develop
 
 Provides `cue`, `yq`, `typst`, and `typstyle`.
 
+Run `nix run .#fmt-cue` to format Git-tracked CUE files with two-space
+indentation. Pass file paths after `--` to format selected files or
+`-- --check` to list files that need formatting.
+
 Export a single concept to PDF
 
 ```bash

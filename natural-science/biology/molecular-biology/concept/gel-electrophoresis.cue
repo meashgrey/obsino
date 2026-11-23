@@ -7,5 +7,5 @@ gel_electrophoresis: {
     of a complex network of pores. These pores, through which the nucleic acids
     must travel to reach the positive electrode, form during the solidification
     of a melted agarose solution.
-  """#
+    """#
 }

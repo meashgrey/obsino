@@ -13,5 +13,5 @@ displacement: {
     In component's form (given a basis ${ub(e)_j}$): 
 
     $ Δ x^j = x_(cal("Q"))^j - x_(cal("P"))^j $
-  """#
+    """#
 }

@@ -16,15 +16,15 @@ pattern_matching_definitions: {
     3. Named arguments and patterns can also be mixed in the same definition.
 
     \(code_part_definitions)
-  """
+    """
   code_part_definitions: #"""
-    #raw-block-file(
-      "src/basic/PatternMatchingDefinitions.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PatternMatchingDefinitions.lean",
+        "lean"
+      )
+    """#
   related: [
     "concept/pattern-matching",
-    "concept/definitions"
+    "concept/definitions",
   ]
 }

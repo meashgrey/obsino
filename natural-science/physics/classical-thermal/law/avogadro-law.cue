@@ -6,10 +6,10 @@ avogadro_law: {
     volume are *directly proportional*:
 
     $ V_1/n_1 = V_2/n_2 = "constant" ("for fixed" T, p) $
-  """#
+    """#
   related: [
     "law/boyle-law",
     "law/charles-law",
-    "law/gay-lussac-law"
+    "law/gay-lussac-law",
   ]
 }

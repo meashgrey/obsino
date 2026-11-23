@@ -8,14 +8,14 @@ automatic_implicit_type_param: {
     implicit parameters:
 
     \(code_part_automatic_implicit_type)
-  """
+    """
   code_part_automatic_implicit_type: #"""
-    #raw-block-file(
-      "src/basic/AutomaticImplicitTypeParam.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/AutomaticImplicitTypeParam.lean",
+        "lean"
+      )
+    """#
   related: [
-    "concept/polymorphism"
+    "concept/polymorphism",
   ]
 }

@@ -37,6 +37,15 @@
     in
     {
       packages = forAllSystems ({ pkgs }: {
+        fmt-cue = pkgs.writeShellApplication {
+          name = "fmt-cue";
+          runtimeInputs = with pkgs; [ cue git python3 ];
+          text = ''
+            root="$(git rev-parse --show-toplevel)"
+            exec python3 "$root/.scripts/format-cue.py" "$@"
+          '';
+        };
+
         handbook = pkgs.writeShellApplication {
           name = "handbook";
           runtimeInputs = with pkgs; [

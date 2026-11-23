@@ -14,8 +14,8 @@ floppy_string_protein: {
     Bonding* between the uniform backbone of the protein. By ignoring the complex
     side chains and looking at the repeating N-H and C=O groups, scientists
     discovered the two universal solutions to the stability problem.
-  """#
+    """#
   related: [
-    "concept/secondary-structure"
+    "concept/secondary-structure",
   ]
 }

@@ -13,8 +13,8 @@ structure_of_collagen: {
     Many triple-helices assemble into a collagen fibril. The 4-Hydroxyproline (
     proline has an OH group) forces the proline ring into a favorable pucker and
     offers more hydrogen bonds *between the three strands of collagen*.
-  """#
+    """#
   related: [
-    "concept/tertiary-structure"
+    "concept/tertiary-structure",
   ]
 }

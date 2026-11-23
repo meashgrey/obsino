@@ -11,7 +11,7 @@ union_of_events: {
 
     1. When $A$ is the subset of $B$, $A ⊂ B$, then $A ∪ B = B$
     2. When $A = B$, then $A ∪ B = A = B$
-  """#
+    """#
   related: [
     "concept/inclusion",
     "concept/equality",

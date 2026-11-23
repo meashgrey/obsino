@@ -10,5 +10,5 @@ random_experiment: {
     possible result
     2. And the result is not deterministic; it is influenced by random factors
     3. The experiment can be repeated under the same conditions
-  """#
+    """#
 }

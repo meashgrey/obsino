@@ -11,8 +11,8 @@ supervised_learning_algorithm: {
     The term *supervised learning* originates from the view of the target $ub(y)$
     being provided by an instructor or teacher who shows the machine learning
     system what to do.
-  """#
+    """#
   related: [
-    "concept/learning-algorithm"
+    "concept/learning-algorithm",
   ]
 }

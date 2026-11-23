@@ -15,11 +15,11 @@ parity_transformation: {
 
     This distinct behavior arises because an axial vector is fundamentally
     constructed from the cross product of two polar vectors.
-  """#
+    """#
   related: [
     "concept/vector",
     "concept/polar-vector",
     "concept/axial-vector",
-    "concept/cross-product"
+    "concept/cross-product",
   ]
 }

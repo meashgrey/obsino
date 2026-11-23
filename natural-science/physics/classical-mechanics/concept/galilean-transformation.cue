@@ -42,5 +42,5 @@ galilean_transformation: {
     $ ("d"ub(v))/("d"t) = ("d"ub(v)_r)/("d"t) + ("d"ub(v)')/("d"t) $
 
     Since $ub(v)_r$ is a constant vector so we obtain $ub(a) = ub(a)'$
-  """#
+    """#
 }

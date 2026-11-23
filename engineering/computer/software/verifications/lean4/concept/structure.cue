@@ -71,29 +71,29 @@ structure: {
     the brace notation for named constructor arguments, this positional syntax
     can only be used in a context where *Lean can determine the structure's type*,
     either from a type annotation or from other type information in the program.
-  """
+    """
   code_part_structure_definition: #"""
-    #raw-block-file(
-      "src/basic/StructureDefinition.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/StructureDefinition.lean",
+        "lean"
+      )
+    """#
   code_part_structure_updating: #"""
-    #raw-block-file(
-      "src/basic/StructureUpdating.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/StructureUpdating.lean",
+        "lean"
+      )
+    """#
   code_part_structure_constructor: #"""
-    #raw-block-file(
-      "src/basic/StructureConstructor.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/StructureConstructor.lean",
+        "lean"
+      )
+    """#
   code_part_structure_positional_args: #"""
-    #raw-block-file(
-      "src/basic/StructurePositionalArgs.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/StructurePositionalArgs.lean",
+        "lean"
+      )
+    """#
 }

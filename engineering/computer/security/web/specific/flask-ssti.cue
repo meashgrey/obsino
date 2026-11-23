@@ -75,38 +75,38 @@ flask_ssti: {
     3. Step 3: Execute system commands
 
     \(code_part_jinja2_subprocess_popen)
-  """
+    """
   code_part_docker_example: #"""
-    #let docker = "assets/docker/flask-ssti/app.py"
-    #raw-block-file(docker, "python")
-  """#
+      #let docker = "assets/docker/flask-ssti/app.py"
+      #raw-block-file(docker, "python")
+    """#
   code_part_jinja2_config: #"""
-    #let jinja2-config = "src/flask-ssti/config.jinja2"
-    #raw-block-file(jinja2-config, "jinja2")
-  """#
+      #let jinja2-config = "src/flask-ssti/config.jinja2"
+      #raw-block-file(jinja2-config, "jinja2")
+    """#
   code_part_jinja2_object_base: #"""
-    #let jinja2-object-base = "src/flask-ssti/object-base.jinja2"
-    #raw-block-file(jinja2-object-base, "jinja2")
-  """#
+      #let jinja2-object-base = "src/flask-ssti/object-base.jinja2"
+      #raw-block-file(jinja2-object-base, "jinja2")
+    """#
   code_part_jinja2_list_subclasses: #"""
-    #let jinja2-list-subclasses = "src/flask-ssti/list-subclasses.jinja2"
-    #raw-block-file(jinja2-list-subclasses, "jinja2")
-  """#
+      #let jinja2-list-subclasses = "src/flask-ssti/list-subclasses.jinja2"
+      #raw-block-file(jinja2-list-subclasses, "jinja2")
+    """#
   code_part_jinja2_subprocess_popen: #"""
-    #let jinja2-subprocess-popen = "src/flask-ssti/subprocess-popen.jinja2"
-    #raw-block-file(jinja2-subprocess-popen, "jinja2")
-  """#
+      #let jinja2-subprocess-popen = "src/flask-ssti/subprocess-popen.jinja2"
+      #raw-block-file(jinja2-subprocess-popen, "jinja2")
+    """#
   code_part_find: #"""
-    #let find-dangerous-classes = "src/flask-ssti/find.py"
-    #raw-block-file(find-dangerous-classes, "python")
-  """#
+      #let find-dangerous-classes = "src/flask-ssti/find.py"
+      #raw-block-file(find-dangerous-classes, "python")
+    """#
   external_link: [
     "https://github.com/pallets/flask",
     "https://github.com/pallets/jinja",
     "https://github.com/pallets/flask/blob/36e4a824f340fdee7ed50937ba8e7f6bc7d17f81/src/flask/templating.py#L136",
-    "https://github.com/pallets/flask/blob/36e4a824f340fdee7ed50937ba8e7f6bc7d17f81/src/flask/templating.py#L151"
+    "https://github.com/pallets/flask/blob/36e4a824f340fdee7ed50937ba8e7f6bc7d17f81/src/flask/templating.py#L151",
   ]
   related: [
-    "concept/ssti"
+    "concept/ssti",
   ]
 }

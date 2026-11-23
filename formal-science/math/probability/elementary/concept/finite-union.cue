@@ -8,9 +8,9 @@ finite_union: {
     $ ⋃_(i=1)^n A_i = A_1 ∪ A_2 ∪ ⋯ ∪ A_n $
 
     This is the event that at least one of $A_1, A_2, ⋯ A_n$ occurs.
-  """#
+    """#
   related: [
     "concept/union-of-events",
-    "concept/countable-infinite-union"
+    "concept/countable-infinite-union",
   ]
 }

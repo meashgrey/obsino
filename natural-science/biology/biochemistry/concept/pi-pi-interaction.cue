@@ -42,5 +42,5 @@ pi_pi_interaction: {
       face of another, the Y-shaped refers to a geometry where *two hydrogens*
       from one aromatic ring interact simultaneously with $π$-cloud of the
       second ring.
-  """
+    """
 }

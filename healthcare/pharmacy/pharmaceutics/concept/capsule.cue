@@ -8,5 +8,5 @@ capsule: {
     of gelatin, methylcellulose, alginates, modified starch, or other high-
     molecular weight materials are used to alter solubility or achieve specific
     release effects.
-  """#
+    """#
 }

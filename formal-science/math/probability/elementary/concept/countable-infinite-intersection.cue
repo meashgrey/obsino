@@ -22,9 +22,9 @@ countable_infinite_intersection: {
     This is a *decreasing sequence* of events:
 
     $ B_1 ⊇ B_2 ⊇ B_3 ⊇ ⋯ space.en "where" space.en B_n = ⋂_(i=1)^n A_i $
-  """#
+    """#
   related: [
     "concept/intersection-of-events",
-    "concept/finite-intersection"
+    "concept/finite-intersection",
   ]
 }

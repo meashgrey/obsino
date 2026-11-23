@@ -48,7 +48,7 @@ rna: {
     of an RNA fold the molecule into loops and other complex structures:
 
     \(figure_part_rna_folding)
-  """
+    """
   figure_part_rna_structure: #"""
     #let rna-structure = "assets/rna-structure.jpg"
     #align(center)[
@@ -61,7 +61,7 @@ rna: {
         ]
       ]
     ]
-  """#
+    """#
   figure_part_rna_folding: #"""
     #let rna-folding = "assets/rna-fold.jpg"
     #align(center)[
@@ -74,9 +74,9 @@ rna: {
         ]
       ]
     ] 
-  """#
+    """#
   related: [
     "concept/rna-transcription",
-    "concept/total-rna"
+    "concept/total-rna",
   ]
 }

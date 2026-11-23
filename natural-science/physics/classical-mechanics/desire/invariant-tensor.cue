@@ -17,8 +17,8 @@ invariant_tensor: {
     scalars and vectors into a hierarchy (ranks). A rank-2 tensor, for instance,
     can be thought of as a "vector of vectors" allowing it to track how a force
     in one direction affects all other directions at once.
-  """#
+    """#
   related: [
-    "concept/tensor"
+    "concept/tensor",
   ]
 }

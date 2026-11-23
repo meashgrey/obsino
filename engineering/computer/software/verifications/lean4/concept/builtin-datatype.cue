@@ -55,33 +55,33 @@ builtin_datatype: {
     languages derived from C.
 
     \(code_part_unit)
-  """
+    """
   code_part_option: #"""
-    #raw-block-file(
-      "src/basic/BuiltinDatatypeOption.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/BuiltinDatatypeOption.lean",
+        "lean"
+      )
+    """#
   code_part_product: #"""
-    #raw-block-file(
-      "src/basic/BuiltinDatatypeProduct.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/BuiltinDatatypeProduct.lean",
+        "lean"
+      )
+    """#
   code_part_sum: #"""
-    #raw-block-file(
-      "src/basic/BuiltinDatatypeSum.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/BuiltinDatatypeSum.lean",
+        "lean"
+      )
+    """#
   code_part_unit: #"""
-    #raw-block-file(
-      "src/basic/BuiltinDatatypeUnit.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/BuiltinDatatypeUnit.lean",
+        "lean"
+      )
+    """#
   related: [
     "concept/structure",
-    "concept/inductive-datatype"
+    "concept/inductive-datatype",
   ]
 }

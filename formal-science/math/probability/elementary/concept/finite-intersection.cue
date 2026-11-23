@@ -8,9 +8,9 @@ finite_intersection: {
     $ ⋂_(i=1)^n A_i = A_1 ∩ A_2 ∩ ⋯ ∩ A_n $
 
     This is the event that all $A_1,A_2,⋯,A_n$ occur simultaneously.
-  """#
+    """#
   related: [
     "concept/intersection-of-events",
-    "concept/countable-infinite-intersection"
+    "concept/countable-infinite-intersection",
   ]
 }

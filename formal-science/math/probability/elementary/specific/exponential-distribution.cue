@@ -34,19 +34,19 @@ exponential_distribution: {
     $ 𝕍"ar"[X] & = 𝔼[X^2] - 𝔼[X]^2 = ∫_0^∞ λ x^2 "e"^(-λ x) "d"x \\
       & = evaluated((-x^2 - 2/λ x - 2/λ^2)"e"^(-λ x))_0^∞ - 1/(λ^2) \\
       & = 2/(λ^2) - 1/(λ^2) = 1/(λ^2) $
-  """
+    """
   figure_part_exponential_distribution_pdf: #"""
     #let exp-pdf = "assets/typst/exponential-distribution-pdf.typ"
     #eval(
       str(read(exp-pdf)),
       mode: "markup"
     )
-  """#
+    """#
   figure_part_exponential_distribution_cdf: #"""
     #let exp-cdf = "assets/typst/exponential-distribution-cdf.typ"
     #eval(
       str(read(exp-cdf)),
       mode: "markup"
     )
-  """#
+    """#
 }

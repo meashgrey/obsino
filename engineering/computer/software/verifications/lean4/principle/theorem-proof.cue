@@ -19,11 +19,11 @@ theorem_proof: {
     with a `show` statement. Adding such extra information can improve the
     clarity of a proof and help detect errors when writing a proof. The `show`
     command does nothing more than annotate the type.
-  """
+    """
   code_part_theorem_proof: #"""
-    #raw-block-file(
-      "src/proof/TheoremProof.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/proof/TheoremProof.lean",
+        "lean"
+      )
+    """#
 }

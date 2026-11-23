@@ -9,5 +9,5 @@ tertiary_structure: {
       insoluble in water;
     - *Globular proteins*: made from several types of secondary structure in the
       same polypeptide chain.
-  """#
+    """#
 }

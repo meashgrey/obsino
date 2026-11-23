@@ -24,16 +24,16 @@ uniformly_charged_plane_with_circular_hole: {
     length regularizes samples close to the ideal charged surface.
 
     \(figure_part_uniformly_charged_plane_with_circular_hole)
-  """
+    """
   figure_part_uniformly_charged_plane_with_circular_hole: #"""
     #include "assets/typst/uniformly-charged-plane-with-circular-hole-heatmap-clio.typ"
-  """#
+    """#
   related: [
     "concept/continuous-charge-distribution",
     "concept/electric-field-strength",
     "law/coulomb-law",
     "law/electric-field-superposition-principle",
     "specific/uniformly-charged-annulus-axis-field",
-    "specific/uniformly-charged-disk-axis-field"
+    "specific/uniformly-charged-disk-axis-field",
   ]
 }

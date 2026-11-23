@@ -19,8 +19,8 @@ critical_micelle_concentration: {
       thermal-dynamically stable micelles. The hydrophobic tails fold inward
       to avoid contact with water, while hydrophilic heads face outward toward
       the aqueous phase.
-  """#
+    """#
   related: [
-    "concept/surfactant"
+    "concept/surfactant",
   ]
 }

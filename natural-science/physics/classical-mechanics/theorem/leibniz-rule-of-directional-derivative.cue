@@ -13,8 +13,8 @@ leibniz_rule_of_directional_derivative: {
 
     $ (S_(a b) T_(c d e))_(;j) A_j
       := (S_(a b ; j) A_j)T_(c d e) + S_(a b)(T_(c d e ; j) A_j) $
-  """#
+    """#
   related: [
-    "concept/directional-derivative"
+    "concept/directional-derivative",
   ]
 }

@@ -7,8 +7,8 @@ mean_collision_frequency: {
     #link(<concept-mean-free-path>)[mean free path], we know that
 
     $ f = sqrt(2) n σ ⟨v⟩ $
-  """#
+    """#
   related: [
-    "concept/mean-free-path"
+    "concept/mean-free-path",
   ]
 }

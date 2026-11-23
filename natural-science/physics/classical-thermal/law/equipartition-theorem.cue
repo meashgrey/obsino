@@ -8,9 +8,9 @@ equipartition_theorem: {
 
     If a kind of molecule has $i$ degrees of freedom then its total kinetic
     energy is $i\/2 k T$.
-  """#
+    """#
   related: [
     "concept/temperature-from-microscopic",
-    "concept/degrees-of-freedom"
+    "concept/degrees-of-freedom",
   ]
 }

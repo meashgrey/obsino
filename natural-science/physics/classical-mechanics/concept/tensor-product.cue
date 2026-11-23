@@ -20,10 +20,10 @@ tensor_product: {
 
     $ sans("T") ⊗ sans("S") (ub(E)_1, ⋯, ub(E)_5) =
       sans("T")(ub(E)_1, ub(E)_2) sans("S")(ub(E)_3, ub(E)_4, ub(E)_5) $
-  """#
+    """#
   related: [
     "concept/tensor",
     "concept/inner-product",
-    "desire/composite-systems"
+    "desire/composite-systems",
   ]
 }

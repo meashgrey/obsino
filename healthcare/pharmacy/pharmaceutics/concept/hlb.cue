@@ -17,8 +17,8 @@ hlb: {
       water system, 水包油);
     - The lower  the HLB value, it's more appropriate for W/O system (water in
       oil system, 油包水).
-  """#
+    """#
   related: [
-    "concept/optimal-hlb"
+    "concept/optimal-hlb",
   ]
 }

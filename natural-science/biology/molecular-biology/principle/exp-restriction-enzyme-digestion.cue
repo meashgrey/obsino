@@ -38,9 +38,9 @@ exp_restriction_enzyme_digestion: {
         mix and load $15 μ"L"$ sample to the gel. Load an extra lane of $4 μ"L"$
         DNA marker (1kb DNA ladder) as comparison. Start electrophoresis at 180V
         immediately after sample loading.
-  """#
+    """#
   related: [
     "concept/restriction-enzyme",
-    "concept/plasmid"
+    "concept/plasmid",
   ]
 }

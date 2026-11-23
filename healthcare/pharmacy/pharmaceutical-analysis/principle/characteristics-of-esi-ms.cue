@@ -49,8 +49,8 @@ characteristics_of_esi_ms: {
         caption: "Common characteristics of isotope peaks"
       )
     ]
-  """#
+    """#
   related: [
-    "principle/mass-spectrometry"
+    "principle/mass-spectrometry",
   ]
 }

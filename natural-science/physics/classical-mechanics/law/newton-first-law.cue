@@ -17,9 +17,9 @@ newton_first_law: {
 
     This law also defines a special class of reference frames: *inertial frames*
     in which Newton's first law holds.
-  """#
+    """#
   related: [
     "concept/acceleration",
-    "concept/velocity"
+    "concept/velocity",
   ]
 }

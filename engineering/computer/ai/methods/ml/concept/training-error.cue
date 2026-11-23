@@ -60,8 +60,8 @@ training_error: {
     variety of functions. *Models with low capacity may struggle to fit the
     training set*. *Models with high capacity can overfit by memorizing properties
     of the training set that do not serve them well on the test set*.
-  """
+    """
   related: [
-    "specific/linear-regression"
+    "specific/linear-regression",
   ]
 }

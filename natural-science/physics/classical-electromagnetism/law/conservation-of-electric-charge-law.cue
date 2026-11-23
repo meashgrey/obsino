@@ -17,6 +17,6 @@ conservation_of_electric_charge_law: {
     and charge flows into or out of it, that part's charge can change; the
     charge of the larger system that includes the surroundings remains
     conserved.
-  """#
+    """#
   related: ["concept/quantization-of-electric-charge"]
 }

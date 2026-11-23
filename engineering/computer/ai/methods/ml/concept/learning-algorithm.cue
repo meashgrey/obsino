@@ -76,9 +76,9 @@ learning_algorithm: {
     One command way of describing a dataset is with a *design matrix*. A design
     matrix is a matrix containing a different example in each row. Each column
     of the matrix corresponds to a different feature.
-  """
+    """
   related: [
     "concept/unsupervised-learning-algorithm",
-    "concept/supervised-learning-algorithm"
+    "concept/supervised-learning-algorithm",
   ]
 }

@@ -20,14 +20,14 @@ inductive_datatype: {
     `Bool.false` respectively.
 
     \(code_part_inductive_datatype)
-  """
+    """
   code_part_inductive_datatype: #"""
-    #raw-block-file(
-      "src/basic/InductiveDatatype.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/InductiveDatatype.lean",
+        "lean"
+      )
+    """#
   related: [
-    "concept/structure"
+    "concept/structure",
   ]
 }

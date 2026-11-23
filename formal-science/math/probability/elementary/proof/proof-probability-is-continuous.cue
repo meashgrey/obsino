@@ -40,10 +40,10 @@ proof_probability_is_continuous: {
     $ lim_(n->∞) P(E_n) = P(⋂_(n=1)^∞ E_n) $
 
     we prove the continuity from above of $P$.
-  """#
+    """#
   related: [
     "concept/continuity",
     "concept/probability",
-    "theorem/de-morgan-law"
+    "theorem/de-morgan-law",
   ]
 }

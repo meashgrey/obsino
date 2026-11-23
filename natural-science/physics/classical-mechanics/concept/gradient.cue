@@ -21,8 +21,8 @@ gradient: {
     has vanishing gradient:
 
     $ ∇sans("g") = 0, space.en g_(a b ; j) = 0 $
-  """#
+    """#
   related: [
-    "concept/directional-derivative"
+    "concept/directional-derivative",
   ]
 }
