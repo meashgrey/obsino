@@ -15,5 +15,5 @@ distribution_column: {
 
     for every real number $x$. Usually we only care about $x$ that are possible
     values of $X$, otherwise $p_X (x)$ = 0.
-  """#
+    """#
 }

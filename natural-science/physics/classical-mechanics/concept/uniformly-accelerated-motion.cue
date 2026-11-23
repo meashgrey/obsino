@@ -43,5 +43,5 @@ uniformly_accelerated_motion: {
     (*Galilean invariance*). When transforming to a non-inertial frame (e.g.
     an accelerating reference frame), the apparent acceleration is no longer
     constant.
-  """#
+    """#
 }

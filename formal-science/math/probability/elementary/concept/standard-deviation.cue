@@ -8,8 +8,8 @@ standard_deviation: {
     $ σ[X] = sqrt(𝕍"ar"[X]) $
 
     it is denoted by $σ$
-  """#
+    """#
   related: [
-    "concept/variance"
+    "concept/variance",
   ]
 }

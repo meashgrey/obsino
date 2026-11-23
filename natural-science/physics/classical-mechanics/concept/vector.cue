@@ -37,5 +37,5 @@ vector: {
     - Similarly the difference $upright(d) ub(v)$ of two velocity measurements
       during a time interval $upright(d)t$, multiplied by $1\/upright(d)t$,
       generates the particle's *acceleration*.
-  """#
+    """#
 }

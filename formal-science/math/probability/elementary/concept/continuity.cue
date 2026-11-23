@@ -16,8 +16,8 @@ continuity: {
 
     *If $P$ is a probability in $σ$-algebra $cal("F")$, then $P$ is continuous
     from below and also continuous from above.*
-  """#
+    """#
   related: [
-    "concept/limit-events"
+    "concept/limit-events",
   ]
 }

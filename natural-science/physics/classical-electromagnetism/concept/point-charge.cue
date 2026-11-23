@@ -15,9 +15,9 @@ point_charge: {
     not mean that charge itself has become continuous or that the object must
     literally have no size. When the object's size matters, we describe how its
     charge is spread using a continuous charge distribution.
-  """#
+    """#
   related: [
     "concept/quantization-of-electric-charge",
-    "concept/continuous-charge-distribution"
+    "concept/continuous-charge-distribution",
   ]
 }

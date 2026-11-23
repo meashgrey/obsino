@@ -37,19 +37,19 @@ buffon_needle_problem: {
     $ p_"cross" = (S_"favorable")/(S_Ω) = (2 L)/(π d) $
 
     \(figure_part_probability)
-  """
+    """
   figure_part_geometric_condition: #"""
     #let geometric-condition = "assets/typst/buffon-needle-problem.typ"
     #eval(
       str(read(geometric-condition)),
       mode: "markup"
     )
-  """#
+    """#
   figure_part_probability: #"""
     #let geometric-probability = "assets/typst/geometric-probability.typ"
     #eval(
       str(read(geometric-probability)),
       mode: "markup"
     )
-  """#
+    """#
 }

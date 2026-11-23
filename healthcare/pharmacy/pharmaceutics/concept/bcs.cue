@@ -23,9 +23,9 @@ bcs: {
     ]
 
     BCS classifies the API (active pharmaceutical ingredient).
-  """#
+    """#
   related: [
     "concept/solubility",
-    "concept/permeability"
+    "concept/permeability",
   ]
 }

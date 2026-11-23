@@ -22,9 +22,9 @@ countable_infinite_union: {
     This is an *increasing sequence* of events:
 
     $ B_1 ⊂ B_2 ⊂ B_3 ⋯ space.en "where" space.en B_n = ⋃_(i=1)^n A_i $
-  """#
+    """#
   related: [
     "concept/union-of-events",
-    "concept/finite-union"
+    "concept/finite-union",
   ]
 }

@@ -31,5 +31,5 @@ thermal_system: {
     - No net macroscopic flow of matter
     - No net heat flow
     - No net work exchange with surroundings
-  """#
+    """#
 }

@@ -22,5 +22,5 @@ de_morgan_law: {
 
     $ overline(⋃_(i=1)^∞ A_i) = ⋂_(i=1)^∞ overline(A_i), space.en
       overline(⋂_(i=1)^∞ A_i) = ⋃_(i=1)^∞ overline(A_i) $
-  """#
+    """#
 }

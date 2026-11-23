@@ -6,5 +6,5 @@ assign_probability_to_uncountable: {
     for certain sample space especially uncountable ones like the real numbers,
     it is *mathematically impossible* to assign a probability to every possible
     subset.
-  """#
+    """#
 }

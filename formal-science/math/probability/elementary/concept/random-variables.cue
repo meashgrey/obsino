@@ -14,5 +14,5 @@ random_variables: {
 
     A random variable is *continuous* if its set of possible values is an interval
     or union of intervals of real numbers
-  """#
+    """#
 }

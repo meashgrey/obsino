@@ -10,10 +10,10 @@ polar_vector: {
     under parity transformation, their behaviors are like:
 
     $ cal("P"): ub(v) |-> -ub(v) $
-  """#
+    """#
   related: [
     "concept/vector",
     "concept/axial-vector",
-    "concept/parity-transformation"
+    "concept/parity-transformation",
   ]
 }

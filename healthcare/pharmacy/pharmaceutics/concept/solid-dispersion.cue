@@ -22,5 +22,5 @@ solid_dispersion: {
       (Eudragit), and lipids.
     - Enteric carrier materials: Enteric cellulose derivatives and enteric polyacrylic
       resins.
-  """#
+    """#
 }

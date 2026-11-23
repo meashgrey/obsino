@@ -42,5 +42,5 @@ gradient_descent: {
 
     Frequently mini-batch size and learning rate are *user-defined*, such tunable
     parameters that are not updated in the training loop are called *hyperparameter*.
-  """#
+    """#
 }

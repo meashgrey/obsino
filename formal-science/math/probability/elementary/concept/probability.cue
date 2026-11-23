@@ -27,9 +27,9 @@ probability: {
     - $P(overline(A)) = 1 - P(A)$. $Ω = A ∪ overline(A)$, these two are disjoint
       so $1 = P(Ω) = P(A) + P(overline(A))$
     - If $A ⊂ B$, then $P(A) ≤ P(B)$. $B = A ∪ (B - A)$, they are disjoint
-  """#
+    """#
   related: [
     "concept/sample-space",
-    "concept/sigma-algebra"
+    "concept/sigma-algebra",
   ]
 }

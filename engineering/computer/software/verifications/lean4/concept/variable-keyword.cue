@@ -9,11 +9,11 @@ variable_keyword: {
     on.
 
     \(code_part_variable_keyword)
-  """
+    """
   code_part_variable_keyword: #"""
-    #raw-block-file(
-      "src/basic/VariableKeyword.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/VariableKeyword.lean",
+        "lean"
+      )
+    """#
 }

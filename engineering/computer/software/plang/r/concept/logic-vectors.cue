@@ -24,11 +24,11 @@ logic_vectors: {
 
     Note that there is a second kind of missing value which are produced by
     numerical computation, the so-called *Not a Number*, `NaN` values.
-  """
+    """
   code_part_logic_vectors: #"""
-    #raw-block-file(
-      "src/basic/logic-vectors.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/logic-vectors.R",
+        "r"
+      )
+    """#
 }

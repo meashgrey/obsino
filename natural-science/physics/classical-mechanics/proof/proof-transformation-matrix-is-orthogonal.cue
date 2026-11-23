@@ -20,10 +20,10 @@ proof_transformation_matrix_is_orthogonal: {
     transformation is a reflection or a rotation. Thus the bases associated with
     any two Euclidean coordinate systems are related by a reflection or rotation,
     and the matrix $[R_(overline(p) i)]$ is *rotation matrix*.
-  """#
+    """#
   related: [
     "concept/basis-vector",
     "concept/orthogonal-transformation",
-    "concept/kronecker-delta"
+    "concept/kronecker-delta",
   ]
 }

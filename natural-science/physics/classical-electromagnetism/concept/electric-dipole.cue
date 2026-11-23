@@ -47,7 +47,7 @@ electric_dipole: {
     charge-field vectors, not from the color.
 
     \(figure_part_electric_dipole)
-  """
+    """
   figure_part_electric_dipole: #"""
     #let dipole-heatmap = "assets/typst/electric-field-strength-heatmap-clio.typ"
     #scale(80%, reflow: true)[
@@ -56,11 +56,11 @@ electric_dipole: {
         mode: "markup"
       )
     ]
-  """#
+    """#
   related: [
     "concept/electric-field-strength",
     "concept/point-charge",
     "law/coulomb-law",
-    "law/electric-field-superposition-principle"
+    "law/electric-field-superposition-principle",
   ]
 }

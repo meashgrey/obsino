@@ -8,8 +8,8 @@ controlled_release_preparation: {
 
     - Generally it's zero-order or nearly zero-order release during specific time;
     - In a broad sense: to control drug release rate, direction or time.
-  """#
+    """#
   related: [
-    "concept/mrdds"
+    "concept/mrdds",
   ]
 }

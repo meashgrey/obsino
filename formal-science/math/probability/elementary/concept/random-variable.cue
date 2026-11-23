@@ -19,8 +19,8 @@ random_variable: {
     Notation:
     - Upper case letter $X$: the random variable itself (the function)
     - Lower case letter $x$: a specific numerical value that $X$ might take
-  """#
+    """#
   related: [
-    "concept/sample-space"
+    "concept/sample-space",
   ]
 }

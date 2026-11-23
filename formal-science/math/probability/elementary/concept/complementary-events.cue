@@ -8,8 +8,8 @@ complementary_events: {
     be:
 
     $ overline(A) := {ω ∈ Ω: ω ∉ A} = Ω - A $
-  """#
+    """#
   related: [
-    "concept/difference-of-events"
+    "concept/difference-of-events",
   ]
 }

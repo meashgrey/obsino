@@ -62,6 +62,17 @@ a module-specific PDF (e.g., `handbook-pharmaceutics.pdf`,
 
 ## Knowledge File Structure
 
+### Medicinal chemistry and figure preferences
+
+- Draw molecular structures in Typst with the `@preview/michem` package and a
+  SMILES string instead of sourcing a separate skeletal-structure image.
+- Typeset chemical formula element symbols upright in math, for example
+  `$"C"_("10")"H"_("17")"N"$`.
+- For structural case studies, prefer publicly accessible, published structural
+  analysis figures that show ligand contacts, nearby residues, and water or
+  hydrogen-bond networks. Cite each figure in its caption and distinguish
+  ligand-bound structures from apo structures and models.
+
 CUE knowledge entries follow this pattern:
 
 - **Content**: Written in Typst markup inside the `content` field
@@ -129,3 +140,26 @@ also ship their own `header.typ` for subject-specific styling.
 Nightly GitHub Action builds all handbooks via `nix run .#handbook` and publishes
 to a `nightly` release as pre-release with `make_latest: true`. Runs on push to
 `master` and on a daily schedule (midnight UTC).
+
+## Picture Storage
+
+Figures are referenced from CUE files as `image("figures://<label>")` and
+resolved through `pictures.yaml`. Picture bytes live in the Cloudflare R2 bucket
+`picbed`. Publish pictures locally. The Nightly build reads R2 using a token
+scoped to Object Read only for `picbed`.
+
+- `.pipeline/r2.sh` — R2 client; S3 API (curl + SigV4) when `R2_ACCESS_KEY_ID`
+  and `R2_SECRET_KEY` are set, otherwise `wrangler r2 object` using the local
+  login.
+- `.pipeline/pictures.sh` — manifest helpers (label → `pictures/<label>.<ext>`,
+  extension detection, image payload validation).
+- `.pipeline/process-content.sh` — resolves refs in this order: local cache,
+  R2, then the upstream URL as a last resort. Non-image responses (HTML error
+  pages) are rejected and never cached.
+- `.scripts/sync-pictures.sh` — local publishing command for labels missing from R2
+  (`make sync-pictures`, `make publish-pictures` to overwrite).
+- `.scripts/check-pictures.sh` — verifies every label exists in R2, or every
+  source URL with `--upstream`.
+
+Ad-hoc `image("https://...")` links are stored under `remote/<md5>.<ext>`.
+

@@ -13,8 +13,8 @@ momentum: {
 
     Momentum is a *vector* pointing the same direction as velocity, it is a
     *geometric object* independent of coordinates.
-  """#
+    """#
   related: [
-    "concept/velocity"
+    "concept/velocity",
   ]
 }

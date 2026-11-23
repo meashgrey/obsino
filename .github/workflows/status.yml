@@ -63,6 +63,7 @@ jobs:
             --output ./assets/status.png
 
       - name: Deploy Figure to Github Page Branch
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

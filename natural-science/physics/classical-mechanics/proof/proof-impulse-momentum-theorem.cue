@@ -10,8 +10,8 @@ proof_impulse_momentum_theorem: {
     
     This uses the fundamental theorem of calculus (vector form). The $"d"t$ is
     scalar and the integral is a vector integral.
-  """#
+    """#
   related: [
-    "law/impulse-momentum-theorem"
+    "law/impulse-momentum-theorem",
   ]
 }

@@ -88,8 +88,8 @@ motif: {
       - *Rossman fold* consists of 3 $β$ strands and $2$ helices in an alternating
         fashion: $β$ strand, helix, $β$ strand, helix, $β$ strand. This motif
         tends to reverse the direction of the chain within a protein. 
-  """#
+    """#
   related: [
-    "concept/secondary-structure"
+    "concept/secondary-structure",
   ]
 }

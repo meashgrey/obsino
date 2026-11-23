@@ -22,8 +22,8 @@ variance: {
       & = 𝔼[a^2 X^2 + 2 a b X + b^2] - a^2 𝔼[X]^2 - 2 a b 𝔼[X] - b^2 \
       & = a^2 (𝔼[X^2] - 𝔼[X]^2) \
       & = a^2 𝕍"ar"[X] $
-  """#
+    """#
   related: [
-    "concept/expectation"
+    "concept/expectation",
   ]
 }

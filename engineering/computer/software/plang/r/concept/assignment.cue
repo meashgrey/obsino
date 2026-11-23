@@ -18,11 +18,11 @@ assignment: {
     3. Global assignment operator `<<-` overwrites the global variables;
     4. Use equal symbol `=` for assignment, not recommended;
     5. Change the direction of `<-` and `<<-` to `->` and `->>`, not recommended.
-  """
+    """
   code_part_assignment: #"""
-    #raw-block-file(
-      "src/basic/assignment.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/assignment.R",
+        "r"
+      )
+    """#
 }

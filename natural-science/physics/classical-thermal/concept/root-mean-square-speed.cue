@@ -11,9 +11,9 @@ root_mean_square_speed: {
 
     $ 1/2 m v_"rms"^2 = 3/2 k T space.en => v_"rms" = sqrt((3 k T)/m)
       = sqrt((3 R T)/M) $
-  """#
+    """#
   related: [
     "concept/average-translational-kinetic-energy",
-    "concept/temperature-from-microscopic"
+    "concept/temperature-from-microscopic",
   ]
 }

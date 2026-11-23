@@ -1,0 +1,96 @@
+# Copyright 2026 AshGrey
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in the
+# Software without restriction, including without limitation the rights to use, copy,
+# modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+# and to permit persons to whom the Software is furnished to do so, subject to the
+# following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED
+# INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+# HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+textbooks: null
+tests: null
+papers:
+  - title: "DNA Gyrase as a Target for Quinolones"
+    journal: "Biomedicines 11(2), 371 (2023)"
+    doi: "https://doi.org/10.3390/biomedicines11020371"
+    completed: false
+  - title: "Mechanism of Quinolone Action and Resistance"
+    journal: "Biochemistry 53 (2014)"
+    doi: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3985860/"
+    completed: false
+  - title: "Structure and mechanism of the M2 proton channel of influenza A virus"
+    journal: "Nature 451, 591–595 (2008)"
+    doi: "https://doi.org/10.1038/nature06531"
+    completed: false
+  - title: "Innate immune responses to RNA: sensing and signaling"
+    journal: "Frontiers in Immunology 15 (2024), 1287940"
+    doi: "https://doi.org/10.3389/fimmu.2024.1287940"
+    completed: false
+  - title: "A Simplified Process for Purification and Refolding of Recombinant Human Interferon-α2b"
+    journal: "Iranian Biomedical Journal 26(1), 85–90 (2022)"
+    doi: "https://doi.org/10.52547/ibj.26.1.85"
+    completed: false
+  - title: "Herpes simplex virus type 1 DNA polymerase: Mechanism of inhibition by acyclovir triphosphate"
+    journal: "Journal of Biological Chemistry 264(11), 6127–6137 (1989)"
+    doi: "https://doi.org/10.1016/S0021-9258(18)83248-3"
+    completed: false
+  - title: "Mechanism of SARS-CoV-2 polymerase stalling by remdesivir"
+    journal: "Nature Communications 12, 279 (2021)"
+    doi: "https://doi.org/10.1038/s41467-020-20542-0"
+    completed: false
+websites:
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC13711503/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8286842/"
+  - "https://pubmed.ncbi.nlm.nih.gov/39471786/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5424203/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC3264260/"
+  - "https://www.rcsb.org/structure/4WFA"
+  - "https://www.kegg.jp/pathway/map00790"
+  - "https://www.rcsb.org/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC9953508/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC9917921/"
+  - "https://www.rcsb.org/structure/2XKK"
+  - "https://pubchem.ncbi.nlm.nih.gov/compound/2130"
+  - "https://www.cdc.gov/flu/treatment/antiviralresistance.html"
+  - "https://commons.wikimedia.org/wiki/File:Amantadine.svg"
+  - "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9290e5b-6d40-2318-e053-2995a90a9916"
+  - "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1287940/full"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8784902/"
+  - "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0de2f5c7-9e75-4bdf-9c28-e026cc6694b4"
+  - "https://commons.wikimedia.org/wiki/File:Mechanism_of_acyclovir_action.png"
+  - "https://www.nature.com/articles/s41467-020-20542-0"
+  - "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-life-cycle"
+  - "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/fda-approved-hiv-medicines"
+  - "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/principles-antiretroviral-therapy"
+  - "https://commons.wikimedia.org/wiki/File:HIV-replication-cycle-en.svg"
+  - "https://wellcomecollection.org/works/enep9d4h"
+  - "https://commons.wikimedia.org/wiki/File:P24_HIV-capsid.png"
+  - "https://wellcomecollection.org/works/dractz5z"
+  - "https://wellcomecollection.org/works/ubp5tz9n"
+  - "https://wellcomecollection.org/works/gxdy6rt2"
+  - "https://wellcomecollection.org/works/ueftx3yf"
+  - "https://wellcomecollection.org/works/ah34mcug"
+  - "https://wellcomecollection.org/works/temz6uyf"
+order:
+  concept:
+    - "medicinal-chemistry"
+  specific:
+    - "amantadine"
+    - "recombinant-interferon"
+    - "nucleoside-analog-antivirals"
+    - "hiv-antiretroviral-drugs"
+    - "quinolone-antibacterials"
+    - "sulfonamide-trimethoprim"
+    - "linezolid-ribosome-inhibition"
+    - "metronidazole-reductive-activation"
+    - "nitrofurantoin-nitroreductase-activation"

@@ -16,5 +16,5 @@ difference_of_events: {
     $A - B ≠ B - A$. And these two are disjoint:
 
     $ (A - B) ∩ (B - A) = ∅ $
-  """#
+    """#
 }

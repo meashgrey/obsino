@@ -20,17 +20,17 @@ factors: {
     irregular.
 
     \(code_part_factors_ragged_array)
-  """
+    """
   code_part_factors: #"""
-    #raw-block-file(
-      "src/basic/factors.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/factors.R",
+        "r"
+      )
+    """#
   code_part_factors_ragged_array: #"""
-    #raw-block-file(
-      "src/basic/factors-ragged-array.R",
-      "r"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/factors-ragged-array.R",
+        "r"
+      )
+    """#
 }

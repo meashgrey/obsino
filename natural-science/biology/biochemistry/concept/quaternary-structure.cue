@@ -13,5 +13,5 @@ quaternary_structure: {
     For example, deoxyhemoglobin consists of 4 same globin subunits. The 3D
     structure, relative position and interactions of these 4 globin subunits
     are called the quaternary structure of deoxyhemoglobin.
-  """#
+    """#
 }

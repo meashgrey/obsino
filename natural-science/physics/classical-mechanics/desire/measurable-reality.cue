@@ -15,8 +15,8 @@ measurable_reality: {
     By defining the inner product as $sans("g")(\_,\_)$, we turn the rules of
     measurement into a *rank-2 tensor*. This allows the "ruler" itself to change
     from point to point in space.
-  """#
+    """#
   related: [
-    "concept/inner-product"
+    "concept/inner-product",
   ]
 }

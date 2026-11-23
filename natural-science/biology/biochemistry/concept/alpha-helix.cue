@@ -37,9 +37,9 @@ alpha_helix: {
     The two helices wind around one another to form a superhelix. Such structures
     are found in many proteins including *keratin* (角蛋白) in hair, quills and
     horns.
-  """#
+    """#
   related: [
     "concept/secondary-structure",
-    "concept/beta-conformation"
+    "concept/beta-conformation",
   ]
 }

@@ -21,9 +21,9 @@ angular_speed: {
 
     This is a geometric cross-product relation, cross product defined via the
     Levi-Civita tensor.
-  """#
+    """#
   related: [
     "concept/cross-product",
-    "concept/levi-civita-tensor"
+    "concept/levi-civita-tensor",
   ]
 }

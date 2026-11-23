@@ -30,19 +30,19 @@ binomial_distribution: {
     and its variance:
 
     $ 𝕍"ar"[X] = ∑_(i=1)^n 𝕍"ar"[X] = ∑_(i=1)^n p(1-p) = n p (1 - p) $
-  """
+    """
   figure_part_binomial_distribution_pmf: #"""
     #let binomial-pmf = "assets/typst/binomial-distribution-pmf.typ"
     #eval(
       str(read(binomial-pmf)),
       mode: "markup"
     )
-  """#
+    """#
   figure_part_binomial_distribution_cdf: #"""
     #let binomial-cdf = "assets/typst/binomial-distribution-cdf.typ"
     #eval(
       str(read(binomial-cdf)),
       mode: "markup"
     )
-  """#
+    """#
 }

@@ -18,5 +18,5 @@ total_rna: {
       assessed indirectly by examining rRNA bands
     - The assumption is that rRNA quality and quantity reflect that of the
       underlying mRNA population
-  """#
+    """#
 }

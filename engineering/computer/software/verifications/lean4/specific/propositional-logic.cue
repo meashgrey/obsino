@@ -68,29 +68,29 @@ propositional_logic: {
     `q → p` from `h : p ↔ q`.
 
     \(code_part_equivalence)
-  """
+    """
   code_part_conjunction: #"""
-    #raw-block-file(
-      "src/specific/PropositionalLogicConjunction.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/specific/PropositionalLogicConjunction.lean",
+        "lean"
+      )
+    """#
   code_part_disjunction: #"""
-    #raw-block-file(
-      "src/specific/PropositionalLogicDisjunction.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/specific/PropositionalLogicDisjunction.lean",
+        "lean"
+      )
+    """#
   code_part_negation: #"""
-    #raw-block-file(
-      "src/specific/PropositionalLogicNegation.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/specific/PropositionalLogicNegation.lean",
+        "lean"
+      )
+    """#
   code_part_equivalence: #"""
-    #raw-block-file(
-      "src/specific/PropositionalLogicEquivalence.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/specific/PropositionalLogicEquivalence.lean",
+        "lean"
+      )
+    """#
 }

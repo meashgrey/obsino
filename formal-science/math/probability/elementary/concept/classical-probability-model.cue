@@ -13,8 +13,8 @@ classical_probability_model: {
     $ P(A) = (abs(A))/(abs(Ω)) $
 
     where $abs(A)$ denotes the number of elements in $A$.
-  """#
+    """#
   related: [
-    "concept/geometric-probability-model"
+    "concept/geometric-probability-model",
   ]
 }

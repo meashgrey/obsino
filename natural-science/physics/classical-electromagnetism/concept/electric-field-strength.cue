@@ -44,17 +44,17 @@ electric_field_strength: {
     field direction.
 
     \(figure_part_electric_field_strength)
-  """
+    """
   figure_part_electric_field_strength: #"""
     #let electric-field-heatmap = "assets/typst/single-point-charge-field-heatmap-clio.typ"
     #eval(
       str(read(electric-field-heatmap)),
       mode: "markup"
     )
-  """#
+    """#
   related: [
     "concept/electric-field",
     "concept/point-charge",
-    "law/coulomb-law"
+    "law/coulomb-law",
   ]
 }

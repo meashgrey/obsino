@@ -9,8 +9,8 @@ thermodynamic_zeroth_law: {
     them and their macroscopic state variables do not change with time.
 
     This law guarantees that *thermal equilibrium is a transitive relation*.
-  """#
+    """#
   related: [
-    "concept/thermal-system"
+    "concept/thermal-system",
   ]
 }

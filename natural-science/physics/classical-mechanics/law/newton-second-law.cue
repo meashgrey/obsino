@@ -12,9 +12,9 @@ newton_second_law: {
     Where $ub(F)$ is the net force vector, $m$ is an inertial mass which is a
     scalar, $ub(a)$ is the acceleration vector. $ub(F)$ and $ub(a)$ are vectors
     pointing in the same direction.
-  """#
+    """#
   related: [
     "concept/acceleration",
-    "law/newton-first-law"
+    "law/newton-first-law",
   ]
 }

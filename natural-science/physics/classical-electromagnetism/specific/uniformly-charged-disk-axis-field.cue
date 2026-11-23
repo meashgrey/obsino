@@ -24,15 +24,15 @@ uniformly_charged_disk_axis_field: {
     disk in the meridional section.
 
     \(figure_part_uniformly_charged_disk_axis_field)
-  """
+    """
   figure_part_uniformly_charged_disk_axis_field: #"""
     #include "assets/typst/uniformly-charged-disk-heatmap-clio.typ"
-  """#
+    """#
   related: [
     "concept/continuous-charge-distribution",
     "concept/electric-field-strength",
     "law/coulomb-law",
     "law/electric-field-superposition-principle",
-    "specific/uniformly-charged-annulus-axis-field"
+    "specific/uniformly-charged-annulus-axis-field",
   ]
 }

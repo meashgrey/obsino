@@ -18,8 +18,8 @@ acceleration: {
 
     where $∇_(ub(v))ub(v)$ is the directional derivative of the velocity field
     along itself.
-  """#
+    """#
   related: [
-    "concept/directional-derivative"
+    "concept/directional-derivative",
   ]
 }

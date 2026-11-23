@@ -43,8 +43,8 @@ sample_space: {
       - An *impossible event* is an event that *never occurs* when the random
         experiment is performed. It contains *no outcomes* from the sample space
         It's often denoted as $∅$.
-  """#
+    """#
   related: [
-    "concept/random-experiment"
+    "concept/random-experiment",
   ]
 }

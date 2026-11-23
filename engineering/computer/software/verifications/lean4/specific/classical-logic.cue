@@ -18,11 +18,11 @@ classical_logic: {
     is not generally possible in constructive logic).
 
     \(code_part_classical_logic)
-  """
+    """
   code_part_classical_logic: #"""
-    #raw-block-file(
-      "src/proof/ClassicalProof.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/proof/ClassicalProof.lean",
+        "lean"
+      )
+    """#
 }

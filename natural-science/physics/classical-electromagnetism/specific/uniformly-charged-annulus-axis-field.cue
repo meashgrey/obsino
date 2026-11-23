@@ -48,14 +48,14 @@ uniformly_charged_annulus_axis_field: {
     pale overlay marks the source cross-section.
 
     \(figure_part_uniformly_charged_annulus_axis_field)
-  """
+    """
   figure_part_uniformly_charged_annulus_axis_field: #"""
     #include "assets/typst/uniformly-charged-annulus-meridian-heatmap-clio.typ"
-  """#
+    """#
   related: [
     "concept/continuous-charge-distribution",
     "concept/electric-field-strength",
     "law/coulomb-law",
-    "law/electric-field-superposition-principle"
+    "law/electric-field-superposition-principle",
   ]
 }

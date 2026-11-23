@@ -12,10 +12,10 @@ intersection_of_events: {
     1. When $A$ is the subset of $B$, $A ⊂ B$, then $A ∩ B = A$
     2. When $A$ and $B$ have no common outcomes, then $A ∩ B = ∅$
     3. When $A = B$, then $A ∩ B = A = B$
-  """#
+    """#
   related: [
     "concept/inclusion",
     "concept/equality",
-    "concept/disjointness"
+    "concept/disjointness",
   ]
 }

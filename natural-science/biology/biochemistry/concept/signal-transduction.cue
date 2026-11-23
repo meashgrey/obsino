@@ -32,12 +32,12 @@ signal_transduction: {
     All of different signal transductions are similar on the whole procedure:
 
     \(figure_part_procedure)
-  """
+    """
   figure_part_procedure: #"""
     #let procedure = "assets/typst/procedure-of-signal-transduction.typ"
     #eval(
       str(read(procedure)),
       mode: "markup"
     )
-  """#
+    """#
 }

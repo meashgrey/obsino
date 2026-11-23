@@ -14,5 +14,5 @@ temperature: {
     $ Θ_A = Θ_B <=> A "is thermal equilibrium with" B $
 
     Any function that has this property can be used as a temperature scale.
-  """#
+    """#
 }

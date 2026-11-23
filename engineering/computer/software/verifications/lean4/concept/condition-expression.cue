@@ -7,11 +7,11 @@ condition_expression: {
     `if`, `then` and `else`.
 
     \(code_part_condition)
-  """
+    """
   code_part_condition: #"""
-    #raw-block-file(
-      "src/basic/ConditionExpression.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/ConditionExpression.lean",
+        "lean"
+      )
+    """#
 }

@@ -31,10 +31,10 @@ limit_events: {
       $ lim_(n->∞) B_n = ⋂_(n=1)^∞ B_n $
 
       This is the event that $B_n$ occurs for all $n$.
-  """#
+    """#
   related: [
     "concept/intersection-of-events",
     "concept/union-of-events",
-    "concept/continuity"
+    "concept/continuity",
   ]
 }

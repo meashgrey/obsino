@@ -35,5 +35,5 @@ purification_methods: {
       The pellet is collected by centrifugation, washed with 70% ethanol to
       remove salt, dried and dissolved. Simple and inexpensive but relatively
       time-consuming.
-  """#
+    """#
 }

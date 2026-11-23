@@ -10,11 +10,11 @@ ssti: {
 
     Useful tools:
     - #link(ssti-map-repo-url)[SSTImap]
-  """#
+    """#
   external_link: [
-    "https://github.com/vladko312/SSTImap"
+    "https://github.com/vladko312/SSTImap",
   ]
   related: [
-    "specific/flask-ssti"
+    "specific/flask-ssti",
   ]
 }

@@ -49,23 +49,23 @@ dependent_type_theory_in_lean: {
     `(a : α) → β a` denotes the type of functions `f` with the property that,
     for each `a : α`, `f a` is an element of `β a`. *In other words, the type of
     the value returned by `f` depends on its input*.
-  """
+    """
   code_part_type_universe: #"""
-    #raw-block-file(
-      "src/basic/TypeUniverse.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/TypeUniverse.lean",
+        "lean"
+      )
+    """#
   code_part_lambda_abstraction: #"""
-    #raw-block-file(
-      "src/basic/LambdaAbstraction.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/LambdaAbstraction.lean",
+        "lean"
+      )
+    """#
   code_part_dependent_type_theory: #"""
-    #raw-block-file(
-      "src/basic/DependentTypeTheory.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/DependentTypeTheory.lean",
+        "lean"
+      )
+    """#
 }

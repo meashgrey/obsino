@@ -74,6 +74,10 @@ nix develop
 
 Provides `cue`, `yq`, `typst`, and `typstyle`.
 
+Run `nix run .#fmt-cue` to format Git-tracked CUE files with two-space
+indentation. Pass file paths after `--` to format selected files or
+`-- --check` to list files that need formatting.
+
 Export a single concept to PDF
 
 ```bash
@@ -113,6 +117,36 @@ Status
 
 ```bash
 nix run .#status      # check the status of project
+```
+
+## 🖼️ Pictures
+
+Figures are referenced from CUE files with `image("figures://<label>")`. Every
+label resolves to an entry in `pictures.yaml`, which lists the upstream source
+URLs for that picture. Publish images from your workstation to the private
+Cloudflare R2 bucket `picbed`. Builds download and cache those images.
+
+- Object keys are `pictures/<label>.<ext>` (for ad-hoc `https://` images the key
+  is `remote/<md5>.<ext>`).
+- Resolution order: local `.cache/figures` → R2 → upstream URL.
+- Source URLs can be updated. If the first URL's extension changes, the
+  resulting R2 object key changes too. The list order controls source fallback.
+- Publishing a picture never happens implicitly during a build; use the sync
+  targets below.
+
+Local publishing uses the existing `wrangler login`. The GitHub Actions build
+uses an R2 Object Read only token scoped to `picbed`. Configure the repository
+secrets `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, and `R2_ENDPOINT`. Use the
+account's S3 endpoint (without `/picbed`). The workflow passes
+`R2_SECRET_ACCESS_KEY` to the picture client as `R2_SECRET_KEY`.
+
+```bash
+R2_BACKEND=wrangler make sync-pictures     # upload labels missing from R2
+R2_BACKEND=wrangler make publish-pictures # re-upload every label, overwriting R2 objects
+make clean-cache       # drop the local cache, forcing R2 refetches
+.scripts/check-pictures.sh            # verify every label exists in R2
+.scripts/check-pictures.sh --upstream # verify the source URLs instead
+nix develop -c .scripts/sort-pictures.sh # sort the manifest labels
 ```
 
 ## ♻️ CI

@@ -24,8 +24,8 @@ cumulative_distribution_function: {
     3. *Right-continuity*: for any $x_0$ we have
 
       $ lim_(x-> x_0^(+0)) F_X (x) = F_X (x_0) $
-  """#
+    """#
   related: [
-    "concept/random-variables"
+    "concept/random-variables",
   ]
 }

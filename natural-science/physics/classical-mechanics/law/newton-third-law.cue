@@ -12,5 +12,5 @@ newton_third_law: {
     $ ub(F)_(B→A) = - ub(F)_(A→B) $
 
     They act along the same line, along the direction $ub(x)_B - ub(x)_A$.
-  """#
+    """#
 }

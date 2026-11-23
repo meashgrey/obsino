@@ -16,5 +16,5 @@ torque: {
     torques:
 
     $ bold(τ)_"total" = ∑_i ub(x)_i × ub(F)_i $
-  """#
+    """#
 }

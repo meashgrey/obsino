@@ -12,11 +12,11 @@ section_keyword: {
     we also don't have to name a section, which is to say, we can use an anonymous
     `section/end` pair. But if we do name a section, however we have to close it
     using the same name. *Sections can also be nested*.
-  """
+    """
   code_part_section_keyword: #"""
-    #raw-block-file(
-      "src/basic/SectionKeyword.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/SectionKeyword.lean",
+        "lean"
+      )
+    """#
 }

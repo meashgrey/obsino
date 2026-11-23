@@ -103,15 +103,15 @@ linear_regression: {
     the affine transformation
 
     \(figure_part_linear_regression)
-  """
+    """
   figure_part_linear_regression: #"""
     #let linear-regression = "assets/typst/linear-regression.typ"
     #eval(
       str(read(linear-regression)),
       mode: "markup"
     )
-  """#
+    """#
   external_related: [
-    "formal-science.math.analysis.calculus"
+    "formal-science.math.analysis.calculus",
   ]
 }

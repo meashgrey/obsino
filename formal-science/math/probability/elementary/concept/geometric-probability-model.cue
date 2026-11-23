@@ -12,8 +12,8 @@ geometric_probability_model: {
     Under these assumptions, the probability of an event $A$ is:
 
     $ P(A) = ("measure of" A)/("measure of" Ω) $
-  """#
+    """#
   related: [
-    "concept/classical-probability-model"
+    "concept/classical-probability-model",
   ]
 }

@@ -27,5 +27,5 @@ levi_civita_tensor: {
     ϵ_(2 3 1) = ϵ_(3 1 2) = +1$ and $ϵ_(1 3 2) = ϵ_(3 2 1) = ϵ_(2 1 3) = -1$.
     And in a left-handed orthonormal basis, the signs of these components are
     reversed.
-  """#
+    """#
 }

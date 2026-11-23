@@ -99,5 +99,5 @@ restriction_enzyme: {
     Escherichia coli RY13 strain. If there are several different kinds of
     restriction enzymes from one host, roman numerals are used such as EcoRI
     and EcoRV.
-  """#
+    """#
 }

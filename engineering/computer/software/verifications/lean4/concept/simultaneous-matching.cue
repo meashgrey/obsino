@@ -15,14 +15,14 @@ simultaneous_matching: {
     checker.
 
     \(code_part_simultaneous_matching)
-  """
+    """
   code_part_simultaneous_matching: #"""
-    #raw-block-file(
-      "src/basic/SimultaneousMatching.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/SimultaneousMatching.lean",
+        "lean"
+      )
+    """#
   related: [
-    "concept/pattern-matching"
+    "concept/pattern-matching",
   ]
 }

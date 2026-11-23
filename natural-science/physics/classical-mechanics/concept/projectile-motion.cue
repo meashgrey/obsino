@@ -59,5 +59,5 @@ projectile_motion: {
 
     This is a vector equation that describes the full geometric trajectory of
     the projectile motion.
-  """#
+    """#
 }

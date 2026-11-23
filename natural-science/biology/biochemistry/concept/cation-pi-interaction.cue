@@ -19,9 +19,9 @@ cation_pi_interaction: {
     or many globular proteins. The guanidinium group of Arginine (Arg+) forms a
     strong cation-$π$ interaction with the indole ring of Tryptophan nearby,
     helping to stabilize the local tertiary structure of the protein.
-  """#,
+    """#
   related: [
     "concept/anion-pi-interaction",
-    "concept/pi-pi-interaction"
+    "concept/pi-pi-interaction",
   ]
 }

@@ -15,14 +15,14 @@ pattern_matching: {
     if `n` was constructed by `Nat.zero`, then the first branch of the pattern
     match is taken and the result is `true`. If `n` was constructed by `Nat.succ`
     then the second branch is taken and the result is `false`.
-  """
+    """
   code_part_pattern_matching: #"""
-    #raw-block-file(
-      "src/basic/PatternMatching.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PatternMatching.lean",
+        "lean"
+      )
+    """#
   related: [
-    "concept/inductive-datatype"
+    "concept/inductive-datatype",
   ]
 }

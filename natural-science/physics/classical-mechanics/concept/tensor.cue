@@ -13,8 +13,8 @@ tensor: {
       + f sans("T")^3(ub(F), ub(B), ub(C)) $
 
     where $e$ and $f$ are real numbers
-  """#
+    """#
   related: [
-    "desire/invariant-tensor"
+    "desire/invariant-tensor",
   ]
 }

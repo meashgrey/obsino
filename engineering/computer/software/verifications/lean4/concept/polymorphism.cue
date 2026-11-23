@@ -38,29 +38,29 @@ polymorphism: {
     explicit type annotations.
 
     \(code_part_polymorphism_infer)
-  """
+    """
   code_part_polymorphism_definition: #"""
-    #raw-block-file(
-      "src/basic/PolymorphismDefinition.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PolymorphismDefinition.lean",
+        "lean"
+      )
+    """#
   code_part_polymorphism_type: #"""
-    #raw-block-file(
-      "src/basic/PolymorphismType.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PolymorphismType.lean",
+        "lean"
+      )
+    """#
   code_part_polymorphism_linked_list: #"""
-    #raw-block-file(
-      "src/basic/PolymorphismLinkedList.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PolymorphismLinkedList.lean",
+        "lean"
+      )
+    """#
   code_part_polymorphism_infer: #"""
-    #raw-block-file(
-      "src/basic/PolymorphismInfer.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/PolymorphismInfer.lean",
+        "lean"
+      )
+    """#
 }

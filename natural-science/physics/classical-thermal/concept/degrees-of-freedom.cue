@@ -29,5 +29,5 @@ degrees_of_freedom: {
     Here $N$ represents the number of atoms in molecule. Linear polyatomic molecule
     is the molecule that cannot rotate freely because of double bond, like $"CO"_2$
     or $"N"_2"O"$.
-  """#
+    """#
 }

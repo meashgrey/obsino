@@ -10,8 +10,8 @@ unsupervised_learning_algorithm: {
     Unsupervised learning involves observing several examples of a random variable
     $ub(x)$ and attempting to implicit or explicitly learn the probability
     distribution $p(ub(x))$.
-  """#
+    """#
   related: [
-    "concept/learning-algorithm"
+    "concept/learning-algorithm",
   ]
 }

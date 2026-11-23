@@ -26,6 +26,6 @@ continuous_charge_distribution: {
     quantum nature. It replaces many tiny individual charges with a smooth
     description that makes their large-scale electric effects easier to
     calculate.
-  """#
+    """#
   related: ["concept/quantization-of-electric-charge"]
 }

@@ -25,10 +25,10 @@ einstein_summation_convention: {
 
     Notice the components of the metric tensor are $sans("g")_(j k) = sans("g")(
     ub(e)_j, ub(e)_k) = ub(e)_j ⋅ ub(e)_k = δ_(j k)$
-  """#
+    """#
   related: [
     "concept/basis-vector",
     "proof/proof-vector-component",
-    "proof/proof-tensor-component"
+    "proof/proof-tensor-component",
   ]
 }

@@ -27,11 +27,11 @@ lake_project: {
     build the binary if necessary and run it.
 
     \(code_part_lakefile)
-  """
+    """
   code_part_lakefile: #"""
-    #raw-block-file(
-      "src/example/cat/lakefile.toml",
-      "toml"
-    )
-  """#
+      #raw-block-file(
+        "src/example/cat/lakefile.toml",
+        "toml"
+      )
+    """#
 }

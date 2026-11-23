@@ -18,8 +18,8 @@ rna_transcription: {
 
     In mRNAs, the pieces of sequence left in the mature mRNA are known as *exons*,
     and there sequences contain the information needed to create proteins.
-  """#
+    """#
   related: [
-    "concept/rna"
+    "concept/rna",
   ]
 }

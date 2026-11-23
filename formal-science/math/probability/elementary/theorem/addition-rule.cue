@@ -16,5 +16,5 @@ addition_rule: {
 
     The sign pattern is $+,-,+,-,⋯$, alternating, with the last sign being
     $(-1)^(n-1)$.
-  """#
+    """#
 }

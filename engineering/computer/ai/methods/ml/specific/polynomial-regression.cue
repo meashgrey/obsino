@@ -28,15 +28,15 @@ polynomial_regression: {
       bold(X)^(("train")⊤)_"poly" bold(y)^("train") $
 
     \(figure_part_polynomial_regression)
-  """
+    """
   figure_part_polynomial_regression: #"""
     #let polynomial-regression = "assets/typst/polynomial-regression.typ"
     #eval(
       str(read(polynomial-regression)),
       mode: "markup"
     )
-  """#
+    """#
   related: [
-    "specific/linear-regression"
+    "specific/linear-regression",
   ]
 }

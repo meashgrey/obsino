@@ -10,10 +10,10 @@ impulse_momentum_theorem: {
     Substituting the definitions:
 
     $ ∫_(t_1)^(t_2) ub(F) "d"t = m ub(v)(t_2) - m ub(v)(t_1) $
-  """#
+    """#
   related: [
     "concept/momentum",
     "concept/impulse",
-    "proof/proof-impulse-momentum-theorem"
+    "proof/proof-impulse-momentum-theorem",
   ]
 }

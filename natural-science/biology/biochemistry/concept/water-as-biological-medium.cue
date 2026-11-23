@@ -17,5 +17,5 @@ water_as_biological_medium: {
     example, water molecules are found in neurotransmitter transporters such as
     GABA transporter, where they contribute to the structural integrity of the
     protein.
-  """#
+    """#
 }

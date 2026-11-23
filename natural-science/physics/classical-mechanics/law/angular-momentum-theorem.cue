@@ -42,5 +42,5 @@ angular_momentum_theorem: {
     So finally we know that the rate of change of the system's total angular
     momentum equals that the *net external torque* acting on the system. Internal
     torques do not contribute to the change of total angular momentum.
-  """#
+    """#
 }

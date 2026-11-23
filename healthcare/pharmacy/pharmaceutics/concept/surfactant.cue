@@ -19,11 +19,11 @@ surfactant: {
 
     By introducing the concept #link(<concept-critical-micelle-concentration>)[
     critical micelle concentration], 
-  """
+    """
   related: [
     "concept/solubilizer",
     "concept/solubilizate",
-    "concept/critical-micelle-concentration"
+    "concept/critical-micelle-concentration",
   ]
   figure_part_polysorbate_80: #"""
     #align(center)[
@@ -32,5 +32,5 @@ surfactant: {
         caption: "Structure of Polysorbate-80 (Tween-80)"
       )
     ]
-  """#
+    """#
 }

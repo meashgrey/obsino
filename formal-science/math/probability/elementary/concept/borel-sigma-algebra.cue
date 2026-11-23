@@ -61,9 +61,9 @@ borel_sigma_algebra: {
     $ cal("B")(ℝ) space.en "or" space.en cal("F")_("Borel") $
 
     Every element in Borel $σ$-algebra is called *Borel set* or *measurable set*.
-  """#
+    """#
   related: [
     "concept/sigma-algebra",
-    "desire/assign-probability-to-uncountable"
+    "desire/assign-probability-to-uncountable",
   ]
 }

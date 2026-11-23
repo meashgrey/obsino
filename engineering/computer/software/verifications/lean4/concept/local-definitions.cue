@@ -22,15 +22,15 @@ local_definitions: {
     `let` can also be used to defined functions. The biggest difference with
     `let` and `def` is that recursive `let` definitions *must be explicitly
     indicated by writing `let rec`*.
-  """
+    """
   code_part_local_definitions: #"""
-    #raw-block-file(
-      "src/basic/LocalDefinitions.lean",
-      "lean"
-    )
-  """#
+      #raw-block-file(
+        "src/basic/LocalDefinitions.lean",
+        "lean"
+      )
+    """#
   related: [
     "concept/function",
-    "concept/definitions"
+    "concept/definitions",
   ]
 }

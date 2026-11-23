@@ -14,5 +14,5 @@ peptide_bond: {
     can rotate. The peptide $"C"-"N"$ bond is not free to rotate. Other single
     bonds in the backbone may also be rotationally hindered, depending on the
     size and charge of $"R"$ group.
-  """#
+    """#
 }
